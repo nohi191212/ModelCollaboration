@@ -1,0 +1,8 @@
+numpy
+scipy
+torch
+Pillow
+tokenizers
+transformers
+pyarrow
+matplotlib

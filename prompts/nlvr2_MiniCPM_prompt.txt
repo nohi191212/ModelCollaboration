@@ -1,0 +1,3 @@
+The first image is the left image and the second is the right image. Determine whether the sentence below is true for this ordered pair. A sentence is True only when every part of it is supported by the images. Interpret counts and comparisons exactly, distinguish claims about one image from claims about both images together, and handle words such as all, at least, more, fewer, same, different, and no literally. Ignore details that the sentence does not mention. Answer with exactly True or False and nothing else.
+
+Sentence: {sentence}

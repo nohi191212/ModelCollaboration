@@ -1,0 +1,362 @@
+[
+  {
+    "config": "shared_12_cub_MiniCPM_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_cub_MiniCPM_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_cub_MiniCPM_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_cub_MiniCPM_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_cub_Qwen3.8_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_cub_Qwen3.8_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_cub_Qwen3.8_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_cub_Qwen3.8_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_glsim_MiniCPM_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_glsim_MiniCPM_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_glsim_MiniCPM_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_glsim_MiniCPM_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_glsim_Qwen3.8_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_glsim_Qwen3.8_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_glsim_Qwen3.8_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_glsim_Qwen3.8_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_groundingdino_MiniCPM_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_groundingdino_MiniCPM_without_text.json",
+    "status": "not_run",
+    "removed": "text"
+  },
+  {
+    "config": "shared_12_groundingdino_MiniCPM_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_groundingdino_MiniCPM_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_groundingdino_MiniCPM_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_groundingdino_Qwen3.8_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_groundingdino_Qwen3.8_without_text.json",
+    "status": "not_run",
+    "removed": "text"
+  },
+  {
+    "config": "shared_12_groundingdino_Qwen3.8_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_groundingdino_Qwen3.8_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_groundingdino_Qwen3.8_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_instancevg_MiniCPM_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_instancevg_MiniCPM_without_text.json",
+    "status": "not_run",
+    "removed": "text"
+  },
+  {
+    "config": "shared_12_instancevg_MiniCPM_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_instancevg_MiniCPM_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_instancevg_MiniCPM_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_instancevg_Qwen3.8_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_instancevg_Qwen3.8_without_text.json",
+    "status": "not_run",
+    "removed": "text"
+  },
+  {
+    "config": "shared_12_instancevg_Qwen3.8_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_instancevg_Qwen3.8_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_instancevg_Qwen3.8_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_nlvr2_MiniCPM_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_nlvr2_MiniCPM_without_text.json",
+    "status": "not_run",
+    "removed": "text"
+  },
+  {
+    "config": "shared_12_nlvr2_MiniCPM_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_nlvr2_MiniCPM_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_nlvr2_MiniCPM_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_nlvr2_Qwen3.8_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_nlvr2_Qwen3.8_without_text.json",
+    "status": "not_run",
+    "removed": "text"
+  },
+  {
+    "config": "shared_12_nlvr2_Qwen3.8_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_nlvr2_Qwen3.8_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_nlvr2_Qwen3.8_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_rtdetr_x_fp32_MiniCPM_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_rtdetr_x_fp32_MiniCPM_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_rtdetr_x_fp32_MiniCPM_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_rtdetr_x_fp32_MiniCPM_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_rtdetr_x_fp32_Qwen3.8_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_rtdetr_x_fp32_Qwen3.8_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_rtdetr_x_fp32_Qwen3.8_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_rtdetr_x_fp32_Qwen3.8_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_vilt_MiniCPM_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_vilt_MiniCPM_without_text.json",
+    "status": "not_run",
+    "removed": "text"
+  },
+  {
+    "config": "shared_12_vilt_MiniCPM_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_vilt_MiniCPM_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_vilt_MiniCPM_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_vilt_Qwen3.8_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_vilt_Qwen3.8_without_text.json",
+    "status": "not_run",
+    "removed": "text"
+  },
+  {
+    "config": "shared_12_vilt_Qwen3.8_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_vilt_Qwen3.8_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_vilt_Qwen3.8_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_yolo26x_MiniCPM_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_yolo26x_MiniCPM_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_yolo26x_MiniCPM_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_yolo26x_MiniCPM_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  },
+  {
+    "config": "shared_12_yolo26x_Qwen3.8_without_image.json",
+    "status": "not_run",
+    "removed": "image"
+  },
+  {
+    "config": "shared_12_yolo26x_Qwen3.8_without_hidden.json",
+    "status": "not_run",
+    "removed": "hidden"
+  },
+  {
+    "config": "shared_12_yolo26x_Qwen3.8_without_confidence.json",
+    "status": "not_run",
+    "removed": "confidence"
+  },
+  {
+    "config": "shared_12_yolo26x_Qwen3.8_without_output.json",
+    "status": "not_run",
+    "removed": "output"
+  }
+]

@@ -1,0 +1,370 @@
+[
+  {
+    "key": [
+      "cub",
+      "cub",
+      "MiniCPM"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.9058333333333334,
+        "test_fixed_A25": 0.6472903003106663,
+        "test_ranked_A25_diagnostic": 0.7895926820849155,
+        "selected_validation_actual_calls": 0.01,
+        "selected_test_actual_calls": 0.113565757680359
+      },
+      "learned": {
+        "validation_fixed_A25": 0.9621666666666666,
+        "test_fixed_A25": 0.7763203313772868,
+        "test_ranked_A25_diagnostic": 0.7967552640662755,
+        "selected_validation_actual_calls": 0.01,
+        "selected_test_actual_calls": 0.028822920262340353
+      }
+    }
+  },
+  {
+    "key": [
+      "cub",
+      "cub",
+      "Qwen3.8"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.9171666666666667,
+        "test_fixed_A25": 0.7316189161201243,
+        "test_ranked_A25_diagnostic": 0.8101484294097343,
+        "selected_validation_actual_calls": 0.01,
+        "selected_test_actual_calls": 0.113565757680359
+      },
+      "learned": {
+        "validation_fixed_A25": 0.9705833333333334,
+        "test_fixed_A25": 0.8053158439765276,
+        "test_ranked_A25_diagnostic": 0.806368657231619,
+        "selected_validation_actual_calls": 0.01,
+        "selected_test_actual_calls": 0.014325163962720055
+      }
+    }
+  },
+  {
+    "key": [
+      "cub",
+      "glsim",
+      "MiniCPM"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.9005000000000001,
+        "test_fixed_A25": 0.7253365550569555,
+        "test_ranked_A25_diagnostic": 0.8519848118743528,
+        "selected_validation_actual_calls": 0.01,
+        "selected_test_actual_calls": 0.08698653779772178
+      },
+      "learned": {
+        "validation_fixed_A25": 0.97075,
+        "test_fixed_A25": 0.8740248532965137,
+        "test_ranked_A25_diagnostic": 0.8809112875388333,
+        "selected_validation_actual_calls": 0.03,
+        "selected_test_actual_calls": 0.04487400759406282
+      }
+    }
+  },
+  {
+    "key": [
+      "cub",
+      "glsim",
+      "Qwen3.8"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.9213333333333334,
+        "test_fixed_A25": 0.7860545391784605,
+        "test_ranked_A25_diagnostic": 0.8691232309285468,
+        "selected_validation_actual_calls": 0.01,
+        "selected_test_actual_calls": 0.08698653779772178
+      },
+      "learned": {
+        "validation_fixed_A25": 0.9757500000000001,
+        "test_fixed_A25": 0.8918536416983087,
+        "test_ranked_A25_diagnostic": 0.8935623058336211,
+        "selected_validation_actual_calls": 0.01,
+        "selected_test_actual_calls": 0.016568864342423197
+      }
+    }
+  },
+  {
+    "key": [
+      "grefcoco",
+      "groundingdino",
+      "MiniCPM"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.5566729917773561,
+        "test_fixed_A25": 0.27538212857669514,
+        "test_ranked_A25_diagnostic": 0.2786603522105323,
+        "selected_validation_actual_calls": 0.9899501019045611,
+        "selected_test_actual_calls": 0.9873805405098829
+      },
+      "learned": {
+        "validation_fixed_A25": 0.6255183076814955,
+        "test_fixed_A25": 0.33085386949493806,
+        "test_ranked_A25_diagnostic": 0.3352494115645294,
+        "selected_validation_actual_calls": 0.339939560053412,
+        "selected_test_actual_calls": 0.43518702322547714
+      }
+    }
+  },
+  {
+    "key": [
+      "grefcoco",
+      "groundingdino",
+      "Qwen3.8"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.5648886077728582,
+        "test_fixed_A25": 0.28625187873975555,
+        "test_ranked_A25_diagnostic": 0.29324220854720245,
+        "selected_validation_actual_calls": 0.9899501019045611,
+        "selected_test_actual_calls": 0.9873805405098829
+      },
+      "learned": {
+        "validation_fixed_A25": 0.669126431934781,
+        "test_fixed_A25": 0.3549726342058248,
+        "test_ranked_A25_diagnostic": 0.37351898590590704,
+        "selected_validation_actual_calls": 0.4199873497786211,
+        "selected_test_actual_calls": 0.5745682443354224
+      }
+    }
+  },
+  {
+    "key": [
+      "grefcoco",
+      "instancevg",
+      "MiniCPM"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.7465176751704266,
+        "test_fixed_A25": 0.6639253608598248,
+        "test_ranked_A25_diagnostic": 0.6590023537418825,
+        "selected_validation_actual_calls": 0.6499402628434886,
+        "selected_test_actual_calls": 0.5209426310864078
+      },
+      "learned": {
+        "validation_fixed_A25": 0.7607140347178298,
+        "test_fixed_A25": 0.6759152652922327,
+        "test_ranked_A25_diagnostic": 0.6777273629583416,
+        "selected_validation_actual_calls": 0.22995291306486754,
+        "selected_test_actual_calls": 0.30904914499617164
+      }
+    }
+  },
+  {
+    "key": [
+      "grefcoco",
+      "instancevg",
+      "Qwen3.8"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.7477616136060159,
+        "test_fixed_A25": 0.6640728242066756,
+        "test_ranked_A25_diagnostic": 0.6611405722712191,
+        "selected_validation_actual_calls": 0.7099585353854804,
+        "selected_test_actual_calls": 0.6838612710206166
+      },
+      "learned": {
+        "validation_fixed_A25": 0.7778129172816081,
+        "test_fixed_A25": 0.7280974392422653,
+        "test_ranked_A25_diagnostic": 0.7136828970875989,
+        "selected_validation_actual_calls": 0.5599831330381615,
+        "selected_test_actual_calls": 0.5355755324277571
+      }
+    }
+  },
+  {
+    "key": [
+      "nlvr2",
+      "nlvr2",
+      "MiniCPM"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.8284302492122602,
+        "test_fixed_A25": 0.833902561526871,
+        "test_ranked_A25_diagnostic": 0.835882901628758,
+        "selected_validation_actual_calls": 0.8587797192781438,
+        "selected_test_actual_calls": 0.8580038745784602
+      },
+      "learned": {
+        "validation_fixed_A25": 0.8359782297336007,
+        "test_fixed_A25": 0.8425629618999785,
+        "test_ranked_A25_diagnostic": 0.8414221137978044,
+        "selected_validation_actual_calls": 0.8498997421942137,
+        "selected_test_actual_calls": 0.8465953935567195
+      }
+    }
+  },
+  {
+    "key": [
+      "nlvr2",
+      "nlvr2",
+      "Qwen3.8"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.831280435405328,
+        "test_fixed_A25": 0.8343976465523427,
+        "test_ranked_A25_diagnostic": 0.8361340317141422,
+        "selected_validation_actual_calls": 0.8587797192781438,
+        "selected_test_actual_calls": 0.8580038745784602
+      },
+      "learned": {
+        "validation_fixed_A25": 0.8402320252076769,
+        "test_fixed_A25": 0.8436320585491857,
+        "test_ranked_A25_diagnostic": 0.8425342613187918,
+        "selected_validation_actual_calls": 0.7699799484388428,
+        "selected_test_actual_calls": 0.7665925234986009
+      }
+    }
+  },
+  {
+    "key": [
+      "nlvr2",
+      "vilt",
+      "MiniCPM"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.7926095674591808,
+        "test_fixed_A25": 0.7987371744277822,
+        "test_ranked_A25_diagnostic": 0.8005237856066586,
+        "selected_validation_actual_calls": 0.9598968776854769,
+        "selected_test_actual_calls": 0.9593169261677549
+      },
+      "learned": {
+        "validation_fixed_A25": 0.793425952449155,
+        "test_fixed_A25": 0.8005094353160652,
+        "test_ranked_A25_diagnostic": 0.8015211308028988,
+        "selected_validation_actual_calls": 0.9899742194213692,
+        "selected_test_actual_calls": 0.9896677907727631
+      }
+    }
+  },
+  {
+    "key": [
+      "nlvr2",
+      "vilt",
+      "Qwen3.8"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.7940561443712404,
+        "test_fixed_A25": 0.7988735021884195,
+        "test_ranked_A25_diagnostic": 0.8006242376408124,
+        "selected_validation_actual_calls": 0.9598968776854769,
+        "selected_test_actual_calls": 0.9593169261677549
+      },
+      "learned": {
+        "validation_fixed_A25": 0.7963477513606417,
+        "test_fixed_A25": 0.802590227452106,
+        "test_ranked_A25_diagnostic": 0.8037526009901701,
+        "selected_validation_actual_calls": 0.9498710971068461,
+        "selected_test_actual_calls": 0.9485542082227165
+      }
+    }
+  },
+  {
+    "key": [
+      "construction",
+      "yolo26x",
+      "MiniCPM"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.17451640525159154,
+        "test_fixed_A25": 0.17697501725814352,
+        "test_ranked_A25_diagnostic": 0.1716572124279524,
+        "selected_validation_actual_calls": 0.9386590584878745,
+        "selected_test_actual_calls": 0.9254327563249002
+      },
+      "learned": {
+        "validation_fixed_A25": 0.22914536623152232,
+        "test_fixed_A25": 0.21733392403576846,
+        "test_ranked_A25_diagnostic": 0.21579610594149268,
+        "selected_validation_actual_calls": 0.4893009985734665,
+        "selected_test_actual_calls": 0.47203728362183756
+      }
+    }
+  },
+  {
+    "key": [
+      "construction",
+      "yolo26x",
+      "Qwen3.8"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.17942553980644182,
+        "test_fixed_A25": 0.18055274894913714,
+        "test_ranked_A25_diagnostic": 0.1793307821359281,
+        "selected_validation_actual_calls": 0.9286733238231099,
+        "selected_test_actual_calls": 0.9221038615179761
+      },
+      "learned": {
+        "validation_fixed_A25": 0.23466194499464404,
+        "test_fixed_A25": 0.21316340540985348,
+        "test_ranked_A25_diagnostic": 0.213003148312119,
+        "selected_validation_actual_calls": 0.4992867332382311,
+        "selected_test_actual_calls": 0.4876830892143808
+      }
+    }
+  },
+  {
+    "key": [
+      "construction",
+      "rtdetr_x_fp32",
+      "MiniCPM"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.08994758708890332,
+        "test_fixed_A25": 0.08325267500178911,
+        "test_ranked_A25_diagnostic": 0.08357421552875581,
+        "selected_validation_actual_calls": 0.978601997146933,
+        "selected_test_actual_calls": 0.9790279627163782
+      },
+      "learned": {
+        "validation_fixed_A25": 0.11165309347543784,
+        "test_fixed_A25": 0.09726595269708746,
+        "test_ranked_A25_diagnostic": 0.09795552217467457,
+        "selected_validation_actual_calls": 0.7788873038516405,
+        "selected_test_actual_calls": 0.7882822902796272
+      }
+    }
+  },
+  {
+    "key": [
+      "construction",
+      "rtdetr_x_fp32",
+      "Qwen3.8"
+    ],
+    "areas": {
+      "confidence": {
+        "validation_fixed_A25": 0.10053453664183931,
+        "test_fixed_A25": 0.08910633276678806,
+        "test_ranked_A25_diagnostic": 0.08907503728424503,
+        "selected_validation_actual_calls": 0.9885877318116976,
+        "selected_test_actual_calls": 0.9860186418109188
+      },
+      "learned": {
+        "validation_fixed_A25": 0.13205087205171664,
+        "test_fixed_A25": 0.10226629753438624,
+        "test_ranked_A25_diagnostic": 0.10459671104829708,
+        "selected_validation_actual_calls": 0.8288159771754636,
+        "selected_test_actual_calls": 0.831225033288948
+      }
+    }
+  }
+]

@@ -1,0 +1,720 @@
+{
+  "status": "search_complete",
+  "started_at": 1789041525.1799183,
+  "completed_stages": [
+    "hidden_percent",
+    "student",
+    "representation_dim",
+    "lr",
+    "target",
+    "strategy"
+  ],
+  "selected": "shared_12",
+  "candidates": [
+    {
+      "id": "shared_00",
+      "settings": {
+        "student": "4M",
+        "representation_dim": 512,
+        "lr": 0.001,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_00_cub_MiniCPM",
+        "shared_00_cub_Qwen3.8",
+        "shared_00_glsim_MiniCPM",
+        "shared_00_glsim_Qwen3.8",
+        "shared_00_groundingdino_MiniCPM",
+        "shared_00_groundingdino_Qwen3.8",
+        "shared_00_instancevg_MiniCPM",
+        "shared_00_instancevg_Qwen3.8",
+        "shared_00_nlvr2_MiniCPM",
+        "shared_00_nlvr2_Qwen3.8",
+        "shared_00_vilt_MiniCPM",
+        "shared_00_vilt_Qwen3.8",
+        "shared_00_yolo26x_MiniCPM",
+        "shared_00_yolo26x_Qwen3.8",
+        "shared_00_rtdetr_x_fp32_MiniCPM",
+        "shared_00_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9498541666666667,
+        "grefcoco": 0.7090097687820648,
+        "nlvr2": 0.8164207963334288,
+        "construction": 0.175986962717605
+      },
+      "validation_mean": 0.6628179236249413,
+      "mean_active_parameters": 4881924.0,
+      "mean_fit_seconds": 37.63353890167855
+    },
+    {
+      "id": "shared_01",
+      "settings": {
+        "student": "4M",
+        "representation_dim": 512,
+        "lr": 0.001,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 30
+      },
+      "runs": [
+        "shared_01_cub_MiniCPM",
+        "shared_01_cub_Qwen3.8",
+        "shared_01_glsim_MiniCPM",
+        "shared_01_glsim_Qwen3.8",
+        "shared_01_groundingdino_MiniCPM",
+        "shared_01_groundingdino_Qwen3.8",
+        "shared_01_instancevg_MiniCPM",
+        "shared_01_instancevg_Qwen3.8",
+        "shared_01_nlvr2_MiniCPM",
+        "shared_01_nlvr2_Qwen3.8",
+        "shared_01_vilt_MiniCPM",
+        "shared_01_vilt_Qwen3.8",
+        "shared_01_yolo26x_MiniCPM",
+        "shared_01_yolo26x_Qwen3.8",
+        "shared_01_rtdetr_x_fp32_MiniCPM",
+        "shared_01_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9346041666666667,
+        "grefcoco": 0.7090431513107035,
+        "nlvr2": 0.8157691205958177,
+        "construction": 0.18298715773892013
+      },
+      "validation_mean": 0.660600899078027,
+      "mean_active_parameters": 4783620.0,
+      "mean_fit_seconds": 39.49221354418114
+    },
+    {
+      "id": "shared_02",
+      "settings": {
+        "student": "4M",
+        "representation_dim": 512,
+        "lr": 0.001,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 60
+      },
+      "runs": [
+        "shared_02_cub_MiniCPM",
+        "shared_02_cub_Qwen3.8",
+        "shared_02_glsim_MiniCPM",
+        "shared_02_glsim_Qwen3.8",
+        "shared_02_groundingdino_MiniCPM",
+        "shared_02_groundingdino_Qwen3.8",
+        "shared_02_instancevg_MiniCPM",
+        "shared_02_instancevg_Qwen3.8",
+        "shared_02_nlvr2_MiniCPM",
+        "shared_02_nlvr2_Qwen3.8",
+        "shared_02_vilt_MiniCPM",
+        "shared_02_vilt_Qwen3.8",
+        "shared_02_yolo26x_MiniCPM",
+        "shared_02_yolo26x_Qwen3.8",
+        "shared_02_rtdetr_x_fp32_MiniCPM",
+        "shared_02_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9472291666666667,
+        "grefcoco": 0.708183990442055,
+        "nlvr2": 0.8155900887997709,
+        "construction": 0.1758169352446146
+      },
+      "validation_mean": 0.6617050452882768,
+      "mean_active_parameters": 4816388.0,
+      "mean_fit_seconds": 34.18548409075447
+    },
+    {
+      "id": "shared_03",
+      "settings": {
+        "student": "1M",
+        "representation_dim": 512,
+        "lr": 0.001,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_03_cub_MiniCPM",
+        "shared_03_cub_Qwen3.8",
+        "shared_03_glsim_MiniCPM",
+        "shared_03_glsim_Qwen3.8",
+        "shared_03_groundingdino_MiniCPM",
+        "shared_03_groundingdino_Qwen3.8",
+        "shared_03_instancevg_MiniCPM",
+        "shared_03_instancevg_Qwen3.8",
+        "shared_03_nlvr2_MiniCPM",
+        "shared_03_nlvr2_Qwen3.8",
+        "shared_03_vilt_MiniCPM",
+        "shared_03_vilt_Qwen3.8",
+        "shared_03_yolo26x_MiniCPM",
+        "shared_03_yolo26x_Qwen3.8",
+        "shared_03_rtdetr_x_fp32_MiniCPM",
+        "shared_03_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9559375,
+        "grefcoco": 0.7093348091924943,
+        "nlvr2": 0.8166929246634202,
+        "construction": 0.173092415345378
+      },
+      "validation_mean": 0.6637644123003231,
+      "mean_active_parameters": 2615822.0,
+      "mean_fit_seconds": 57.72181743498368
+    },
+    {
+      "id": "shared_04",
+      "settings": {
+        "student": "2M",
+        "representation_dim": 512,
+        "lr": 0.001,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_04_cub_MiniCPM",
+        "shared_04_cub_Qwen3.8",
+        "shared_04_glsim_MiniCPM",
+        "shared_04_glsim_Qwen3.8",
+        "shared_04_groundingdino_MiniCPM",
+        "shared_04_groundingdino_Qwen3.8",
+        "shared_04_instancevg_MiniCPM",
+        "shared_04_instancevg_Qwen3.8",
+        "shared_04_nlvr2_MiniCPM",
+        "shared_04_nlvr2_Qwen3.8",
+        "shared_04_vilt_MiniCPM",
+        "shared_04_vilt_Qwen3.8",
+        "shared_04_yolo26x_MiniCPM",
+        "shared_04_yolo26x_Qwen3.8",
+        "shared_04_rtdetr_x_fp32_MiniCPM",
+        "shared_04_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9448958333333333,
+        "grefcoco": 0.7087286527514232,
+        "nlvr2": 0.8167144084789458,
+        "construction": 0.1764152469711854
+      },
+      "validation_mean": 0.661688535383722,
+      "mean_active_parameters": 3402222.0,
+      "mean_fit_seconds": 57.64163886100141
+    },
+    {
+      "id": "shared_05",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 512,
+        "lr": 0.001,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_05_cub_MiniCPM",
+        "shared_05_cub_Qwen3.8",
+        "shared_05_glsim_MiniCPM",
+        "shared_05_glsim_Qwen3.8",
+        "shared_05_groundingdino_MiniCPM",
+        "shared_05_groundingdino_Qwen3.8",
+        "shared_05_instancevg_MiniCPM",
+        "shared_05_instancevg_Qwen3.8",
+        "shared_05_nlvr2_MiniCPM",
+        "shared_05_nlvr2_Qwen3.8",
+        "shared_05_vilt_MiniCPM",
+        "shared_05_vilt_Qwen3.8",
+        "shared_05_yolo26x_MiniCPM",
+        "shared_05_yolo26x_Qwen3.8",
+        "shared_05_rtdetr_x_fp32_MiniCPM",
+        "shared_05_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9542916666666666,
+        "grefcoco": 0.7095351043643263,
+        "nlvr2": 0.8168110856488112,
+        "construction": 0.17955466204144832
+      },
+      "validation_mean": 0.6650481296803131,
+      "mean_active_parameters": 7994758.0,
+      "mean_fit_seconds": 46.836150376082514
+    },
+    {
+      "id": "shared_06",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 32,
+        "lr": 0.001,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_06_cub_MiniCPM",
+        "shared_06_cub_Qwen3.8",
+        "shared_06_glsim_MiniCPM",
+        "shared_06_glsim_Qwen3.8",
+        "shared_06_groundingdino_MiniCPM",
+        "shared_06_groundingdino_Qwen3.8",
+        "shared_06_instancevg_MiniCPM",
+        "shared_06_instancevg_Qwen3.8",
+        "shared_06_nlvr2_MiniCPM",
+        "shared_06_nlvr2_Qwen3.8",
+        "shared_06_vilt_MiniCPM",
+        "shared_06_vilt_Qwen3.8",
+        "shared_06_yolo26x_MiniCPM",
+        "shared_06_yolo26x_Qwen3.8",
+        "shared_06_rtdetr_x_fp32_MiniCPM",
+        "shared_06_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.966125,
+        "grefcoco": 0.7070665542202544,
+        "nlvr2": 0.8169149240905185,
+        "construction": 0.17258963439949287
+      },
+      "validation_mean": 0.6656740281775665,
+      "mean_active_parameters": 6222718.0,
+      "mean_fit_seconds": 63.611915712936025
+    },
+    {
+      "id": "shared_07",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 64,
+        "lr": 0.001,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_07_cub_MiniCPM",
+        "shared_07_cub_Qwen3.8",
+        "shared_07_glsim_MiniCPM",
+        "shared_07_glsim_Qwen3.8",
+        "shared_07_groundingdino_MiniCPM",
+        "shared_07_groundingdino_Qwen3.8",
+        "shared_07_instancevg_MiniCPM",
+        "shared_07_instancevg_Qwen3.8",
+        "shared_07_nlvr2_MiniCPM",
+        "shared_07_nlvr2_Qwen3.8",
+        "shared_07_vilt_MiniCPM",
+        "shared_07_vilt_Qwen3.8",
+        "shared_07_yolo26x_MiniCPM",
+        "shared_07_yolo26x_Qwen3.8",
+        "shared_07_rtdetr_x_fp32_MiniCPM",
+        "shared_07_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9693333333333334,
+        "grefcoco": 0.7083755007379295,
+        "nlvr2": 0.8167716986536809,
+        "construction": 0.17603867039292925
+      },
+      "validation_mean": 0.6676298007794683,
+      "mean_active_parameters": 6340854.0,
+      "mean_fit_seconds": 62.082761554156605
+    },
+    {
+      "id": "shared_08",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 128,
+        "lr": 0.001,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_08_cub_MiniCPM",
+        "shared_08_cub_Qwen3.8",
+        "shared_08_glsim_MiniCPM",
+        "shared_08_glsim_Qwen3.8",
+        "shared_08_groundingdino_MiniCPM",
+        "shared_08_groundingdino_Qwen3.8",
+        "shared_08_instancevg_MiniCPM",
+        "shared_08_instancevg_Qwen3.8",
+        "shared_08_nlvr2_MiniCPM",
+        "shared_08_nlvr2_Qwen3.8",
+        "shared_08_vilt_MiniCPM",
+        "shared_08_vilt_Qwen3.8",
+        "shared_08_yolo26x_MiniCPM",
+        "shared_08_yolo26x_Qwen3.8",
+        "shared_08_rtdetr_x_fp32_MiniCPM",
+        "shared_08_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9704166666666667,
+        "grefcoco": 0.7082156159955021,
+        "nlvr2": 0.8169006015468347,
+        "construction": 0.17553875298671762
+      },
+      "validation_mean": 0.6677679092989303,
+      "mean_active_parameters": 6577126.0,
+      "mean_fit_seconds": 58.37819891100662
+    },
+    {
+      "id": "shared_09",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 256,
+        "lr": 0.001,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_09_cub_MiniCPM",
+        "shared_09_cub_Qwen3.8",
+        "shared_09_glsim_MiniCPM",
+        "shared_09_glsim_Qwen3.8",
+        "shared_09_groundingdino_MiniCPM",
+        "shared_09_groundingdino_Qwen3.8",
+        "shared_09_instancevg_MiniCPM",
+        "shared_09_instancevg_Qwen3.8",
+        "shared_09_nlvr2_MiniCPM",
+        "shared_09_nlvr2_Qwen3.8",
+        "shared_09_vilt_MiniCPM",
+        "shared_09_vilt_Qwen3.8",
+        "shared_09_yolo26x_MiniCPM",
+        "shared_09_yolo26x_Qwen3.8",
+        "shared_09_rtdetr_x_fp32_MiniCPM",
+        "shared_09_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9678541666666667,
+        "grefcoco": 0.7090659919881931,
+        "nlvr2": 0.8167609567459181,
+        "construction": 0.17265650809871438
+      },
+      "validation_mean": 0.6665844058748731,
+      "mean_active_parameters": 7049670.0,
+      "mean_fit_seconds": 50.47316628225235
+    },
+    {
+      "id": "shared_10",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 128,
+        "lr": 0.0001,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_10_cub_MiniCPM",
+        "shared_10_cub_Qwen3.8",
+        "shared_10_glsim_MiniCPM",
+        "shared_10_glsim_Qwen3.8",
+        "shared_10_groundingdino_MiniCPM",
+        "shared_10_groundingdino_Qwen3.8",
+        "shared_10_instancevg_MiniCPM",
+        "shared_10_instancevg_Qwen3.8",
+        "shared_10_nlvr2_MiniCPM",
+        "shared_10_nlvr2_Qwen3.8",
+        "shared_10_vilt_MiniCPM",
+        "shared_10_vilt_Qwen3.8",
+        "shared_10_yolo26x_MiniCPM",
+        "shared_10_yolo26x_Qwen3.8",
+        "shared_10_rtdetr_x_fp32_MiniCPM",
+        "shared_10_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9694166666666667,
+        "grefcoco": 0.7047965422728231,
+        "nlvr2": 0.8161844743626469,
+        "construction": 0.17403212405686308
+      },
+      "validation_mean": 0.66610745183975,
+      "mean_active_parameters": 6577126.0,
+      "mean_fit_seconds": 91.61671701988234
+    },
+    {
+      "id": "shared_11",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 128,
+        "lr": 0.0003,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_11_cub_MiniCPM",
+        "shared_11_cub_Qwen3.8",
+        "shared_11_glsim_MiniCPM",
+        "shared_11_glsim_Qwen3.8",
+        "shared_11_groundingdino_MiniCPM",
+        "shared_11_groundingdino_Qwen3.8",
+        "shared_11_instancevg_MiniCPM",
+        "shared_11_instancevg_Qwen3.8",
+        "shared_11_nlvr2_MiniCPM",
+        "shared_11_nlvr2_Qwen3.8",
+        "shared_11_vilt_MiniCPM",
+        "shared_11_vilt_Qwen3.8",
+        "shared_11_yolo26x_MiniCPM",
+        "shared_11_yolo26x_Qwen3.8",
+        "shared_11_rtdetr_x_fp32_MiniCPM",
+        "shared_11_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9692083333333333,
+        "grefcoco": 0.7071210204511913,
+        "nlvr2": 0.8166034087653967,
+        "construction": 0.17173346213113433
+      },
+      "validation_mean": 0.6661665561702639,
+      "mean_active_parameters": 6577126.0,
+      "mean_fit_seconds": 75.3759171601705
+    },
+    {
+      "id": "shared_12",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 128,
+        "lr": 0.003,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_12_cub_MiniCPM",
+        "shared_12_cub_Qwen3.8",
+        "shared_12_glsim_MiniCPM",
+        "shared_12_glsim_Qwen3.8",
+        "shared_12_groundingdino_MiniCPM",
+        "shared_12_groundingdino_Qwen3.8",
+        "shared_12_instancevg_MiniCPM",
+        "shared_12_instancevg_Qwen3.8",
+        "shared_12_nlvr2_MiniCPM",
+        "shared_12_nlvr2_Qwen3.8",
+        "shared_12_vilt_MiniCPM",
+        "shared_12_vilt_Qwen3.8",
+        "shared_12_yolo26x_MiniCPM",
+        "shared_12_yolo26x_Qwen3.8",
+        "shared_12_rtdetr_x_fp32_MiniCPM",
+        "shared_12_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9698125,
+        "grefcoco": 0.7082964368543117,
+        "nlvr2": 0.8164959896877686,
+        "construction": 0.1768778191883302
+      },
+      "validation_mean": 0.6678706864326026,
+      "mean_active_parameters": 6577126.0,
+      "mean_fit_seconds": 67.41994623254868
+    },
+    {
+      "id": "shared_13",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 128,
+        "lr": 0.01,
+        "target": "four_state",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_13_cub_MiniCPM",
+        "shared_13_cub_Qwen3.8",
+        "shared_13_glsim_MiniCPM",
+        "shared_13_glsim_Qwen3.8",
+        "shared_13_groundingdino_MiniCPM",
+        "shared_13_groundingdino_Qwen3.8",
+        "shared_13_instancevg_MiniCPM",
+        "shared_13_instancevg_Qwen3.8",
+        "shared_13_nlvr2_MiniCPM",
+        "shared_13_nlvr2_Qwen3.8",
+        "shared_13_vilt_MiniCPM",
+        "shared_13_vilt_Qwen3.8",
+        "shared_13_yolo26x_MiniCPM",
+        "shared_13_yolo26x_Qwen3.8",
+        "shared_13_rtdetr_x_fp32_MiniCPM",
+        "shared_13_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9509375,
+        "grefcoco": 0.7100024597652681,
+        "nlvr2": 0.8169936980807792,
+        "construction": 0.17572600052962756
+      },
+      "validation_mean": 0.6634149145939187,
+      "mean_active_parameters": 6577126.0,
+      "mean_fit_seconds": 58.952753572441
+    },
+    {
+      "id": "shared_14",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 128,
+        "lr": 0.003,
+        "target": "gain",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_14_cub_MiniCPM",
+        "shared_14_cub_Qwen3.8",
+        "shared_14_glsim_MiniCPM",
+        "shared_14_glsim_Qwen3.8",
+        "shared_14_groundingdino_MiniCPM",
+        "shared_14_groundingdino_Qwen3.8",
+        "shared_14_instancevg_MiniCPM",
+        "shared_14_instancevg_Qwen3.8",
+        "shared_14_nlvr2_MiniCPM",
+        "shared_14_nlvr2_Qwen3.8",
+        "shared_14_vilt_MiniCPM",
+        "shared_14_vilt_Qwen3.8",
+        "shared_14_yolo26x_MiniCPM",
+        "shared_14_yolo26x_Qwen3.8",
+        "shared_14_rtdetr_x_fp32_MiniCPM",
+        "shared_14_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.97975,
+        "grefcoco": 0.6943653805608265,
+        "nlvr2": 0.815819249498711,
+        "construction": 0.17119724948093312
+      },
+      "validation_mean": 0.6652829698851177,
+      "mean_active_parameters": 6576739.0,
+      "mean_fit_seconds": 46.42365771972982
+    },
+    {
+      "id": "shared_15",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 128,
+        "lr": 0.003,
+        "target": "error",
+        "strategy": "natural",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_15_cub_MiniCPM",
+        "shared_15_cub_Qwen3.8",
+        "shared_15_glsim_MiniCPM",
+        "shared_15_glsim_Qwen3.8",
+        "shared_15_groundingdino_MiniCPM",
+        "shared_15_groundingdino_Qwen3.8",
+        "shared_15_instancevg_MiniCPM",
+        "shared_15_instancevg_Qwen3.8",
+        "shared_15_nlvr2_MiniCPM",
+        "shared_15_nlvr2_Qwen3.8",
+        "shared_15_vilt_MiniCPM",
+        "shared_15_vilt_Qwen3.8",
+        "shared_15_yolo26x_MiniCPM",
+        "shared_15_yolo26x_Qwen3.8",
+        "shared_15_rtdetr_x_fp32_MiniCPM",
+        "shared_15_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9172083333333333,
+        "grefcoco": 0.707660411834985,
+        "nlvr2": 0.8152570896591235,
+        "construction": 0.17163397920287538
+      },
+      "validation_mean": 0.6529399535075793,
+      "mean_active_parameters": 6576739.0,
+      "mean_fit_seconds": 39.98559669695533
+    },
+    {
+      "id": "shared_16",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 128,
+        "lr": 0.003,
+        "target": "four_state",
+        "strategy": "weighted",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_16_cub_MiniCPM",
+        "shared_16_cub_Qwen3.8",
+        "shared_16_glsim_MiniCPM",
+        "shared_16_glsim_Qwen3.8",
+        "shared_16_groundingdino_MiniCPM",
+        "shared_16_groundingdino_Qwen3.8",
+        "shared_16_instancevg_MiniCPM",
+        "shared_16_instancevg_Qwen3.8",
+        "shared_16_nlvr2_MiniCPM",
+        "shared_16_nlvr2_Qwen3.8",
+        "shared_16_vilt_MiniCPM",
+        "shared_16_vilt_Qwen3.8",
+        "shared_16_yolo26x_MiniCPM",
+        "shared_16_yolo26x_Qwen3.8",
+        "shared_16_rtdetr_x_fp32_MiniCPM",
+        "shared_16_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.958625,
+        "grefcoco": 0.7108879752617893,
+        "nlvr2": 0.8163420223431682,
+        "construction": 0.17381623998937223
+      },
+      "validation_mean": 0.6649178093985824,
+      "mean_active_parameters": 6577126.0,
+      "mean_fit_seconds": 39.95715373130224
+    },
+    {
+      "id": "shared_17",
+      "settings": {
+        "student": "8M",
+        "representation_dim": 128,
+        "lr": 0.003,
+        "target": "four_state",
+        "strategy": "balanced",
+        "hidden_percent": 90
+      },
+      "runs": [
+        "shared_17_cub_MiniCPM",
+        "shared_17_cub_Qwen3.8",
+        "shared_17_glsim_MiniCPM",
+        "shared_17_glsim_Qwen3.8",
+        "shared_17_groundingdino_MiniCPM",
+        "shared_17_groundingdino_Qwen3.8",
+        "shared_17_instancevg_MiniCPM",
+        "shared_17_instancevg_Qwen3.8",
+        "shared_17_nlvr2_MiniCPM",
+        "shared_17_nlvr2_Qwen3.8",
+        "shared_17_vilt_MiniCPM",
+        "shared_17_vilt_Qwen3.8",
+        "shared_17_yolo26x_MiniCPM",
+        "shared_17_yolo26x_Qwen3.8",
+        "shared_17_rtdetr_x_fp32_MiniCPM",
+        "shared_17_rtdetr_x_fp32_Qwen3.8"
+      ],
+      "status": "complete",
+      "task_means": {
+        "cub": 0.9554583333333334,
+        "grefcoco": 0.7062583456321596,
+        "nlvr2": 0.8156903466055572,
+        "construction": 0.17510649266382114
+      },
+      "validation_mean": 0.6631283795587178,
+      "mean_active_parameters": 6577126.0,
+      "mean_fit_seconds": 35.547329766683106
+    }
+  ],
+  "failures": [],
+  "test_loaded": false,
+  "finished_at": 1789043234.371715
+}

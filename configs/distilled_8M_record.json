@@ -1,0 +1,38 @@
+{
+  "model": {
+    "width": 380,
+    "depth": 2,
+    "vocab_size": 4096,
+    "text_length": 64,
+    "output_dim": 768
+  },
+  "parameters": {
+    "total": 8072328,
+    "vision": 4135548,
+    "text": 3936780
+  },
+  "root": "${ICASSP_DATA_ROOT}",
+  "output": "${ICASSP_DATA_ROOT}/outputs/mini_siglip_strict_20260910_300ep",
+  "experiment": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "gpus_per_experiment": 1,
+  "one_gpu_per_experiment": true,
+  "cache_dir": "${ICASSP_DATA_ROOT}/data/siglip_distillation_strict_20260910",
+  "settings_file": "${ICASSP_DATA_ROOT}/code/siglip_distillation/exp_settings_strict_20260910.md",
+  "batch_size": 2048,
+  "lr": 0.0001,
+  "epochs": 300,
+  "weight_decay": 0.01,
+  "seed": 42,
+  "smoke_steps": 0,
+  "resume": false,
+  "gpus": [
+    3
+  ],
+  "world_size": 1,
+  "size_millions": 8
+}

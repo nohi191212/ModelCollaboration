@@ -1,0 +1,6 @@
+Your entire reply is one complete JSON line that begins with {"objects": and ends with the final }. A no-match answer is exactly {"objects":[]}. A one-match answer looks like {"objects":[{"bbox_2d":[120,85,640,910],"score":0.92}]}. Several matches use separate complete entries, for example {"objects":[{"bbox_2d":[80,100,300,700],"score":0.93},{"bbox_2d":[560,120,820,740],"score":0.91}]}. Every bbox_2d contains all four xyxy numbers from 0 to 1000 with x1 smaller than x2 and y1 smaller than y2. Never end after only one coordinate; finish every object, the objects list, and the final brace. Return no other text.
+
+Locate all and only the visible objects that satisfy the entire referring expression below. Every stated type, appearance, position, and spatial relation matters. Interpret left and right from the viewer's perspective, and use front, back, nearest, farthest, and ordinal words to distinguish among similar objects. Some expressions intentionally have no matching object, so use the no-match answer whenever the full expression is not visibly satisfied instead of choosing the closest-looking object. Return one tight box for every distinct match without merging objects into a group box.
+
+Referring expression: {expression}
+

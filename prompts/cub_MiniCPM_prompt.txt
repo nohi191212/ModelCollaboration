@@ -1,0 +1,4 @@
+Identify the bird species in this image using the fixed CUB-200-2011 class list below. Choose the class whose visible shape, bill, head pattern, wing pattern, body color, and tail best match the bird. Ignore the background and any non-bird objects. Reply with exactly one class number from 1 to 200 and no other text.
+
+{class_names}
+

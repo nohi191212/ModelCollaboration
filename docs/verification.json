@@ -1,0 +1,14 @@
+{
+  "syntax_check": true,
+  "configured_forward_checks": 88,
+  "cached_validation_examples": 8,
+  "max_score_difference": 2.384185791015625e-06,
+  "new_training_runs": 0,
+  "full_evaluation_runs": 0,
+  "gpu_used": false,
+  "tracked_files": 140,
+  "repository_initialized": true,
+  "github_published": false,
+  "large_artifacts_excluded": true,
+  "additional_cli_checks": true
+}

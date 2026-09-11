@@ -1,0 +1,30 @@
+{
+  "fraction": 1.0,
+  "seed": 42,
+  "freeze_encoder": true,
+  "fusion": "concat",
+  "harm_cost": 1.0,
+  "batch_size": 256,
+  "weight_decay": 0.01,
+  "max_epochs": 50,
+  "patience": 8,
+  "cpu_threads": 1,
+  "student": "8M",
+  "representation_dim": 128,
+  "lr": 0.003,
+  "target": "four_state",
+  "strategy": "natural",
+  "hidden_percent": 90,
+  "expert": "instancevg",
+  "task": "grefcoco",
+  "endpoint": "MiniCPM",
+  "branches": [
+    "image",
+    "text",
+    "confidence",
+    "output"
+  ],
+  "hidden_layer": "joint_encoder__layer_11",
+  "id": "shared_12_instancevg_MiniCPM_without_hidden",
+  "stage": "input_ablation_not_run"
+}
