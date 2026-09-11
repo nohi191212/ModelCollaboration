@@ -15,6 +15,8 @@ Use Python 3.12 and install `requirements.txt` in your own environment. Install 
 
 ## Data and weights
 
+See **[model and dataset downloads](docs/DOWNLOADS.md)** for Hugging Face links, official dataset sources, download commands and the availability of experiment-specific weights.
+
 Set `ICASSP_DATA_ROOT` to the external experiment-data root described in `docs/DATA.md`. Large datasets, specialist weights, VLM weights and feature arrays are not copied into Git. See `docs/REPRODUCE.md` for the required files and commands. This repository preserves the recorded data-directory layout to reuse prepared features without changing the model or metric.
 
 ```bash
@@ -34,4 +36,4 @@ The main result uses the final shared settings. Earlier input removals use diffe
 
 ## Rights and publication
 
-No GitHub remote is configured and nothing has been published. Dataset examples in the supplement retain their source-dataset attribution. Third-party repositories and model weights are not vendored. A code license has not been selected by the authors; choose one before publishing if you intend to grant reuse rights.
+The source repository is [nohi191212/ModelCollaboration](https://github.com/nohi191212/ModelCollaboration). Dataset examples in the supplement retain their source-dataset attribution. Third-party repositories and model weights are not vendored. The authors have not yet selected a code license.

@@ -1,5 +1,7 @@
 # External data layout
 
+Start with the [official dataset and model download links](DOWNLOADS.md), including access instructions and checkpoint availability.
+
 `ICASSP_DATA_ROOT` is separate from this source repository. It contains:
 
 ```
