@@ -1,6 +1,16 @@
 # Trained weights and compact experiment data
 
-A companion artifact release is being prepared locally. Its public Hugging Face URL will be added after upload succeeds.
+Download the companion release from [nohi191212/ModelCollaboration on Hugging Face](https://huggingface.co/nohi191212/ModelCollaboration).
+
+- [Trained weights (317 MB)](https://huggingface.co/nohi191212/ModelCollaboration/resolve/main/weights.tar)
+- [Compact per-example experiment data](https://huggingface.co/nohi191212/ModelCollaboration/resolve/main/experiment_data.tar.gz)
+- [Paper table and figure data](https://huggingface.co/nohi191212/ModelCollaboration/tree/main/paper_results)
+
+```bash
+hf download nohi191212/ModelCollaboration --local-dir artifacts
+tar -xf artifacts/weights.tar -C artifacts
+tar -xzf artifacts/experiment_data.tar.gz -C artifacts
+```
 
 It includes the two trained ConstructionSite detectors, the 16 selected main-table routers with normalization statistics, and the final 8M distilled encoders. A compact data archive contains validation/test scores, task outcomes, sample IDs, frozen thresholds and curves. Paper table/figure source data and cost measurements accompany it.
 

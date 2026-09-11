@@ -30,7 +30,7 @@ Follow each model card for serving dependencies. Task prompts are provided in [`
 | GLSim / CUB-200-2011 | Paper checkpoint: `cub_vit_b16_16_2.pth` | An exact public download URL has not yet been added |
 | YOLO26x and RT-DETR-X / ConstructionSite | [Ultralytics model instructions](https://docs.ultralytics.com/models/) | Upstream detection weights are initialization resources; the task-trained checkpoints are required for the reported results |
 
-**Release status:** this repository currently contains source code, configurations and results, but no downloadable release of our trained router, distilled student encoders, or locally trained specialist checkpoints. The links above identify upstream resources; they do not replace those experiment-specific weights. Exact replay of the main table also requires the prepared records, split manifests and cached features described in [`DATA.md`](DATA.md). These assets have not been uploaded to this repository. Training from the provided code and replaying the published checkpoints are separate reproduction paths.
+**Trained weights:** the [Hugging Face companion release](https://huggingface.co/nohi191212/ModelCollaboration) contains the 16 main-table routers, normalization parameters, the final 8M distilled encoders, and the trained YOLO26x/RT-DETR-X specialists. It also provides compact per-example results for checking the reported curves without model inference. See [`ARTIFACTS.md`](ARTIFACTS.md) for download and replay commands. Other specialist checkpoints and full feature caches remain external; full model execution requires the prepared inputs described in [`DATA.md`](DATA.md).
 
 ## Datasets
 
