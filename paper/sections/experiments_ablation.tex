@@ -1,8 +1,8 @@
-\subsection{Supervision, Scoring and Post-hoc Deferral}
+\subsection{Ablations on Supervision and Scoring}
 \label{sec:ablation}
 \noindent\begin{minipage}{\columnwidth}
 \input{tables/objective_main}
 \end{minipage}\par\vspace{4pt}
-Table~\ref{tab:objective} compares training objectives and scores. Merging the two unchanged outcomes into one target or directly predicting the gain gives curves close to the four-state probability difference. The supplement gives their losses and training settings.
+Table~\ref{tab:objective} compares variants and scores, each detailed in the supplement. Merging unchanged outcomes or predicting gain directly gives curves close to the four-state probability difference.
 
-Changing only the score has a larger effect on some tasks. Here $r_{4S}=\log[(p_R+p_B)/(p_H+p_B)]$ estimates the optimal score of the post-hoc loss~\cite{posthocdefer}, whereas $\mathrm{LR}_{PH}$ learns its score directly. On NLVR2, this change largely closes the middle-to-high-budget gap to post-hoc deferral, but it hurts CUB. The normalized score has the highest task average, while no score is best on every task.
+Changing only the score has a larger effect on some tasks. Here $r_{4S}=\log[(p_R+p_B)/(p_H+p_B)]$ estimates the optimal score of the post-hoc loss~\cite{posthocdefer}, whereas $\mathrm{LR}_{PH}$ learns its score directly. On NLVR2, this change largely closes the middle-to-high-budget gap to post-hoc deferral, but it hurts CUB. The normalized score has the highest task average, while no score is best on every task. Thus, ranking can improve even when supervision and learned predictions remain unchanged.

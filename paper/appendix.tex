@@ -6,7 +6,7 @@
 \DeclareMathSizes{8}{8}{6}{5}
 \DeclareMathSizes{8.5}{9}{6}{5}
 \input{tables/colors}
-\hypersetup{hidelinks}
+\hypersetup{hidelinks,pdfauthor={Sihang Cai, Rongjunchen Zhang, Wenxu Jia, Yipu Gong, Tao Jin}}
 \setlength{\emergencystretch}{2em}
 \title{When Should a Vision Specialist Defer?\\\large Supplementary Material: Learned Routing}
 \date{}
@@ -32,6 +32,8 @@ For every epoch and candidate $\alpha$, we sort validation inputs and evaluate e
 
 After weights and $\alpha$ are fixed, a separate validation search selects one threshold. At each interior budget, the threshold is the score of the last allowed input. All threshold ties are included only if they fit the quota; otherwise all equal-score ties are excluded. The highest validation metric wins; ties favor fewer calls, then a smaller budget. Budgets 0 and 100\% explicitly mean never and always call. Confidence uses the same endpoint-inclusive search. Test labels do not select weights, normalization or thresholds. Actual test call rates can differ after a threshold is transferred.
 
+\input{tables/selected_alpha}
+
 \section{Main Results and Full Curves}
 Table~\ref{tab:full} includes both splits. Numerical per-seed cutoffs, comparison operators, chosen epochs and normalization strengths are stored with the revision data. Higher routed performance and fewer calls are different objectives; selected points need not dominate a baseline on both. Zero- and full-call endpoints agree with direct standalone evaluation.
 \input{tables/main_full}
@@ -45,13 +47,10 @@ Table~\ref{tab:full} includes both splits. Numerical per-seed cutoffs, compariso
 \section{Training Objectives and Ranking Scores}
 This section gives the settings behind Table 3 of the main paper. The table evaluates the full 0--100\% call curve, but the trained heads were selected using the earlier 0--25\% validation criterion. Evaluation range and training selection range are distinct. In contrast, the main table selects weights using the full-budget criterion. Table 3 therefore compares objectives within the earlier experiments; it should not be read as a comparison of every objective under the final main-table training settings.
 
-Let $c_S,c_L$ denote correctness of the fixed specialist and VLM answers. The three-state target distinguishes rescue, harm and an unchanged result, merging both-correct and both-wrong examples. It uses cross-entropy and ranks by predicted rescue probability minus harm probability. Gain regression uses squared error with target $c_L-c_S$ and ranks by its scalar output. For construction, targets are averaged over the four event labels. The four-state rows change only the score computed from the same trained heads; they do not represent four separate training runs.
-
 Four-state, three-state, gain and post-hoc runs use the same inputs, architecture except necessary head dimensions, optimizer settings, seeds and original 0--25\% validation checkpoint-selection range. All four-state score variants share 80 identical checkpoints. Normalization strength alone is chosen by full-budget validation area.
 
-For $\mathrm{LR}_{PH}$, the scalar loss is $e_S\log(1+e^{-r})+e_L\log(1+e^r)$, where $e_S,e_L$ are observed errors, averaged over construction events. This is the zero-added-cost post-hoc comparison. Its unmodified scalar score is swept for budget curves; this differs from reporting only the native $r>0$ decision. The VLM and specialist answers remain fixed. Other archived cost coefficients are not selected using test results.
-
-The four-state score $r_{4S}=\log[(p_R+p_B)/(p_H+p_B)]$ estimates the conditional minimizer of the zero-cost post-hoc logistic loss when both conditional error rates are positive. This reuses the error-ratio row, not a new training run. The separately trained scalar $r$ need not equal $r_{4S}$ for finite fitted models. Avg. is the arithmetic mean of the four task columns (accuracy for three tasks and macro-F1 for construction), not a pooled accuracy or a significance test.
+Specialist and VLM answers remain fixed. Other archived post-hoc cost coefficients are not selected using test results. The reported averages are descriptive, not significance tests.
+\input{sections/supp_table3_scores}
 \begin{table}[H]\input{tables/objective_main}\end{table}
 \begin{figure}[p]\centering\includegraphics[width=\textwidth]{figures/score_controls.pdf}\caption{Earlier experiments: changing four-state scoring while holding weights fixed, with separately trained zero-cost post-hoc deferral. Both use the archived checkpoint-selection range. These are equal-call curves, not test-selected best-threshold envelopes.}\end{figure}
 \clearpage

@@ -2,7 +2,7 @@
 
 Code, trained weights and experiment data for **When Should a Vision Specialist Defer? Budgeted Collaboration with Vision–Language Models**.
 
-[Paper](paper/main.pdf) · [Supplement](paper/appendix.pdf) · [Weights and data](https://huggingface.co/nohi191212/ModelCollaboration/tree/main/releases/20260913_lr) · [Reproduction instructions](docs/REPRODUCE.md)
+[Paper](paper.pdf) · [Supplement](appendix.pdf) · [Weights and data](https://huggingface.co/nohi191212/ModelCollaboration/tree/main/releases/20260913_lr) · [Reproduction instructions](docs/REPRODUCE.md)
 
 ## What is included
 

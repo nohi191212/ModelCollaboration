@@ -1,0 +1,28 @@
+\begin{table}[H]
+\centering
+\caption{Selected normalization strength $\alpha$ for the main experiment, separately chosen on validation data for each pair and seed. M: MiniCPM. Q: Qwen. Across 80 runs, $0,0.25,0.5,0.75,1$ are selected 29, 8, 9, 9 and 25 times. These choices do not describe the earlier Table 3 checkpoints.}
+\label{tab:alpha}
+\small
+\begin{tabular}{lllrrrrr}
+\toprule
+Task & Specialist & VLM & 2026 & 2027 & 2028 & 2029 & 2030 \\
+\midrule
+CUB & ResNet-50 & M & 0 & 0 & 0.25 & 0 & 0 \\
+CUB & ResNet-50 & Q & 0 & 0 & 0 & 0 & 0.25 \\
+CUB & GLSim & M & 0.5 & 0.25 & 0.5 & 0.5 & 0.5 \\
+CUB & GLSim & Q & 0 & 0 & 0 & 0 & 0 \\
+gRefCOCO & GroundingDINO & M & 0 & 0 & 0 & 0 & 0 \\
+gRefCOCO & GroundingDINO & Q & 0 & 0 & 0 & 0 & 0 \\
+gRefCOCO & InstanceVG & M & 0.75 & 0.75 & 0.75 & 0.75 & 0.75 \\
+gRefCOCO & InstanceVG & Q & 1 & 1 & 1 & 1 & 1 \\
+NLVR2 & BEiT3 & M & 1 & 1 & 1 & 1 & 1 \\
+NLVR2 & BEiT3 & Q & 1 & 1 & 1 & 1 & 1 \\
+NLVR2 & ViLT & M & 1 & 1 & 1 & 1 & 1 \\
+NLVR2 & ViLT & Q & 1 & 1 & 1 & 1 & 1 \\
+Construction & YOLO26X & M & 0.5 & 0.5 & 0.75 & 0.75 & 0.5 \\
+Construction & YOLO26X & Q & 0.75 & 0.5 & 0.25 & 0.25 & 0.75 \\
+Construction & RT-DETR-X & M & 0 & 0 & 0.25 & 0 & 0 \\
+Construction & RT-DETR-X & Q & 0 & 0.25 & 0.25 & 0 & 0.5 \\
+\bottomrule
+\end{tabular}
+\end{table}

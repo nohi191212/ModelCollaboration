@@ -1,6 +1,6 @@
 \subsection{Implementation and Comparisons}
 Specialists are ResNet-50~\cite{resnet}, GLSim~\cite{glsim}, GroundingDINO~\cite{groundingdino}, InstanceVG~\cite{instancevg}, BEiT3~\cite{beit3}, ViLT~\cite{vilt}, YOLO26X~\cite{yolo26} and RT-DETR-X~\cite{rtdetr}. Each pairs with MiniCPM-V-4.5~\cite{minicpm} (M) and Qwen3.8-27B-FP8~\cite{qwen38} (Q).
 
-LR uses AdamW, learning rate 0.003, weight decay 0.01, batch 256, at most 50 epochs and patience 8. Specialist states are taken at 90\% depth. We retain the architecture from an earlier eighteen-setting search and repeat training with seeds 2026--2030. Main results use the full-budget selection above; Table~\ref{tab:objective} uses earlier training settings, detailed in the supplement.
+LR uses AdamW, learning rate 0.003, weight decay 0.01, batch 256, at most 50 epochs and patience 8. Specialist states are taken at 90\% depth. We retain the architecture from an earlier eighteen-setting search and use seeds 2026--2030. Validation selects $\alpha$ per pair and seed: $0,0.25,0.5,0.75,1$ occur in 29, 8, 9, 9 and 25 runs, respectively. The supplement lists all choices.
 
 Each VLM receives one temperature-zero request per example. Invalid responses remain errors and are never repaired. The supplement reports per-seed results, full curves and additional training comparisons. These analyses reuse previously inspected test sets and are exploratory, rather than a new blind evaluation.

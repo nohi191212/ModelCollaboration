@@ -1,0 +1,45 @@
+\subsection{Targets, Outputs and All Seven Table Rows}
+Let $C=(1,1)$, $R=(0,1)$, $H=(1,0)$ and $B=(0,0)$ denote both-correct, rescue, harm and both-wrong outcomes, respectively, with specialist correctness first. A four-output head produces logits $\ell_k$ and probabilities $p_k=\exp(\ell_k)/\sum_j\exp(\ell_j)$ for $k,j\in\{C,R,H,B\}$. Thus $p_R$ estimates the chance that replacement fixes an error, $p_H$ that it causes an error, and $p_B$ that both answers are wrong. For construction, the target $q_k$ is the fraction of four event labels in state $k$. There is one predicted distribution and one score per image, and a call replaces all four event answers. Every row sorts scores in descending order: larger scores receive calls first.
+
+\paragraph{Row 1: post-hoc deferral, score $r$.}
+One unrestricted scalar output $r=f_\theta(\mathcal I)$ replaces the four logits. With $e_S=1-c_S$ and $e_L=1-c_L$, training minimizes the sample mean of
+\[
+e_S\log(1+\exp(-r))+e_L\log(1+\exp(r)).
+\]
+For construction, the two errors are averaged over events. A specialist error favors a positive score, and a VLM error a negative score. Added call cost is zero. Ranking uses $r$ directly, without a probability conversion or a fixed zero threshold.
+
+\paragraph{Row 2: three-state classification, score $p_R-p_H$.}
+The targets are rescue, harm and unchanged ($U=C\cup B$). Three logits feed a three-way softmax. Training minimizes cross-entropy $-\sum_{k\in\{R,H,U\}}q_k\log p_k$, averaged over examples. Construction again uses event fractions as targets. The score subtracts predicted harm probability from predicted rescue probability. Both unchanged outcomes have zero gain and share one target.
+
+\paragraph{Row 3: gain regression, score $\widehat\Delta$.}
+One unrestricted scalar $\widehat\Delta=f_\theta(\mathcal I)$ predicts $d=c_L-c_S$, which is $+1$ for rescue, $-1$ for harm and $0$ for either unchanged outcome. Construction uses $d=\tfrac14\sum_{j=1}^{4}(c_{L,j}-c_{S,j})$. Training minimizes the sample mean of $(\widehat\Delta-d)^2$. The scalar prediction is the ranking score, without softmax, sigmoid or clipping.
+
+\paragraph{Row 4: four-state classification, probability difference.}
+The four-state head minimizes cross-entropy $-\sum_{k\in\{C,R,H,B\}}q_k\log p_k$. Its score $p_R-p_H$ estimates expected correctness gain from replacement and lies in $[-1,1]$. Neither unchanged outcome contributes to the difference. Rows 5--7 reuse exactly these head weights and probabilities.
+
+\paragraph{Row 5: four-state classification, rescue-to-harm ratio.}
+The score $\log(p_R/p_H)=\ell_R-\ell_H$ measures rescue relative to harm, instead of subtracting probabilities. The implementation subtracts logits, avoiding division by very small probabilities. The unchanged states do not enter the ratio explicitly.
+
+\paragraph{Row 6: four-state classification, error ratio $r_{4S}$.}
+The predicted specialist error rate is $p_R+p_B$, and the predicted VLM error rate is $p_H+p_B$. The score is
+\[
+r_{4S}=\log\frac{p_R+p_B}{p_H+p_B}
+=\operatorname{LSE}(\ell_R,\ell_B)-\operatorname{LSE}(\ell_H,\ell_B),
+\]
+where $\operatorname{LSE}(a,b)=\log(\exp(a)+\exp(b))$ is evaluated by a numerically stable log-sum-exp operation. Both-wrong probability enters both error rates. For positive conditional error rates, setting the derivative of the expected row-1 loss to zero gives $\exp(r)=\mathbb E[e_S\mid\mathcal I]/\mathbb E[e_L\mid\mathcal I]$. Row 6 estimates this ratio from four-state probabilities, while row 1 fits a scalar separately. Their fitted rankings need not coincide.
+
+\paragraph{Row 7: four-state classification, normalized gain $s_\alpha$.}
+The score is
+\[
+s_\alpha=\frac{p_R-p_H}{(p_R+p_H+2p_B+10^{-8})^\alpha}.
+\]
+The denominator is the sum of the two predicted error rates, with $10^{-8}$ added for numerical stability. At $\alpha=0$, the score equals row 4. Ignoring that constant, at $\alpha=1$ it is $(a-b)/(a+b)$ for $a=p_R+p_B$ and $b=p_H+p_B$, which orders examples like $a/b$ and hence row 6. Intermediate values partially normalize gain. For Table 3, each pair and seed selects $\alpha\in\{0,0.25,0.5,0.75,1\}$ by full-budget validation area with the row-4 checkpoint fixed. This differs from the main experiment's joint epoch and $\alpha$ selection.
+
+\subsection{How the Table Values Are Calculated}
+For each variant, model pair and seed, sort the $n$ test examples by score, preserving original order at ties. At budget index $k=0,\ldots,100$, call the VLM on the first $m_k=\lfloor kn/100\rfloor$ examples and retain the specialist elsewhere. Let $b_k=m_k/n$ and $M_k$ be the resulting task metric as a fraction. The full-budget mean in percentage units is
+\[
+A=100\sum_{k=1}^{100}\frac{M_{k-1}+M_k}{2}(b_k-b_{k-1}).
+\]
+The interval runs from $b_0=0$ to $b_{100}=1$, so no further range normalization is needed. This is a trapezoidal average of the entire curve, not the best test threshold. For CUB, gRefCOCO and NLVR2, $M_k$ is task accuracy. For construction, the combined predictions determine new true-positive, false-positive and false-negative counts at each budget. Then $M_k$ averages $2\mathrm{TP}/(2\mathrm{TP}+\mathrm{FP}+\mathrm{FN})$ over four events, assigning zero when the denominator is zero.
+
+Each task column averages $A$ over four model pairs and five seeds. For each seed, Avg. averages four pairs within each task and then gives equal weight to the four tasks. The displayed Avg. is the mean of those five seed-level values, and its SD uses divisor $5-1$. The final column subtracts the unrounded post-hoc Avg. from the unrounded variant Avg. and rounds to two decimals. Subtracting displayed rounded means can therefore differ by 0.01 points. No value pools examples across tasks or selects the best seed.
