@@ -1,0 +1,8 @@
+Let $S$ be a specialist and $L$ a VLM. For input $x$, the specialist first gives $S(x)$. A router then uses information $\mathcal I(x)$ available before calling $L$ to choose the final answer:
+\begin{equation}
+\widehat y(x)=
+\begin{cases}S(x),&a(x)=0,\\L(x),&a(x)=1,\end{cases}
+\quad a(x)\in\{0,1\}.
+\label{eq:decision}
+\end{equation}
+Here $a(x)=0$ keeps the specialist answer, while $a(x)=1$ calls the VLM and uses its answer instead.

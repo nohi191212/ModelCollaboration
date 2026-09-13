@@ -1,0 +1,210 @@
+[
+  {
+    "key": [
+      "cub",
+      "cub",
+      "MiniCPM"
+    ],
+    "confidence_score": 81.429064549534,
+    "confidence_calls": 0.0,
+    "lr_score": 81.42906454953402,
+    "lr_calls": 0.5937176389368313,
+    "rescued": 4.6,
+    "harmed": 4.6
+  },
+  {
+    "key": [
+      "cub",
+      "cub",
+      "Qwen3.8"
+    ],
+    "confidence_score": 81.429064549534,
+    "confidence_calls": 0.0,
+    "lr_score": 81.42906454953402,
+    "lr_calls": 0.0,
+    "rescued": 0.0,
+    "harmed": 0.0
+  },
+  {
+    "key": [
+      "cub",
+      "glsim",
+      "MiniCPM"
+    ],
+    "confidence_score": 90.16223679668623,
+    "confidence_calls": 0.0,
+    "lr_score": 90.13117017604418,
+    "lr_calls": 0.8491542975491888,
+    "rescued": 1.0,
+    "harmed": 2.8
+  },
+  {
+    "key": [
+      "cub",
+      "glsim",
+      "Qwen3.8"
+    ],
+    "confidence_score": 90.16223679668623,
+    "confidence_calls": 0.0,
+    "lr_score": 90.16223679668623,
+    "lr_calls": 0.0,
+    "rescued": 0.0,
+    "harmed": 0.0
+  },
+  {
+    "key": [
+      "grefcoco",
+      "groundingdino",
+      "MiniCPM"
+    ],
+    "confidence_score": 50.00708958398321,
+    "confidence_calls": 100.0,
+    "lr_score": 50.22828460425942,
+    "lr_calls": 58.18676800045374,
+    "rescued": 9475.4,
+    "harmed": 1174.4
+  },
+  {
+    "key": [
+      "grefcoco",
+      "groundingdino",
+      "Qwen3.8"
+    ],
+    "confidence_score": 74.47182599325072,
+    "confidence_calls": 100.0,
+    "lr_score": 75.12179905283158,
+    "lr_calls": 88.46666477611093,
+    "rescued": 18720.8,
+    "harmed": 1641.6
+  },
+  {
+    "key": [
+      "grefcoco",
+      "instancevg",
+      "MiniCPM"
+    ],
+    "confidence_score": 61.877889005473165,
+    "confidence_calls": 52.09426310864078,
+    "lr_score": 67.91367722542041,
+    "lr_calls": 19.038085245157816,
+    "rescued": 727.6,
+    "harmed": 388.2
+  },
+  {
+    "key": [
+      "grefcoco",
+      "instancevg",
+      "Qwen3.8"
+    ],
+    "confidence_score": 72.43286163967898,
+    "confidence_calls": 68.38612710206165,
+    "lr_score": 76.24365482233502,
+    "lr_calls": 62.00153135014037,
+    "rescued": 4753.6,
+    "harmed": 1476.8
+  },
+  {
+    "key": [
+      "nlvr2",
+      "nlvr2",
+      "MiniCPM"
+    ],
+    "confidence_score": 90.77276314845376,
+    "confidence_calls": 85.80038745784601,
+    "lr_score": 90.80002870058121,
+    "lr_calls": 91.10425486116092,
+    "rescued": 2189.4,
+    "harmed": 684.6
+  },
+  {
+    "key": [
+      "nlvr2",
+      "nlvr2",
+      "Qwen3.8"
+    ],
+    "confidence_score": 90.24180239649853,
+    "confidence_calls": 85.80038745784601,
+    "lr_score": 90.60055966133314,
+    "lr_calls": 84.34096290449882,
+    "rescued": 2163.4,
+    "harmed": 686.4
+  },
+  {
+    "key": [
+      "nlvr2",
+      "vilt",
+      "MiniCPM"
+    ],
+    "confidence_score": 90.64361053311329,
+    "confidence_calls": 95.93169261677549,
+    "lr_score": 90.69383655019013,
+    "lr_calls": 98.05984071177441,
+    "rescued": 2693.8,
+    "harmed": 704.8
+  },
+  {
+    "key": [
+      "nlvr2",
+      "vilt",
+      "Qwen3.8"
+    ],
+    "confidence_score": 89.96197172992753,
+    "confidence_calls": 95.93169261677549,
+    "lr_score": 90.0652938221999,
+    "lr_calls": 99.61684724115663,
+    "rescued": 2788.2,
+    "harmed": 886.8
+  },
+  {
+    "key": [
+      "construction",
+      "yolo26x",
+      "MiniCPM"
+    ],
+    "confidence_score": 25.23047077304935,
+    "confidence_calls": 92.54327563249002,
+    "lr_score": 25.880436219165098,
+    "lr_calls": 45.31957390146471,
+    "rescued": 1139.6,
+    "harmed": 803.4
+  },
+  {
+    "key": [
+      "construction",
+      "yolo26x",
+      "Qwen3.8"
+    ],
+    "confidence_score": 25.974900047621052,
+    "confidence_calls": 92.21038615179761,
+    "lr_score": 29.79678330127048,
+    "lr_calls": 44.766977363515316,
+    "rescued": 1231.6,
+    "harmed": 315.0
+  },
+  {
+    "key": [
+      "construction",
+      "rtdetr_x_fp32",
+      "MiniCPM"
+    ],
+    "confidence_score": 22.361115727328066,
+    "confidence_calls": 100.0,
+    "lr_score": 22.79931433315267,
+    "lr_calls": 78.43541944074566,
+    "rescued": 3288.6,
+    "harmed": 1452.4
+  },
+  {
+    "key": [
+      "construction",
+      "rtdetr_x_fp32",
+      "Qwen3.8"
+    ],
+    "confidence_score": 27.001009067886244,
+    "confidence_calls": 100.0,
+    "lr_score": 26.783631605767233,
+    "lr_calls": 83.56857523302264,
+    "rescued": 3448.0,
+    "harmed": 574.8
+  }
+]

@@ -1,0 +1,261 @@
+{
+  "status": "complete",
+  "model_kind": "MiniCPM",
+  "task": "grefcoco",
+  "model_path": "/mnt/HithinkOmniSSD/user_workspace/caisihang/checkpoints/MiniCPM-V-4_5",
+  "sample_count": 8,
+  "records": [
+    {
+      "sample_id": "testA-5038-13945",
+      "prompt_tokens_in_reference_tensor": 528,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          528
+        ],
+        "attention_mask": [
+          1,
+          528
+        ]
+      },
+      "prefill_flops_counted": 10720928684032,
+      "decode_one_token_flops_counted": 15446671488,
+      "prefill_gflops_counted": 10720.928684032,
+      "decode_one_token_gflops_counted": 15.446671488,
+      "prefill_operators": {
+        "aten.bmm": 164433561600,
+        "aten.mm": 7335973519360,
+        "vision:aten.convolution": 4210569216,
+        "vision:aten.addmm": 2568098906112,
+        "vision:aten.bmm": 610809421824,
+        "vision:aten.mm": 35773218816,
+        "vision:aten.baddbmm": 1629487104
+      },
+      "decode_operators": {
+        "aten.bmm": 312017024,
+        "aten.mm": 15134654464
+      }
+    },
+    {
+      "sample_id": "testA-73305-202014",
+      "prompt_tokens_in_reference_tensor": 528,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          528
+        ],
+        "attention_mask": [
+          1,
+          528
+        ]
+      },
+      "prefill_flops_counted": 10720928684032,
+      "decode_one_token_flops_counted": 15446671488,
+      "prefill_gflops_counted": 10720.928684032,
+      "decode_one_token_gflops_counted": 15.446671488,
+      "prefill_operators": {
+        "aten.bmm": 164433561600,
+        "aten.mm": 7335973519360,
+        "vision:aten.convolution": 4210569216,
+        "vision:aten.addmm": 2568098906112,
+        "vision:aten.bmm": 610809421824,
+        "vision:aten.mm": 35773218816,
+        "vision:aten.baddbmm": 1629487104
+      },
+      "decode_operators": {
+        "aten.bmm": 312017024,
+        "aten.mm": 15134654464
+      }
+    },
+    {
+      "sample_id": "testA-26952-74099",
+      "prompt_tokens_in_reference_tensor": 523,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          523
+        ],
+        "attention_mask": [
+          1,
+          523
+        ]
+      },
+      "prefill_flops_counted": 10648371484032,
+      "decode_one_token_flops_counted": 15443722368,
+      "prefill_gflops_counted": 10648.371484032,
+      "decode_one_token_gflops_counted": 15.443722368,
+      "prefill_operators": {
+        "aten.bmm": 161334035840,
+        "aten.mm": 7266515845120,
+        "vision:aten.convolution": 4210569216,
+        "vision:aten.addmm": 2568098906112,
+        "vision:aten.bmm": 610809421824,
+        "vision:aten.mm": 35773218816,
+        "vision:aten.baddbmm": 1629487104
+      },
+      "decode_operators": {
+        "aten.bmm": 309067904,
+        "aten.mm": 15134654464
+      }
+    },
+    {
+      "sample_id": "testB-53254-146620",
+      "prompt_tokens_in_reference_tensor": 520,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          520
+        ],
+        "attention_mask": [
+          1,
+          520
+        ]
+      },
+      "prefill_flops_counted": 10604851319808,
+      "decode_one_token_flops_counted": 15441952896,
+      "prefill_gflops_counted": 10604.851319808,
+      "decode_one_token_gflops_counted": 15.441952896,
+      "prefill_operators": {
+        "aten.bmm": 159488476160,
+        "aten.mm": 7224841240576,
+        "vision:aten.convolution": 4210569216,
+        "vision:aten.addmm": 2568098906112,
+        "vision:aten.bmm": 610809421824,
+        "vision:aten.mm": 35773218816,
+        "vision:aten.baddbmm": 1629487104
+      },
+      "decode_operators": {
+        "aten.bmm": 307298432,
+        "aten.mm": 15134654464
+      }
+    },
+    {
+      "sample_id": "testB-37889-104439",
+      "prompt_tokens_in_reference_tensor": 528,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          528
+        ],
+        "attention_mask": [
+          1,
+          528
+        ]
+      },
+      "prefill_flops_counted": 10637704296448,
+      "decode_one_token_flops_counted": 15446671488,
+      "prefill_gflops_counted": 10637.704296448,
+      "decode_one_token_gflops_counted": 15.446671488,
+      "prefill_operators": {
+        "aten.bmm": 164433561600,
+        "aten.mm": 7335973519360,
+        "vision:aten.convolution": 4113027072,
+        "vision:aten.addmm": 2508904759296,
+        "vision:aten.bmm": 587593949184,
+        "vision:aten.mm": 35093741568,
+        "vision:aten.baddbmm": 1591738368
+      },
+      "decode_operators": {
+        "aten.bmm": 312017024,
+        "aten.mm": 15134654464
+      }
+    },
+    {
+      "sample_id": "testA-58523-161084",
+      "prompt_tokens_in_reference_tensor": 396,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          396
+        ],
+        "attention_mask": [
+          1,
+          396
+        ]
+      },
+      "prefill_flops_counted": 6668292011520,
+      "decode_one_token_flops_counted": 15368814720,
+      "prefill_gflops_counted": 6668.29201152,
+      "decode_one_token_gflops_counted": 15.36881472,
+      "prefill_operators": {
+        "aten.bmm": 92493891072,
+        "aten.mm": 5502290919424,
+        "vision:aten.convolution": 1403523072,
+        "vision:aten.addmm": 925557751808,
+        "vision:aten.bmm": 134078357504,
+        "vision:aten.mm": 11924406272,
+        "vision:aten.baddbmm": 543162368
+      },
+      "decode_operators": {
+        "aten.bmm": 234160256,
+        "aten.mm": 15134654464
+      }
+    },
+    {
+      "sample_id": "testB-3419-9449",
+      "prompt_tokens_in_reference_tensor": 528,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          528
+        ],
+        "attention_mask": [
+          1,
+          528
+        ]
+      },
+      "prefill_flops_counted": 10720928684032,
+      "decode_one_token_flops_counted": 15446671488,
+      "prefill_gflops_counted": 10720.928684032,
+      "decode_one_token_gflops_counted": 15.446671488,
+      "prefill_operators": {
+        "aten.bmm": 164433561600,
+        "aten.mm": 7335973519360,
+        "vision:aten.convolution": 4210569216,
+        "vision:aten.addmm": 2568098906112,
+        "vision:aten.bmm": 610809421824,
+        "vision:aten.mm": 35773218816,
+        "vision:aten.baddbmm": 1629487104
+      },
+      "decode_operators": {
+        "aten.bmm": 312017024,
+        "aten.mm": 15134654464
+      }
+    },
+    {
+      "sample_id": "testB-24035-66084",
+      "prompt_tokens_in_reference_tensor": 521,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          521
+        ],
+        "attention_mask": [
+          1,
+          521
+        ]
+      },
+      "prefill_flops_counted": 10619356861568,
+      "decode_one_token_flops_counted": 15442542720,
+      "prefill_gflops_counted": 10619.356861568,
+      "decode_one_token_gflops_counted": 15.44254272,
+      "prefill_operators": {
+        "aten.bmm": 160102483072,
+        "aten.mm": 7238732775424,
+        "vision:aten.convolution": 4210569216,
+        "vision:aten.addmm": 2568098906112,
+        "vision:aten.bmm": 610809421824,
+        "vision:aten.mm": 35773218816,
+        "vision:aten.baddbmm": 1629487104
+      },
+      "decode_operators": {
+        "aten.bmm": 307888256,
+        "aten.mm": 15134654464
+      }
+    }
+  ],
+  "mean_prefill_gflops_counted": 10167.670253184,
+  "mean_decode_one_token_gflops_counted": 15.435464832,
+  "scope": "HF reference execution on the A800 with real task inputs; dense products/convolutions/supported attention counted with multiply-add=2 FLOPs. vLLM custom kernels, elementwise/normalization/nonlinearities and other unsupported operations are not complete.",
+  "answer_generation": "not performed; one known-token decode probe only"
+}

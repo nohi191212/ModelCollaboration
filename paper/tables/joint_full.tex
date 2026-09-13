@@ -1,0 +1,33 @@
+\begin{table}[H]
+\centering
+\caption{Earlier single-task versus joint-training comparison. Both use 4M students, image/text inputs and specialist-error supervision. Metrics use validation-selected 25\% thresholds; actual call rates are not present in this comparison file. Differences are joint minus single in percentage points. All tasks were seen during training.}
+\label{tab:joint_full}
+\fontsize{9}{10.799999999999999}\selectfont
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}lllrrr@{}}
+\toprule
+Task & Specialist & VLM & Single & Joint & Difference (pp) \\
+\midrule
+CUB-200-2011 & ResNet & M & 71.194 & 70.797 & -0.397 \\
+ & ResNet & Q & 76.200 & 77.822 & +1.622 \\
+ & GLSim & M & 75.923 & 77.459 & +1.536 \\
+ & GLSim & Q & 83.017 & 84.484 & +1.467 \\
+\midrule
+gRefCOCO & GroundingDINO & M & 35.981 & 37.005 & +1.024 \\
+ & GroundingDINO & Q & 42.240 & 45.992 & +3.752 \\
+ & InstanceVG & M & 63.942 & 62.437 & -1.506 \\
+ & InstanceVG & Q & 72.249 & 70.530 & -1.719 \\
+\midrule
+NLVR2 & BEiT3 & M & 83.468 & 83.095 & -0.373 \\
+ & BEiT3 & Q & 83.727 & 83.375 & -0.352 \\
+ & ViLT & M & 80.469 & 80.261 & -0.208 \\
+ & ViLT & Q & 80.455 & 80.677 & +0.222 \\
+\midrule
+ConstructionSite & YOLO26x & M & 18.033 & 18.362 & +0.329 \\
+ & YOLO26x & Q & 19.009 & 19.603 & +0.594 \\
+ & RT-DETR-X & M & 10.367 & 11.260 & +0.893 \\
+ & RT-DETR-X & Q & 10.483 & 12.038 & +1.555 \\
+\bottomrule
+\end{tabular}
+\end{table}

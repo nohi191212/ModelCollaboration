@@ -1,0 +1,327 @@
+{
+  "status": "passed",
+  "runs": 80,
+  "examples_per_run": 128,
+  "checks": [
+    {
+      "run": "full_cub_MiniCPM_s2026",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_cub_MiniCPM_s2027",
+      "max_abs_error": 4.291534423828125e-06
+    },
+    {
+      "run": "full_cub_MiniCPM_s2028",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_cub_MiniCPM_s2029",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_cub_MiniCPM_s2030",
+      "max_abs_error": 3.337860107421875e-06
+    },
+    {
+      "run": "full_cub_Qwen3.8_s2026",
+      "max_abs_error": 4.291534423828125e-06
+    },
+    {
+      "run": "full_cub_Qwen3.8_s2027",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_cub_Qwen3.8_s2028",
+      "max_abs_error": 4.291534423828125e-06
+    },
+    {
+      "run": "full_cub_Qwen3.8_s2029",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_cub_Qwen3.8_s2030",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_glsim_MiniCPM_s2026",
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "run": "full_glsim_MiniCPM_s2027",
+      "max_abs_error": 3.337860107421875e-06
+    },
+    {
+      "run": "full_glsim_MiniCPM_s2028",
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "run": "full_glsim_MiniCPM_s2029",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_glsim_MiniCPM_s2030",
+      "max_abs_error": 4.291534423828125e-06
+    },
+    {
+      "run": "full_glsim_Qwen3.8_s2026",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_glsim_Qwen3.8_s2027",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_glsim_Qwen3.8_s2028",
+      "max_abs_error": 4.291534423828125e-06
+    },
+    {
+      "run": "full_glsim_Qwen3.8_s2029",
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "run": "full_glsim_Qwen3.8_s2030",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_groundingdino_MiniCPM_s2026",
+      "max_abs_error": 8.58306884765625e-06
+    },
+    {
+      "run": "full_groundingdino_MiniCPM_s2027",
+      "max_abs_error": 9.5367431640625e-06
+    },
+    {
+      "run": "full_groundingdino_MiniCPM_s2028",
+      "max_abs_error": 8.58306884765625e-06
+    },
+    {
+      "run": "full_groundingdino_MiniCPM_s2029",
+      "max_abs_error": 6.67572021484375e-06
+    },
+    {
+      "run": "full_groundingdino_MiniCPM_s2030",
+      "max_abs_error": 5.7220458984375e-06
+    },
+    {
+      "run": "full_groundingdino_Qwen3.8_s2026",
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "run": "full_groundingdino_Qwen3.8_s2027",
+      "max_abs_error": 6.67572021484375e-06
+    },
+    {
+      "run": "full_groundingdino_Qwen3.8_s2028",
+      "max_abs_error": 4.291534423828125e-06
+    },
+    {
+      "run": "full_groundingdino_Qwen3.8_s2029",
+      "max_abs_error": 8.106231689453125e-06
+    },
+    {
+      "run": "full_groundingdino_Qwen3.8_s2030",
+      "max_abs_error": 6.67572021484375e-06
+    },
+    {
+      "run": "full_instancevg_MiniCPM_s2026",
+      "max_abs_error": 5.7220458984375e-06
+    },
+    {
+      "run": "full_instancevg_MiniCPM_s2027",
+      "max_abs_error": 6.67572021484375e-06
+    },
+    {
+      "run": "full_instancevg_MiniCPM_s2028",
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "run": "full_instancevg_MiniCPM_s2029",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_instancevg_MiniCPM_s2030",
+      "max_abs_error": 9.5367431640625e-06
+    },
+    {
+      "run": "full_instancevg_Qwen3.8_s2026",
+      "max_abs_error": 6.67572021484375e-06
+    },
+    {
+      "run": "full_instancevg_Qwen3.8_s2027",
+      "max_abs_error": 6.67572021484375e-06
+    },
+    {
+      "run": "full_instancevg_Qwen3.8_s2028",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_instancevg_Qwen3.8_s2029",
+      "max_abs_error": 5.7220458984375e-06
+    },
+    {
+      "run": "full_instancevg_Qwen3.8_s2030",
+      "max_abs_error": 7.62939453125e-06
+    },
+    {
+      "run": "full_nlvr2_MiniCPM_s2026",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_nlvr2_MiniCPM_s2027",
+      "max_abs_error": 2.384185791015625e-06
+    },
+    {
+      "run": "full_nlvr2_MiniCPM_s2028",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_nlvr2_MiniCPM_s2029",
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "run": "full_nlvr2_MiniCPM_s2030",
+      "max_abs_error": 3.337860107421875e-06
+    },
+    {
+      "run": "full_nlvr2_Qwen3.8_s2026",
+      "max_abs_error": 2.384185791015625e-06
+    },
+    {
+      "run": "full_nlvr2_Qwen3.8_s2027",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_nlvr2_Qwen3.8_s2028",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_nlvr2_Qwen3.8_s2029",
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "run": "full_nlvr2_Qwen3.8_s2030",
+      "max_abs_error": 2.384185791015625e-06
+    },
+    {
+      "run": "full_rtdetr_x_fp32_MiniCPM_s2026",
+      "max_abs_error": 1.430511474609375e-06
+    },
+    {
+      "run": "full_rtdetr_x_fp32_MiniCPM_s2027",
+      "max_abs_error": 1.430511474609375e-06
+    },
+    {
+      "run": "full_rtdetr_x_fp32_MiniCPM_s2028",
+      "max_abs_error": 1.6689300537109375e-06
+    },
+    {
+      "run": "full_rtdetr_x_fp32_MiniCPM_s2029",
+      "max_abs_error": 1.6689300537109375e-06
+    },
+    {
+      "run": "full_rtdetr_x_fp32_MiniCPM_s2030",
+      "max_abs_error": 1.430511474609375e-06
+    },
+    {
+      "run": "full_rtdetr_x_fp32_Qwen3.8_s2026",
+      "max_abs_error": 2.1457672119140625e-06
+    },
+    {
+      "run": "full_rtdetr_x_fp32_Qwen3.8_s2027",
+      "max_abs_error": 1.430511474609375e-06
+    },
+    {
+      "run": "full_rtdetr_x_fp32_Qwen3.8_s2028",
+      "max_abs_error": 1.6689300537109375e-06
+    },
+    {
+      "run": "full_rtdetr_x_fp32_Qwen3.8_s2029",
+      "max_abs_error": 1.6689300537109375e-06
+    },
+    {
+      "run": "full_rtdetr_x_fp32_Qwen3.8_s2030",
+      "max_abs_error": 1.6689300537109375e-06
+    },
+    {
+      "run": "full_vilt_MiniCPM_s2026",
+      "max_abs_error": 3.337860107421875e-06
+    },
+    {
+      "run": "full_vilt_MiniCPM_s2027",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_vilt_MiniCPM_s2028",
+      "max_abs_error": 5.7220458984375e-06
+    },
+    {
+      "run": "full_vilt_MiniCPM_s2029",
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "run": "full_vilt_MiniCPM_s2030",
+      "max_abs_error": 2.1457672119140625e-06
+    },
+    {
+      "run": "full_vilt_Qwen3.8_s2026",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_vilt_Qwen3.8_s2027",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_vilt_Qwen3.8_s2028",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_vilt_Qwen3.8_s2029",
+      "max_abs_error": 2.384185791015625e-06
+    },
+    {
+      "run": "full_vilt_Qwen3.8_s2030",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_yolo26x_MiniCPM_s2026",
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "run": "full_yolo26x_MiniCPM_s2027",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_yolo26x_MiniCPM_s2028",
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "run": "full_yolo26x_MiniCPM_s2029",
+      "max_abs_error": 2.86102294921875e-06
+    },
+    {
+      "run": "full_yolo26x_MiniCPM_s2030",
+      "max_abs_error": 4.291534423828125e-06
+    },
+    {
+      "run": "full_yolo26x_Qwen3.8_s2026",
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "run": "full_yolo26x_Qwen3.8_s2027",
+      "max_abs_error": 2.384185791015625e-06
+    },
+    {
+      "run": "full_yolo26x_Qwen3.8_s2028",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_yolo26x_Qwen3.8_s2029",
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "run": "full_yolo26x_Qwen3.8_s2030",
+      "max_abs_error": 5.7220458984375e-06
+    }
+  ]
+}

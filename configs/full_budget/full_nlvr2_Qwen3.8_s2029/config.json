@@ -1,0 +1,50 @@
+{
+  "fraction": 1.0,
+  "seed": 2029,
+  "freeze_encoder": true,
+  "fusion": "concat",
+  "harm_cost": 1.0,
+  "batch_size": 256,
+  "weight_decay": 0.01,
+  "max_epochs": 50,
+  "patience": 8,
+  "cpu_threads": 1,
+  "student": "8M",
+  "representation_dim": 128,
+  "lr": 0.003,
+  "target": "four_state",
+  "strategy": "natural",
+  "hidden_percent": 90,
+  "expert": "nlvr2",
+  "task": "nlvr2",
+  "endpoint": "Qwen3.8",
+  "branches": [
+    "image",
+    "text",
+    "hidden",
+    "confidence",
+    "output"
+  ],
+  "hidden_layer": "multimodal_encoder__layer_11",
+  "id": "full_nlvr2_Qwen3.8_s2029",
+  "stage": "shared_mandatory_inputs",
+  "ranking": "probability_difference",
+  "method": "four_difference",
+  "source_id": "repeat_nlvr2_Qwen3.8_four_difference_s2029",
+  "selection_range": [
+    0,
+    100
+  ],
+  "alpha_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "checkpoint_selection": "joint epoch/alpha validation exact-call full-curve mean",
+  "policy_budget_range": [
+    0,
+    100
+  ]
+}

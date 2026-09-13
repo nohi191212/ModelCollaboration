@@ -1,0 +1,54 @@
+{
+  "selected": {
+    "id": "shared_12",
+    "settings": {
+      "student": "8M",
+      "representation_dim": 128,
+      "lr": 0.003,
+      "target": "four_state",
+      "strategy": "natural",
+      "hidden_percent": 90
+    },
+    "runs": [
+      "shared_12_cub_MiniCPM",
+      "shared_12_cub_Qwen3.8",
+      "shared_12_glsim_MiniCPM",
+      "shared_12_glsim_Qwen3.8",
+      "shared_12_groundingdino_MiniCPM",
+      "shared_12_groundingdino_Qwen3.8",
+      "shared_12_instancevg_MiniCPM",
+      "shared_12_instancevg_Qwen3.8",
+      "shared_12_nlvr2_MiniCPM",
+      "shared_12_nlvr2_Qwen3.8",
+      "shared_12_vilt_MiniCPM",
+      "shared_12_vilt_Qwen3.8",
+      "shared_12_yolo26x_MiniCPM",
+      "shared_12_yolo26x_Qwen3.8",
+      "shared_12_rtdetr_x_fp32_MiniCPM",
+      "shared_12_rtdetr_x_fp32_Qwen3.8"
+    ],
+    "status": "complete",
+    "task_means": {
+      "cub": 0.9698125,
+      "grefcoco": 0.7082964368543117,
+      "nlvr2": 0.8164959896877686,
+      "construction": 0.1768778191883302
+    },
+    "validation_mean": 0.6678706864326026,
+    "mean_active_parameters": 6577126.0,
+    "mean_fit_seconds": 67.41994623254868
+  },
+  "selection_locked_at": 1789043234.3553715,
+  "completed_stages": [
+    "hidden_percent",
+    "student",
+    "representation_dim",
+    "lr",
+    "target",
+    "strategy"
+  ],
+  "test_loaded_during_selection": false,
+  "shared_settings_tested": 18,
+  "individual_fits": 288,
+  "boundary_note": "No expansion beyond declared ranges: 288-fit cap and only four already-distilled encoder sizes. This is the best observed coordinate-search setting, not a global optimum."
+}

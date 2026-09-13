@@ -1,0 +1,114 @@
+{
+  "name": "router_method_improvement_20260911",
+  "remote_root": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration",
+  "remote_work": "outputs/router_method_improvement_20260911",
+  "data_work": "outputs/router_full_20260910",
+  "student": "8M",
+  "student_checkpoint": "outputs/mini_siglip_strict_20260910_300ep/8M/epoch_300.pt",
+  "fixed": {
+    "fraction": 1.0,
+    "freeze_encoder": true,
+    "fusion": "concat",
+    "harm_cost": 1.0,
+    "batch_size": 256,
+    "weight_decay": 0.01,
+    "max_epochs": 50,
+    "patience": 8,
+    "representation_dim": 128,
+    "lr": 0.003,
+    "target": "four_state",
+    "strategy": "natural",
+    "hidden_percent": 90,
+    "cpu_threads": 1
+  },
+  "seeds": [42, 43, 44],
+  "experts": {
+    "cub": {
+      "task": "cub",
+      "hidden_layer": "residual_blocks__layer_15",
+      "hidden_depth": 16,
+      "branches": ["image", "hidden", "confidence", "output"],
+      "confidence_column": "max_probability",
+      "confidence_valid_column": "max_probability_valid",
+      "expected_rows": {"train": 4792, "val": 1200, "test": 5794}
+    },
+    "glsim": {
+      "task": "cub",
+      "hidden_layer": "global_local_encoder__layer_11",
+      "hidden_depth": 12,
+      "branches": ["image", "hidden", "confidence", "output"],
+      "confidence_column": "max_probability",
+      "confidence_valid_column": "max_probability_valid",
+      "expected_rows": {"train": 4792, "val": 1200, "test": 5794}
+    },
+    "groundingdino": {
+      "task": "grefcoco",
+      "hidden_layer": "multimodal_encoder__layer_06",
+      "hidden_depth": 6,
+      "branches": ["image", "text", "hidden", "confidence", "output"],
+      "confidence_column": "max_score",
+      "confidence_valid_column": "max_score_valid",
+      "expected_rows": {"train": 209344, "val": 14229, "test": 35263}
+    },
+    "instancevg": {
+      "task": "grefcoco",
+      "hidden_layer": "joint_encoder__layer_11",
+      "hidden_depth": 12,
+      "branches": ["image", "text", "hidden", "confidence", "output"],
+      "confidence_column": "max_score",
+      "confidence_valid_column": "max_score_valid",
+      "expected_rows": {"train": 209344, "val": 14229, "test": 35263}
+    },
+    "nlvr2": {
+      "task": "nlvr2",
+      "hidden_layer": "multimodal_encoder__layer_11",
+      "hidden_depth": 12,
+      "branches": ["image", "text", "hidden", "confidence", "output"],
+      "confidence_column": "max_probability",
+      "confidence_valid_column": "max_probability_valid",
+      "expected_rows": {"train": 85042, "val": 6982, "test": 13937}
+    },
+    "vilt": {
+      "task": "nlvr2",
+      "hidden_layer": "ordered_image_text__layer_11",
+      "hidden_depth": 12,
+      "branches": ["image", "text", "hidden", "confidence", "output"],
+      "confidence_column": "max_probability",
+      "confidence_valid_column": "max_probability_valid",
+      "expected_rows": {"train": 85042, "val": 6982, "test": 13937}
+    },
+    "yolo26x": {
+      "task": "construction",
+      "hidden_layer": "feature_blocks__layer_16",
+      "hidden_depth": 17,
+      "branches": ["image", "hidden", "confidence", "output"],
+      "confidence_column": "max_score",
+      "confidence_valid_column": "max_score_valid",
+      "expected_rows": {"train": 6308, "val": 701, "test": 3004}
+    },
+    "rtdetr_x_fp32": {
+      "task": "construction",
+      "hidden_layer": "query_decoder__layer_06",
+      "hidden_depth": 6,
+      "branches": ["image", "hidden", "confidence", "output"],
+      "confidence_column": "max_score",
+      "confidence_valid_column": "max_score_valid",
+      "expected_rows": {"train": 6308, "val": 701, "test": 3004}
+    }
+  },
+  "conditions": [
+    {"name": "original", "selection_mode": "a25", "score_mode": "s_log"},
+    {"name": "score_gain", "selection_mode": "a25", "score_mode": "s_gain"},
+    {"name": "checkpoint_perf", "selection_mode": "max_task_performance", "score_mode": "s_log"},
+    {"name": "both", "selection_mode": "max_task_performance", "score_mode": "s_gain"}
+  ],
+  "score_only_control": {"name": "score_only_gain", "source_condition": "original", "score_mode": "s_gain"},
+  "budgets": {
+    "a25": [0.0, 0.05, 0.10, 0.15, 0.20, 0.25],
+    "historical_threshold": [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.11, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.20, 0.21, 0.22, 0.23, 0.24, 0.25, 0.26, 0.27, 0.28, 0.29, 0.30, 0.31, 0.32, 0.33, 0.34, 0.35, 0.36, 0.37, 0.38, 0.39, 0.40, 0.41, 0.42, 0.43, 0.44, 0.45, 0.46, 0.47, 0.48, 0.49, 0.50, 0.51, 0.52, 0.53, 0.54, 0.55, 0.56, 0.57, 0.58, 0.59, 0.60, 0.61, 0.62, 0.63, 0.64, 0.65, 0.66, 0.67, 0.68, 0.69, 0.70, 0.71, 0.72, 0.73, 0.74, 0.75, 0.76, 0.77, 0.78, 0.79, 0.80, 0.81, 0.82, 0.83, 0.84, 0.85, 0.86, 0.87, 0.88, 0.89, 0.90, 0.91, 0.92, 0.93, 0.94, 0.95, 0.96, 0.97, 0.98, 0.99],
+    "endpoint": [0.0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.11, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.20, 0.21, 0.22, 0.23, 0.24, 0.25, 0.26, 0.27, 0.28, 0.29, 0.30, 0.31, 0.32, 0.33, 0.34, 0.35, 0.36, 0.37, 0.38, 0.39, 0.40, 0.41, 0.42, 0.43, 0.44, 0.45, 0.46, 0.47, 0.48, 0.49, 0.50, 0.51, 0.52, 0.53, 0.54, 0.55, 0.56, 0.57, 0.58, 0.59, 0.60, 0.61, 0.62, 0.63, 0.64, 0.65, 0.66, 0.67, 0.68, 0.69, 0.70, 0.71, 0.72, 0.73, 0.74, 0.75, 0.76, 0.77, 0.78, 0.79, 0.80, 0.81, 0.82, 0.83, 0.84, 0.85, 0.86, 0.87, 0.88, 0.89, 0.90, 0.91, 0.92, 0.93, 0.94, 0.95, 0.96, 0.97, 0.98, 0.99, 1.0],
+    "batch_diagnostic": [0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.50, 0.75, 1.0]
+  },
+  "fusion_alphas": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "tie_epsilon": 1e-12
+}

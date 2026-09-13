@@ -1,0 +1,14 @@
+% Standalone insertions for the updated three-seed router, not the revision-17 policy.
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/flops_performance.pdf}
+\caption{Test performance versus estimated computation for InstanceVG/MiniCPM and YOLO26x/Qwen. Learned uses the probability contrast $p_R-p_H$ and validation task-performance checkpoint selection; conf. uses specialist confidence. Curves average seeds 42--44; shading is one population standard deviation and dots average validation-selected policies. All thresholds are fixed before test evaluation. Costs combine measured components with actual test call fractions; VLM decoding is estimated from mean output length. Router feature encoders and unsupported operations are excluded. These are component-based estimates, not full-system counts.}
+\label{fig:new_cost_flops}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/latency_performance.pdf}
+\caption{Test performance versus estimated amortized time per input under the same three-seed protocol. Time combines A800 specialist measurements, the routing head on cached features, and VLM batch wall time weighted by actual test calls. The VLM probe uses batch size 4. Feature-encoder computation, loading, warmup and deployment queueing are excluded. This estimate is not a measurement of online per-request response latency. Learned and conf. have the same meaning as in Fig.~\ref{fig:new_cost_flops}.}
+\label{fig:new_cost_time}
+\end{figure*}

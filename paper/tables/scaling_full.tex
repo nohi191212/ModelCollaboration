@@ -1,0 +1,33 @@
+\begin{table}[H]
+\centering
+\caption{Earlier training-data comparisons. Each pair retains its exploratory reference configuration; only router-training fraction changes. Within each fraction: test metric, actual test calls, and test metric at exactly 25\% ranked calls. The first two use a validation-selected 25\% threshold. These are not final shared-recipe ablations. All entries are percentages.}
+\label{tab:scaling_full}
+\fontsize{8.5}{10.2}\selectfont
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}lllrrrrrrrrr@{}}
+\toprule
+Task & Specialist & VLM & \multicolumn{3}{c}{25\% training} & \multicolumn{3}{c}{50\% training} & \multicolumn{3}{c}{100\% training}\\ \cmidrule(lr){4-6}\cmidrule(lr){7-9}\cmidrule(l){10-12} & & & Metric & Calls & Rank & Metric & Calls & Rank & Metric & Calls & Rank \\
+\midrule
+CUB-200-2011 & ResNet & M & 78.49 & 25.87 & 78.84 & 79.05 & 25.49 & 79.31 & 78.72 & 25.58 & 79.13 \\
+ & ResNet & Q & 68.74 & 60.39 & 80.60 & 69.43 & 59.98 & 80.96 & 68.29 & 60.49 & 80.91 \\
+ & GLSim & M & 86.74 & 24.82 & 86.74 & 87.00 & 24.99 & 87.00 & 86.59 & 25.51 & 86.80 \\
+ & GLSim & Q & 87.97 & 23.66 & 87.76 & 87.64 & 24.53 & 87.63 & 86.85 & 25.08 & 86.85 \\
+\midrule
+gRefCOCO & GroundingDINO & M & 38.16 & 24.84 & 38.20 & 36.59 & 22.03 & 37.58 & 36.93 & 22.85 & 37.58 \\
+ & GroundingDINO & Q & 45.63 & 24.86 & 45.71 & 43.46 & 22.01 & 45.37 & 43.03 & 21.27 & 45.44 \\
+ & InstanceVG & M & 65.23 & 34.79 & 66.53 & 65.67 & 31.24 & 66.28 & 65.48 & 33.95 & 66.56 \\
+ & InstanceVG & Q & 70.98 & 10.64 & 70.20 & 74.17 & 48.24 & 72.08 & 70.90 & 12.33 & 70.22 \\
+\midrule
+NLVR2 & BEiT3 & M & 86.38 & 25.39 & 86.30 & 86.83 & 24.39 & 86.90 & 87.08 & 26.12 & 86.89 \\
+ & BEiT3 & Q & 87.18 & 25.30 & 87.14 & 87.21 & 25.41 & 87.03 & 87.09 & 25.40 & 86.96 \\
+ & ViLT & M & 83.24 & 24.07 & 83.43 & 83.38 & 24.70 & 83.45 & 83.27 & 24.21 & 83.47 \\
+ & ViLT & Q & 83.36 & 24.43 & 83.47 & 83.09 & 23.61 & 83.41 & 83.30 & 24.09 & 83.48 \\
+\midrule
+ConstructionSite & YOLO26x & M & 22.26 & 18.34 & 22.25 & 22.26 & 18.34 & 22.25 & 22.28 & 18.87 & 22.27 \\
+ & YOLO26x & Q & 25.04 & 18.34 & 26.33 & 25.04 & 18.34 & 26.33 & 25.04 & 18.34 & 26.33 \\
+ & RT-DETR-X & M & 12.16 & 26.90 & 12.10 & 11.14 & 25.80 & 11.16 & 11.41 & 23.34 & 11.42 \\
+ & RT-DETR-X & Q & 14.47 & 28.93 & 14.35 & 15.00 & 26.80 & 14.99 & 14.98 & 25.40 & 15.03 \\
+\bottomrule
+\end{tabular}
+\end{table}

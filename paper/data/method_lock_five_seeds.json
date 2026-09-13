@@ -1,0 +1,81 @@
+{
+  "selected_method": "four_difference",
+  "selection": "task-balanced validation Score25 mean minus sample standard deviation over five router seeds",
+  "repeat_seeds": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "comparison": [
+    {
+      "method": "error",
+      "validation_seed_scores": [
+        0.652854712535587,
+        0.653201861091734,
+        0.653549705081995,
+        0.6529296233301471,
+        0.6533734477104217
+      ],
+      "validation_mean": 0.653181869949977,
+      "validation_std": 0.00029285862604605935,
+      "selection_value": 0.6528890113239308
+    },
+    {
+      "method": "four_difference",
+      "validation_seed_scores": [
+        0.6659279432360811,
+        0.6666052399411169,
+        0.6664902552160231,
+        0.666460246201781,
+        0.6671766800294149
+      ],
+      "validation_mean": 0.6665320729248834,
+      "validation_std": 0.0004451831677229395,
+      "selection_value": 0.6660868897571605
+    },
+    {
+      "method": "four_ratio",
+      "validation_seed_scores": [
+        0.6669800355113474,
+        0.6654694961331916,
+        0.6669276041336858,
+        0.6664081580190494,
+        0.6645222674050018
+      ],
+      "validation_mean": 0.6660615122404552,
+      "validation_std": 0.001052820164752406,
+      "selection_value": 0.6650086920757028
+    },
+    {
+      "method": "gain",
+      "validation_seed_scores": [
+        0.6656365114137299,
+        0.6665939365548585,
+        0.6663926476912081,
+        0.6648075719596137,
+        0.6656891621835576
+      ],
+      "validation_mean": 0.6658239659605936,
+      "validation_std": 0.0007075700773489459,
+      "selection_value": 0.6651163958832447
+    },
+    {
+      "method": "route",
+      "validation_seed_scores": [
+        0.6522091985724042,
+        0.6522614154026475,
+        0.6528619080142624,
+        0.6518457956309271,
+        0.6514639634291153
+      ],
+      "validation_mean": 0.6521284562098713,
+      "validation_std": 0.0005204797508024464,
+      "selection_value": 0.6516079764590688
+    }
+  ],
+  "selector_reads_test_records": false,
+  "historical_pilot_selected_method": "four_ratio",
+  "rule_amendment": "User changed selection criterion after the seed-42 pilot and partial CUB test results had been reported. The final numerical criterion uses validation records only; this is not a prospectively untouched test set."
+}

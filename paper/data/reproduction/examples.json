@@ -1,0 +1,108 @@
+[
+  {
+    "task": "cub",
+    "source": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/data/router_splits_strict_20260910/cub/val.jsonl",
+    "record": {
+      "sample_id": "cub-train-00003",
+      "split": "val",
+      "image_path": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/outputs/experiments/20260827_cub_native_classification/inputs/train_images/00003.jpg",
+      "width": 500,
+      "height": 333,
+      "ground_truth": {
+        "sample_id": "cub-train-00003",
+        "category_id": 172,
+        "official_name": "172.Nashville_Warbler",
+        "prompt_name": "Nashville Warbler"
+      },
+      "source_split": "train"
+    }
+  },
+  {
+    "task": "grefcoco",
+    "source": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/data/router_splits_strict_20260910/grefcoco/val.jsonl",
+    "record": {
+      "sample_id": "val-101-307",
+      "split": "val",
+      "ref_id": 101,
+      "sentence_id": 307,
+      "image_id": 716,
+      "image_path": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/data/grefcoco/images/train2014/COCO_train2014_000000000716.jpg",
+      "width": 640,
+      "height": 480,
+      "expression": "a mouse beside a laptop and a little boy sitting far from us is looking at a laptop",
+      "ground_truth": {
+        "sample_id": "val-101-307",
+        "split": "val",
+        "target_type": "multi_target",
+        "target_boxes": [
+          {
+            "annotation_id": 209737,
+            "bbox_xyxy": [
+              231.76,
+              148.4,
+              348.26,
+              267.79
+            ]
+          },
+          {
+            "annotation_id": 1971716,
+            "bbox_xyxy": [
+              454.39,
+              335.2,
+              491.24,
+              361.65999999999997
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "task": "nlvr2",
+    "source": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/data/router_splits_strict_20260910/nlvr2/dev.jsonl",
+    "record": {
+      "sample_id": "dev-850-0-0",
+      "split": "dev",
+      "sentence": "The right image shows a curving walkway of dark glass circles embedded in dirt and flanked by foliage.",
+      "image1": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/data/nlvr2/images/eval_original_20260908/dev/dev/dev-850-0-img0.png",
+      "image2": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/data/nlvr2/images/eval_original_20260908/dev/dev/dev-850-0-img1.png",
+      "ground_truth": "False",
+      "image_source": "original_archive"
+    }
+  },
+  {
+    "task": "construction",
+    "source": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/data/router_splits_strict_20260910/construction/val.jsonl",
+    "record": {
+      "sample_id": "0004857",
+      "split": "val",
+      "image_path": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/outputs/experiments/20260901_construction_yolo4_events/dataset_event4_yolo/images/val/0004857.jpg",
+      "ground_truth": {
+        "sample_id": "0004857",
+        "split": "val",
+        "events": {
+          "rule_1_ppe_violation": {
+            "present": false,
+            "reason": null,
+            "boxes": []
+          },
+          "rule_2_fall_protection_violation": {
+            "present": false,
+            "reason": null,
+            "boxes": []
+          },
+          "rule_3_unprotected_edge_violation": {
+            "present": false,
+            "reason": null,
+            "boxes": []
+          },
+          "rule_4_excavator_proximity_violation": {
+            "present": false,
+            "reason": null,
+            "boxes": []
+          }
+        }
+      }
+    }
+  }
+]

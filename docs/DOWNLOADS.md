@@ -1,5 +1,7 @@
 # Model and dataset downloads
 
+For the current paper, use [LATEST_RELEASE.md](LATEST_RELEASE.md). The latest release contains 80 main-table router weights and eight specialist input caches. The notes below describe the earlier release.
+
 ## Vision-language models and router teacher
 
 | Resource | Download | Role |

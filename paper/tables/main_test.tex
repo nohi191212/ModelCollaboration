@@ -1,0 +1,35 @@
+\begin{minipage}{\textwidth}
+\centering
+\captionof{table}{Test results at validation-selected thresholds over 0--100\% budgets. Scores and actual calls are percentages; LR is normalized $\mathrm{LR}_{4S}$, averaged over five seeds. Parentheses show LR-minus-confidence changes in percentage points (green: better; red: worse). Bold marks the higher routed score; $\dagger$ exceeds both endpoints. M: MiniCPM-V-4.5; Q: Qwen3.8-27B-FP8.}
+\label{tab:main}
+\fontsize{9}{10.8}\selectfont
+\setlength{\tabcolsep}{3.0pt}
+\renewcommand{\arraystretch}{1.03}
+\begin{tabular}{@{}lllrr>{\columncolor{conffill}}r>{\columncolor{conffill}}r>{\columncolor{learnfill}}r>{\columncolor{learnfill}[\tabcolsep][0pt]}r@{}}
+\toprule
+\multirow{2}{*}{Dataset} & \multirow{2}{*}{Specialist} & \multirow{2}{*}{VLM} & \multicolumn{2}{c}{Standalone} & \multicolumn{2}{c}{Confidence} & \multicolumn{2}{c}{LR} \\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(l){8-9}
+ & & & Spec. & VLM & Score$\uparrow$ & Calls$\downarrow$ & Score$\uparrow$ & Calls$\downarrow$ \\
+\midrule
+CUB-200-2011 & ResNet & M & 81.43 & 26.56 & \textbf{81.43} & 0.00 & \textbf{81.43}\samechg{0.00} & 0.59\callup{0.59} \\
+ & ResNet & Q & 81.43 & 54.82 & \textbf{81.43} & 0.00 & \textbf{81.43}\samechg{0.00} & 0.00\samechg{0.00} \\
+ & GLSim & M & 90.16 & 26.56 & \textbf{90.16} & 0.00 & 90.13\downchg{0.03} & 0.85\callup{0.85} \\
+ & GLSim & Q & 90.16 & 54.82 & \textbf{90.16} & 0.00 & \textbf{90.16}\samechg{0.00} & 0.00\samechg{0.00} \\
+\midrule
+gRefCOCO & GroundingDINO & M & 26.69 & 50.01 & 50.01 & 100.00 & \textbf{50.23}$^\dagger$\upchg{0.22} & 58.19\calldown{41.81} \\
+ & GroundingDINO & Q & 26.69 & 74.47 & 74.47 & 100.00 & \textbf{75.12}$^\dagger$\upchg{0.65} & 88.47\calldown{11.53} \\
+ & InstanceVG & M & 66.95 & 50.01 & 61.88 & 52.09 & \textbf{67.91}$^\dagger$\upchg{6.04} & 19.04\calldown{33.06} \\
+ & InstanceVG & Q & 66.95 & 74.47 & 72.43 & 68.39 & \textbf{76.24}$^\dagger$\upchg{3.81} & 62.00\calldown{6.38} \\
+\midrule
+NLVR2 & BEiT3 & M & 80.00 & 90.74 & 90.77 & 85.80 & \textbf{90.80}$^\dagger$\upchg{0.03} & 91.10\callup{5.30} \\
+ & BEiT3 & Q & 80.00 & 90.06 & 90.24 & 85.80 & \textbf{90.60}$^\dagger$\upchg{0.36} & 84.34\calldown{1.46} \\
+ & ViLT & M & 76.42 & 90.74 & 90.64 & 95.93 & \textbf{90.69}\upchg{0.05} & 98.06\callup{2.13} \\
+ & ViLT & Q & 76.42 & 90.06 & 89.96 & 95.93 & \textbf{90.07}$^\dagger$\upchg{0.10} & 99.62\callup{3.69} \\
+\midrule
+ConstructionSite & YOLO26x & M & 18.13 & 22.36 & 25.23 & 92.54 & \textbf{25.88}$^\dagger$\upchg{0.65} & 45.32\calldown{47.22} \\
+ & YOLO26x & Q & 18.13 & 27.00 & 25.97 & 92.21 & \textbf{29.80}$^\dagger$\upchg{3.82} & 44.77\calldown{47.44} \\
+ & RT-DETR-X & M & 7.89 & 22.36 & 22.36 & 100.00 & \textbf{22.80}$^\dagger$\upchg{0.44} & 78.44\calldown{21.56} \\
+ & RT-DETR-X & Q & 7.89 & 27.00 & \textbf{27.00} & 100.00 & 26.78\downchg{0.22} & 83.57\calldown{16.43} \\
+\bottomrule
+\end{tabular}
+\end{minipage}

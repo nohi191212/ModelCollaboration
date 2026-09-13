@@ -1,0 +1,385 @@
+{
+  "status": "complete",
+  "model_kind": "MiniCPM",
+  "task": "grefcoco",
+  "expert": "instancevg",
+  "model_path": "/mnt/HithinkOmniSSD/user_workspace/caisihang/checkpoints/MiniCPM-V-4_5",
+  "device": "cuda:0",
+  "gpu_memory_utilization": 0.75,
+  "sample_count_requested": 32,
+  "warmup_count": 2,
+  "measured_count": 30,
+  "batch_size": 4,
+  "sample_ids": [
+    "testA-24562-67519",
+    "testB-37093-102233",
+    "testB-23966-65871",
+    "testB-66119-182290",
+    "testA-81450-224192",
+    "testB-33122-91196",
+    "testB-80267-220980",
+    "testA-47140-129791",
+    "testA-24439-67195",
+    "testA-54310-149436",
+    "testA-79491-218834",
+    "testA-10078-27741",
+    "testB-57040-156982",
+    "testA-26858-73835",
+    "testB-44430-122263",
+    "testA-60760-167399",
+    "testB-3182-8806",
+    "testB-947-2650",
+    "testA-73301-202004",
+    "testA-29200-80379",
+    "testB-42734-117684",
+    "testB-46676-128533",
+    "testB-8468-23291",
+    "testA-54557-150151",
+    "testA-58479-160960",
+    "testA-81251-223648",
+    "testA-5038-13944",
+    "testB-37760-104089",
+    "testA-62943-173467",
+    "testB-12467-34323",
+    "testA-80534-221720",
+    "testB-53121-146261"
+  ],
+  "batches": [
+    {
+      "sample_ids": [
+        "testB-23966-65871",
+        "testB-66119-182290",
+        "testA-81450-224192",
+        "testB-33122-91196"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 6.051569456933066,
+      "batch_wall_latency_seconds": 6.090657560969703,
+      "amortized_generation_ms_per_sample": 1512.8923642332666,
+      "amortized_batch_wall_ms_per_sample": 1522.6643902424257,
+      "outputs": [
+        {
+          "finish_reason": "length",
+          "stop_reason": null,
+          "prompt_tokens": 528,
+          "completion_tokens": 512,
+          "text_characters": 528
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 526,
+          "completion_tokens": 87,
+          "text_characters": 140
+        },
+        {
+          "finish_reason": "length",
+          "stop_reason": null,
+          "prompt_tokens": 523,
+          "completion_tokens": 512,
+          "text_characters": 528
+        },
+        {
+          "finish_reason": "length",
+          "stop_reason": null,
+          "prompt_tokens": 527,
+          "completion_tokens": 512,
+          "text_characters": 528
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-80267-220980",
+        "testA-47140-129791",
+        "testA-24439-67195",
+        "testA-54310-149436"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 6.01708423695527,
+      "batch_wall_latency_seconds": 6.064165806979872,
+      "amortized_generation_ms_per_sample": 1504.2710592388175,
+      "amortized_batch_wall_ms_per_sample": 1516.041451744968,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 525,
+          "completion_tokens": 5,
+          "text_characters": 14
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 524,
+          "completion_tokens": 29,
+          "text_characters": 52
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 524,
+          "completion_tokens": 33,
+          "text_characters": 56
+        },
+        {
+          "finish_reason": "length",
+          "stop_reason": null,
+          "prompt_tokens": 522,
+          "completion_tokens": 512,
+          "text_characters": 528
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-79491-218834",
+        "testA-10078-27741",
+        "testB-57040-156982",
+        "testA-26858-73835"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 6.010764242964797,
+      "batch_wall_latency_seconds": 6.046397175989114,
+      "amortized_generation_ms_per_sample": 1502.6910607411992,
+      "amortized_batch_wall_ms_per_sample": 1511.5992939972784,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 524,
+          "completion_tokens": 62,
+          "text_characters": 100
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 529,
+          "completion_tokens": 87,
+          "text_characters": 140
+        },
+        {
+          "finish_reason": "length",
+          "stop_reason": null,
+          "prompt_tokens": 528,
+          "completion_tokens": 512,
+          "text_characters": 1690
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 521,
+          "completion_tokens": 5,
+          "text_characters": 14
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-44430-122263",
+        "testA-60760-167399",
+        "testB-3182-8806",
+        "testB-947-2650"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 2.593448459985666,
+      "batch_wall_latency_seconds": 2.6335477660177276,
+      "amortized_generation_ms_per_sample": 648.3621149964165,
+      "amortized_batch_wall_ms_per_sample": 658.3869415044319,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 525,
+          "completion_tokens": 6,
+          "text_characters": 14
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 392,
+          "completion_tokens": 33,
+          "text_characters": 56
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 392,
+          "completion_tokens": 33,
+          "text_characters": 56
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 528,
+          "completion_tokens": 208,
+          "text_characters": 321
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-73301-202004",
+        "testA-29200-80379",
+        "testB-42734-117684",
+        "testB-46676-128533"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 6.017314173979685,
+      "batch_wall_latency_seconds": 6.065163187915459,
+      "amortized_generation_ms_per_sample": 1504.3285434949212,
+      "amortized_batch_wall_ms_per_sample": 1516.2907969788648,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 525,
+          "completion_tokens": 61,
+          "text_characters": 99
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 520,
+          "completion_tokens": 5,
+          "text_characters": 14
+        },
+        {
+          "finish_reason": "length",
+          "stop_reason": null,
+          "prompt_tokens": 523,
+          "completion_tokens": 512,
+          "text_characters": 528
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 528,
+          "completion_tokens": 5,
+          "text_characters": 14
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-8468-23291",
+        "testA-54557-150151",
+        "testA-58479-160960",
+        "testA-81251-223648"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 1.6802827849751338,
+      "batch_wall_latency_seconds": 1.716626849025488,
+      "amortized_generation_ms_per_sample": 420.07069624378346,
+      "amortized_batch_wall_ms_per_sample": 429.156712256372,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 539,
+          "completion_tokens": 62,
+          "text_characters": 100
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 522,
+          "completion_tokens": 30,
+          "text_characters": 53
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 529,
+          "completion_tokens": 6,
+          "text_characters": 14
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 525,
+          "completion_tokens": 122,
+          "text_characters": 190
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-5038-13944",
+        "testB-37760-104089",
+        "testA-62943-173467",
+        "testB-12467-34323"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 5.998426596052013,
+      "batch_wall_latency_seconds": 6.038230134989135,
+      "amortized_generation_ms_per_sample": 1499.6066490130033,
+      "amortized_batch_wall_ms_per_sample": 1509.5575337472837,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 522,
+          "completion_tokens": 39,
+          "text_characters": 64
+        },
+        {
+          "finish_reason": "length",
+          "stop_reason": null,
+          "prompt_tokens": 536,
+          "completion_tokens": 512,
+          "text_characters": 528
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 538,
+          "completion_tokens": 33,
+          "text_characters": 56
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 522,
+          "completion_tokens": 5,
+          "text_characters": 14
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-80534-221720",
+        "testB-53121-146261"
+      ],
+      "batch_size": 2,
+      "generation_latency_seconds": 5.806203712942079,
+      "batch_wall_latency_seconds": 5.831518966006115,
+      "amortized_generation_ms_per_sample": 2903.1018564710394,
+      "amortized_batch_wall_ms_per_sample": 2915.7594830030575,
+      "outputs": [
+        {
+          "finish_reason": "length",
+          "stop_reason": null,
+          "prompt_tokens": 390,
+          "completion_tokens": 512,
+          "text_characters": 528
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 523,
+          "completion_tokens": 33,
+          "text_characters": 56
+        }
+      ]
+    }
+  ],
+  "mean_generation_ms_per_sample": 1436.915543054056,
+  "median_generation_ms_per_sample": 1503.4810599900084,
+  "mean_batch_wall_ms_per_sample": 1447.4320754343353,
+  "median_batch_wall_ms_per_sample": 1513.8203728711233,
+  "mean_prompt_tokens": 512.6666666666666,
+  "mean_completion_tokens": 169.5,
+  "latency_scope": "A800 vLLM-0.18.0 native generation latency with the frozen task prompt and structured-output schema; model loading and warmup excluded. Batch wall time includes the real request/image preparation path.",
+  "flops_scope": "This file measures latency only. Counted FLOPs are measured separately by the HF reference probe and are not claimed to be complete vLLM kernel FLOPs."
+}

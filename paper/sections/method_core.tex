@@ -1,0 +1,43 @@
+\section{Learned Routing}
+\label{sec:method}
+\subsection{Replacement Outcomes and Gain}
+Let $c_S,c_L\in\{0,1\}$ indicate specialist and VLM correctness. Their paired outcomes are both correct $(1,1)$, rescue $R=(0,1)$, harm $H=(1,0)$ and both wrong $B=(0,0)$. For delegated inputs $A$,
+\begin{equation}
+\Delta\operatorname{Acc}=\frac{|R\cap A|-|H\cap A|}{n}.
+\label{eq:decomposition}
+\end{equation}
+Given pre-call information $\mathcal I$, expected correctness gain is
+\begin{equation}
+\eta(\mathcal I)=\Pr(R\mid\mathcal I)-\Pr(H\mid\mathcal I).
+\label{eq:utility}
+\end{equation}
+With true conditional probabilities and equal call costs, choosing the largest positive gains maximizes expected accuracy under a budget ceiling. Network probabilities are estimates; alternative scores can rank them differently. Macro-F1 is not additive, so construction performance is computed from the combined predictions rather than this gain identity.
+
+\subsection{Shared Inputs and Supervision}
+LR uses an 8.07M-parameter image/text backbone distilled from SigLIP2~\cite{siglip2} on training inputs. Distillation matches normalized image and text features separately, without task labels. The backbone and specialist remain frozen during router training.
+
+Figure~\ref{fig:method} combines image features, pooled specialist states, prediction summaries and confidence with missing-value indicators. Task text adds a branch on gRefCOCO and NLVR2. Each branch is projected to 128 dimensions and layer-normalized; their concatenation enters an MLP with 128 hidden units and GELU. Each pair learns separate weights under shared settings.
+
+Our four-state version, $\mathrm{LR}_{4S}$, uses one target state per example, or fractions over four construction events. We minimize
+\begin{equation}
+\mathcal L_{4S}=-\frac1N\sum_{i=1}^{N}\sum_{k=1}^{4}q_{ik}\log p_{ik},
+\qquad p_i=\operatorname{softmax}(\ell_i).
+\label{eq:loss}
+\end{equation}
+Here $q_i$ is the observed state distribution. Four outputs support outcome inspection and several scoring rules; we do not assume that distinguishing both-correct from both-wrong cases must improve ranking. We use uniform sampling without class weights or label smoothing.
+
+For the post-hoc comparison $\mathrm{LR}_{PH}$, a scalar head $r$ on the same inputs uses the deferral loss~\cite{posthocdefer}
+\begin{equation}
+\mathcal L_{PH}=e_S\log(1+e^{-r})+e_L\log(1+e^{r}),
+\label{eq:posthoc}
+\end{equation}
+where $e_S=1-c_S$ and $e_L=1-c_L$ (event averages for construction). We fix the added call-cost coefficient to zero and sweep the score threshold to compare budgets. The original specialist answer is retained when no call is made.
+
+\subsection{From Outcome Estimates to a Ranking}
+Our default $\mathrm{LR}_{4S}$ uses
+\begin{equation}
+s_\alpha(x)=\frac{p_R-p_H}{(p_R+p_H+2p_B+\epsilon)^\alpha},
+\quad \epsilon=10^{-8}.
+\label{eq:score}
+\end{equation}
+At $\alpha=0$ this is the probability difference. Ignoring $\epsilon$, $\alpha=1$ ranks like the estimated error-rate ratio $(p_R+p_B)/(p_H+p_B)$. Intermediate values interpolate between these rankings. Normalization uses existing outputs, not new information or a VLM call. It is an empirical scoring rule and does not inherit the true-gain optimality statement above.

@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{Complete objective comparison across five seeds. Entries are task-balanced means $\pm$ sample standard deviations, multiplied by 100. Validation uses fixed-count $\mathrm{Score}_{25}^{\mathrm{count}}$ and test uses fixed-threshold $\mathrm{Score}_{25}^{\mathrm{thr}}$. The final method maximizes validation mean minus standard deviation. $p_E$ predicts specialist error. Rescue BCE predicts rescue alone. The last two rows share 4-state training but use different scores and validation-selected checkpoints.}
+\label{tab:objective_full}
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}llccc@{}}
+\toprule
+Target & Score & Validation & Val. mean $-$ SD & Test \\
+\midrule
+Error BCE & $p_E$ & $65.318\pm0.029$ & 65.289 & $56.234\pm0.059$ \\
+Rescue BCE & $p_R$ & $65.213\pm0.052$ & 65.161 & $56.986\pm0.265$ \\
+Gain regression & $\widehat\Delta$ & $66.582\pm0.071$ & 66.512 & $59.544\pm0.064$ \\
+Paired cross-entropy & $\log(p_R/p_H)$ & $66.606\pm0.105$ & 66.501 & $58.329\pm0.179$ \\
+\rowcolor{learnfill}Paired cross-entropy & $p_R-p_H$ & $66.653\pm0.045$ & \textbf{66.609} & $59.660\pm0.068$ \\
+\bottomrule
+\end{tabular}
+\end{table}

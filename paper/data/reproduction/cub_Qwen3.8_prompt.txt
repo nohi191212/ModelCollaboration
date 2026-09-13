@@ -1,0 +1,3 @@
+Identify the bird species in the image from the fixed CUB-200-2011 reference below. Each class is paired with three visual traits learned only from official training images. Use the species name to establish the likely bird group, then distinguish close candidates by the visible bill, crown and face markings, wing pattern, breast and belly color, tail, and overall form. The traits are clues rather than absolute rules because pose, sex, age, lighting, and occlusion can change what is visible. Choose the strongest overall match, ignore the background, and reply with exactly one class number from 1 to 200 and no other text.
+
+{class_traits}

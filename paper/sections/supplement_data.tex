@@ -1,0 +1,35 @@
+\section{Data Preparation and Evaluation}
+\label{sec:datasets}
+Table~\ref{tab:data} lists the examples actually used in this study. The 4 datasets span detection-related localization and event recognition, together with classification and visual reasoning. They are not 4 object-detection benchmarks, and their task scores have different meanings.
+
+\begin{table}[H]
+\centering
+\caption{Experimental splits. Counts refer to task examples, not uniformly to distinct images. Training denotes the router's full available training split; specialist training provenance is listed separately. Totals are the sums of the three columns after the recorded exclusions.}
+\label{tab:data}
+\small\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}llrrrrl@{}}
+\toprule
+Dataset & Example unit & Train & Validation & Test & Total & Evaluation \\
+\midrule
+CUB-200-2011 & One image & 4,792 & 1,200 & 5,794 & 11,786 & Top-1 accuracy \\
+gRefCOCO & Image--expression pair & 209,344 & 14,229 & 35,263 & 258,836 & Strict localization accuracy \\
+NLVR2 & Two images and a statement & 85,042 & 6,982 & 13,937 & 105,961 & Binary accuracy \\
+ConstructionSite10k & One image, 4 event labels & 6,308 & 701 & 3,004 & 10,013 & Event macro-F1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{CUB-200-2011}~\cite{cub} tests fine-grained recognition among 200 bird species, where differences in plumage, shape and local appearance distinguish related categories. We report top-1 class accuracy. The router reserves 1,200 images from the official training partition for validation and excludes two training images identified as near-duplicates of test images, leaving 4,792 training examples. The official 5,794-image test partition is retained.
+
+\textbf{gRefCOCO}~\cite{gref} tests generalized referring-expression localization, including expressions with one, multiple or no matching objects. TestA and testB contribute 19,200 and 16,063 expressions. Our fixed box-based evaluation requires a valid empty answer for no-target examples. Boxes from either model are first filtered at score $\geq0.7$. For target-present examples, greedy one-to-one matching uses generalized intersection over union of at least 0.5; an example is correct only when instance F1 equals one, with no missed or extra instances. This strict correctness measure is distinct from the dataset's official segmentation evaluation and from detection average precision.
+
+\textbf{NLVR2}~\cite{nlvr2} tests whether a natural-language statement is true of an ordered pair of natural images, including counting, attributes and relations across the pair. We report binary accuracy. The prepared training set contains 85,042 usable examples after filtering the source training partition; validation has 6,982, and the two test portions have 6,967 and 6,970. Routing acts on the complete two-image example.
+
+\textbf{ConstructionSite10k}~\cite{construction} contains construction scenes with structured safety annotations. We evaluate 4 event-presence categories: personal-protection, fall-protection, unprotected-edge and excavator-proximity violations. The original 7,009 training images are split into 6,308 for training and 701 for validation; all 3,004 test images are retained. The dataset name is approximate: the prepared partitions contain 10,013 images. We report
+\begin{equation}
+M_{\rm event}=\frac14\sum_{j=1}^4
+\frac{2\mathrm{TP}_j}{2\mathrm{TP}_j+\mathrm{FP}_j+\mathrm{FN}_j},
+\label{eq:f1}
+\end{equation}
+with zero for a class whose denominator is zero. Delegation replaces all 4 event predictions for an image; confusion counts are then recomputed. This is event recognition, not bounding-box average precision.
+

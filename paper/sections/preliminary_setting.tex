@@ -1,0 +1,7 @@
+For $n$ inputs, $\sum_i a(x_i)$ is the number of VLM calls. Given an allowed call fraction $b$, we seek the highest task score $M$:
+\begin{equation}
+\max_a M(\widehat{\mathbf y},\mathbf y)
+\quad\text{s.t.}\quad \sum_i a(x_i)\leq\lfloor bn\rfloor.
+\label{eq:budget}
+\end{equation}
+Here $\widehat{\mathbf y}$ and $\mathbf y$ collect the final answers and ground-truth labels. For example, $b=0.25$ allows calls on at most a quarter of the inputs. Each input counts once, even if it contains two images or multiple target objects. Our router makes this choice using a score threshold chosen on validation data. The same threshold is used on test inputs, where the fraction of calls may differ from the validation budget.

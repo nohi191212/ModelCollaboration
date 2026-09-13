@@ -1,0 +1,7 @@
+% Copy cost_compact.pdf alongside this snippet, or adjust the path.
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{cost_compact.pdf}
+  \caption{Test performance versus estimated computation (top) and serial latency (bottom) for InstanceVG--MiniCPM on gRefCOCO and YOLO26x--Qwen on Construction. Only the original main-table learned router and confidence baseline are compared. Dots mark the operating points selected on validation. Costs combine A800 component measurements with each policy's actual test call rate; learned routing includes the distilled encoders and routing head. FLOPs use supported-operator counts and generation-length estimates. Latency is estimated from batch-one measurements, not timed end-to-end for each policy.}
+  \label{fig:main-cost}
+\end{figure}

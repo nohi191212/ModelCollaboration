@@ -1,0 +1,29 @@
+{
+  "old_distribution": {
+    "width_pt": 523.1995239257812,
+    "height_pt": 309.7997741699219,
+    "height_at_7_16_in": 4.239618504261674
+  },
+  "old_budget": {
+    "width_pt": 526.7994995117188,
+    "height_pt": 237.7997589111328,
+    "height_at_7_16_in": 3.2320575007794505
+  },
+  "combined": {
+    "width_pt": 515.52001953125,
+    "height_pt": 324.0,
+    "height_at_7_16_in": 4.499999829510743
+  },
+  "reduction_percent": 39.77255134624947,
+  "old_pages": 16,
+  "new_pages": 14,
+  "new_figure_and_section_pages": [
+    6,
+    7
+  ],
+  "changed_sections": [
+    "sections\\appendix.tex",
+    "sections\\experiments.tex"
+  ],
+  "figure1_identical": true
+}

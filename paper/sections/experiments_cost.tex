@@ -1,0 +1,11 @@
+\subsection{Computational Cost}
+\label{sec:cost_provisional}
+\noindent\begin{minipage}{\columnwidth}
+\centering
+\includegraphics[width=0.86\columnwidth]{figures/cost_compact.pdf}
+\captionof{figure}{\textbf{Cost--performance trade-offs.} InstanceVG/M (left), YOLO26X/Q (right). LR curves show five-seed means with one-SD bands. Dots average results at validation-selected thresholds. Costs are component-based estimates.}
+\label{fig:cost}
+\end{minipage}\par\vspace{4pt}
+We add specialist and router costs per input, plus VLM cost at the actual call rate. Confidence omits router overhead. Existing A800 component measurements provide serial cost estimates, not newly measured integrated latency.
+
+InstanceVG/M gains 6.04 points over confidence with 63.3\% fewer estimated FLOPs and 61.3\% less time; YOLO26X/Q gains 3.82 points with reductions of 51.4\% and 50.9\%.

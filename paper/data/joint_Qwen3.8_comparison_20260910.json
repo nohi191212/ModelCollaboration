@@ -1,0 +1,58 @@
+[
+  {
+    "expert": "cub",
+    "endpoint": "Qwen3.8",
+    "single_task_test_fixed25": 0.7619951674145667,
+    "multi_task_test_fixed25": 0.7782188470831896,
+    "delta_multi_minus_single": 0.016223679668622815
+  },
+  {
+    "expert": "glsim",
+    "endpoint": "Qwen3.8",
+    "single_task_test_fixed25": 0.8301691404901622,
+    "multi_task_test_fixed25": 0.8448394891266828,
+    "delta_multi_minus_single": 0.014670348636520614
+  },
+  {
+    "expert": "nlvr2",
+    "endpoint": "Qwen3.8",
+    "single_task_test_fixed25": 0.8372677046710196,
+    "multi_task_test_fixed25": 0.8337518834756403,
+    "delta_multi_minus_single": -0.0035158211953792984
+  },
+  {
+    "expert": "vilt",
+    "endpoint": "Qwen3.8",
+    "single_task_test_fixed25": 0.8045490421181029,
+    "multi_task_test_fixed25": 0.8067733371600775,
+    "delta_multi_minus_single": 0.0022242950419746332
+  },
+  {
+    "expert": "groundingdino",
+    "endpoint": "Qwen3.8",
+    "single_task_test_fixed25": 0.4223974137197629,
+    "multi_task_test_fixed25": 0.45991549215892014,
+    "delta_multi_minus_single": 0.03751807843915722
+  },
+  {
+    "expert": "instancevg",
+    "endpoint": "Qwen3.8",
+    "single_task_test_fixed25": 0.7224853245611548,
+    "multi_task_test_fixed25": 0.7053001729858492,
+    "delta_multi_minus_single": -0.017185151575305535
+  },
+  {
+    "expert": "yolo26x",
+    "endpoint": "Qwen3.8",
+    "single_task_test_fixed25": 0.19009376433100783,
+    "multi_task_test_fixed25": 0.19603467084956394,
+    "delta_multi_minus_single": 0.0059409065185561105
+  },
+  {
+    "expert": "rtdetr_x_fp32",
+    "endpoint": "Qwen3.8",
+    "single_task_test_fixed25": 0.10483176081963008,
+    "multi_task_test_fixed25": 0.12038495915476813,
+    "delta_multi_minus_single": 0.015553198335138047
+  }
+]

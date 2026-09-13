@@ -1,0 +1,25 @@
+\subsection{Additional objective controls and repeated training}
+All additional controls retain the main-table input branches, frozen distilled encoders, specialist and VLM predictions, data splits, optimizer settings, and stopping rule. We compare error prediction, squared-error gain regression, binary rescue prediction, and 4-state cross-entropy with either log-probability-ratio or probability-difference ranking. Binary rescue prediction uses $y_R$ as its BCE target: a rescue is positive and the other three outcomes are negative. For ConstructionSite, $y_R$ is the fraction of the 4 events rescued, consistent with the event-averaged 4-state target. It is not a ground-truth optimal decision for the non-additive macro-F1 metric.
+
+\paragraph{What gain regression predicts.}
+For input $i$, the training target is the change in correctness when replacing the specialist with the VLM:
+\begin{equation}
+g_i=\frac{1}{m_i}\sum_{j=1}^{m_i}(c_{L,ij}-c_{S,ij})=q_{i,R}-q_{i,H},\qquad
+\mathcal L_{\rm gain}=\frac1N\sum_{i=1}^N\left(f_\theta(I_i)-g_i\right)^2.
+\label{eq:gain_regression}
+\end{equation}
+Here $m_i=1$ for the three accuracy tasks and $m_i=4$ for construction. Thus rescue has target $+1$, harm has target $-1$, and both-correct or both-wrong outcomes have target $0$; construction averages these values over its 4 events. All runs use equal rescue and harm weights. The router retains the same input branches and hidden MLP but has one unrestricted scalar output $\widehat\Delta_i=f_\theta(I_i)$, without a sigmoid or clipping. This output is the ranking score; its deployment threshold is selected on validation data, not fixed at zero.
+
+Under squared loss, the population-optimal predictor is the conditional mean $\mathbb E[g_i\mid I_i]$. For single-outcome tasks this equals $\Pr(R\mid I_i)-\Pr(H\mid I_i)$. Gain regression fits that scalar directly, whereas 4-state training fits a distribution with cross-entropy and subtracts its rescue and harm probabilities afterwards. They therefore target the same correctness-gain quantity through different training losses and output representations. For construction, this remains an event-correctness surrogate, not a per-image macro-F1 improvement or a computational-cost saving. Post-hoc deferral~\cite{posthocdefer} and calibrated expert-correctness estimation~\cite{calibrateddefer} provide related context; the scalar MSE control here is our matched ablation, not a reproduction of either published method.
+
+The two 4-state variants optimize the same cross-entropy loss. Their deployment scores are $\log(p_R/p_H)$ and $p_R-p_H$, respectively. We compare each score with its own validation-selected stopping epoch and also evaluate both scores on the same frozen checkpoint. The latter comparison isolates scoring from checkpoint selection; neither comparison selects a score on test data.
+
+Following an initial seed-42 comparison, we repeat every objective on all 16 model pairs using seeds 2026, 2027, 2028, 2029, and 2030. Each seed selects its own epoch and threshold on validation data. For candidate $a$, let $V_{a,s}$ be the task-balanced validation $\mathrm{Score}_{25}^{\mathrm{count}}$ for seed $s$. The final shared recipe maximizes
+\begin{equation}
+ a^*=\arg\max_a\left(\bar V_a-\widehat\sigma_a\right),\quad
+ \bar V_a=\frac{1}{5}\sum_{s=1}^{5}V_{a,s},\quad
+ \widehat\sigma_a=\sqrt{\frac{1}{4}\sum_{s=1}^{5}(V_{a,s}-\bar V_a)^2}.
+\end{equation}
+This criterion penalizes training variability; it is not a confidence bound. We report validation and test means and sample standard deviations across all five seeds, without selecting a favorable run. Specialists, VLM records, and distilled encoders remain fixed, so these deviations quantify router-training variation rather than uncertainty from retraining the full system or resampling test images.
+
+The objective comparison gives both fixed-threshold $\mathrm{Score}_{25}^{\mathrm{thr}}$ and fixed-count $\mathrm{Score}_{25}^{\mathrm{count}}$ on test data. The former averages performance over nominal validation budgets and permits test call-rate shifts. The latter ranks the test batch to enforce the same call counts. Both use the zero-call specialist baseline. These results compare training targets but do not establish 4-state supervision as the best objective.

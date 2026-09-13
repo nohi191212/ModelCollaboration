@@ -1,0 +1,153 @@
+\begin{table}[H]\centering
+\caption{cub: five-seed objective comparisons. All scores are multiplied by 100. Validation and test ranked use $\mathrm{Score}_{25}^{\mathrm{count}}$. Test fixed uses $\mathrm{Score}_{25}^{\mathrm{thr}}$.}
+\fontsize{7.5}{9}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llccc}\toprule
+Pair & Target / ranking & Validation & Test fixed & Test ranked \\\midrule
+ResNet/M & Error BCE & $90.438\pm0.049$ & $65.491\pm0.504$ & $77.645\pm0.509$ \\
+ & Rescue BCE & $90.767\pm0.158$ & $68.339\pm1.471$ & $77.984\pm0.104$ \\
+ & Gain regression & $97.373\pm0.039$ & $80.580\pm0.282$ & $80.786\pm0.214$ \\
+ & 4-state / ratio & $94.922\pm1.095$ & $75.027\pm2.563$ & $79.570\pm0.498$ \\
+ & 4-state / difference & $97.433\pm0.048$ & $80.645\pm0.216$ & $80.889\pm0.125$ \\
+\addlinespace
+ResNet/Q & Error BCE & $91.957\pm0.151$ & $74.547\pm0.414$ & $79.611\pm0.371$ \\
+ & Rescue BCE & $92.085\pm0.157$ & $75.147\pm0.682$ & $80.022\pm0.292$ \\
+ & Gain regression & $98.175\pm0.051$ & $81.252\pm0.031$ & $81.150\pm0.084$ \\
+ & 4-state / ratio & $96.448\pm0.837$ & $79.953\pm0.786$ & $80.463\pm0.282$ \\
+ & 4-state / difference & $98.348\pm0.031$ & $81.297\pm0.013$ & $81.175\pm0.056$ \\
+\addlinespace
+GLSim/M & Error BCE & $91.080\pm0.190$ & $76.180\pm0.460$ & $84.520\pm0.155$ \\
+ & Rescue BCE & $90.128\pm0.082$ & $75.465\pm1.748$ & $85.027\pm0.077$ \\
+ & Gain regression & $97.853\pm0.027$ & $89.138\pm0.111$ & $89.294\pm0.042$ \\
+ & 4-state / ratio & $97.007\pm0.128$ & $87.168\pm0.270$ & $88.079\pm0.123$ \\
+ & 4-state / difference & $97.872\pm0.027$ & $89.154\pm0.082$ & $89.244\pm0.061$ \\
+\addlinespace
+GLSim/Q & Error BCE & $93.573\pm0.150$ & $81.506\pm0.198$ & $86.621\pm0.050$ \\
+ & Rescue BCE & $92.515\pm0.230$ & $79.384\pm0.772$ & $86.312\pm0.363$ \\
+ & Gain regression & $98.520\pm0.064$ & $89.561\pm0.208$ & $89.529\pm0.163$ \\
+ & 4-state / ratio & $97.623\pm0.198$ & $88.793\pm0.433$ & $89.141\pm0.237$ \\
+ & 4-state / difference & $98.622\pm0.035$ & $89.744\pm0.039$ & $89.690\pm0.019$ \\
+\addlinespace
+\bottomrule\end{tabular}\end{table}
+\begin{table}[H]\centering
+\caption{grefcoco: five-seed objective comparisons. All scores are multiplied by 100. Validation and test ranked use $\mathrm{Score}_{25}^{\mathrm{count}}$. Test fixed uses $\mathrm{Score}_{25}^{\mathrm{thr}}$.}
+\fontsize{7.5}{9}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llccc}\toprule
+Pair & Target / ranking & Validation & Test fixed & Test ranked \\\midrule
+GroundingDINO/M & Error BCE & $62.107\pm0.093$ & $32.352\pm0.601$ & $33.152\pm0.129$ \\
+ & Rescue BCE & $61.112\pm0.134$ & $37.844\pm0.188$ & $34.925\pm0.080$ \\
+ & Gain regression & $61.403\pm0.285$ & $37.809\pm0.229$ & $34.948\pm0.082$ \\
+ & 4-state / ratio & $62.574\pm0.062$ & $33.589\pm0.926$ & $33.798\pm0.349$ \\
+ & 4-state / difference & $61.376\pm0.201$ & $37.619\pm0.451$ & $34.934\pm0.069$ \\
+\addlinespace
+GroundingDINO/Q & Error BCE & $66.418\pm0.064$ & $35.656\pm0.843$ & $37.027\pm0.143$ \\
+ & Rescue BCE & $64.648\pm0.204$ & $41.916\pm0.400$ & $37.456\pm0.066$ \\
+ & Gain regression & $64.726\pm0.338$ & $40.912\pm0.512$ & $37.395\pm0.125$ \\
+ & 4-state / ratio & $66.811\pm0.034$ & $35.780\pm0.342$ & $37.302\pm0.155$ \\
+ & 4-state / difference & $64.843\pm0.255$ & $42.231\pm0.385$ & $37.489\pm0.093$ \\
+\addlinespace
+InstanceVG/M & Error BCE & $75.758\pm0.257$ & $67.078\pm0.192$ & $67.603\pm0.037$ \\
+ & Rescue BCE & $76.777\pm0.471$ & $67.039\pm0.404$ & $67.448\pm0.201$ \\
+ & Gain regression & $75.328\pm0.143$ & $67.720\pm0.081$ & $67.688\pm0.078$ \\
+ & 4-state / ratio & $75.993\pm0.298$ & $67.626\pm0.128$ & $67.787\pm0.053$ \\
+ & 4-state / difference & $75.517\pm0.038$ & $67.895\pm0.107$ & $67.848\pm0.100$ \\
+\addlinespace
+InstanceVG/Q & Error BCE & $78.356\pm0.286$ & $72.827\pm0.100$ & $71.367\pm0.032$ \\
+ & Rescue BCE & $78.773\pm0.214$ & $72.519\pm0.427$ & $71.289\pm0.140$ \\
+ & Gain regression & $76.884\pm0.296$ & $71.270\pm0.601$ & $70.368\pm0.409$ \\
+ & 4-state / ratio & $78.209\pm0.250$ & $72.884\pm0.098$ & $71.368\pm0.052$ \\
+ & 4-state / difference & $76.770\pm0.172$ & $71.326\pm0.442$ & $70.617\pm0.235$ \\
+\addlinespace
+\bottomrule\end{tabular}\end{table}
+\begin{table}[H]\centering
+\caption{nlvr2: five-seed objective comparisons. All scores are multiplied by 100. Validation and test ranked use $\mathrm{Score}_{25}^{\mathrm{count}}$. Test fixed uses $\mathrm{Score}_{25}^{\mathrm{thr}}$.}
+\fontsize{7.5}{9}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llccc}\toprule
+Pair & Target / ranking & Validation & Test fixed & Test ranked \\\midrule
+BEiT3/M & Error BCE & $83.571\pm0.041$ & $84.141\pm0.125$ & $84.101\pm0.094$ \\
+ & Rescue BCE & $83.646\pm0.027$ & $84.165\pm0.084$ & $84.114\pm0.073$ \\
+ & Gain regression & $83.503\pm0.045$ & $84.112\pm0.158$ & $84.062\pm0.105$ \\
+ & 4-state / ratio & $83.604\pm0.031$ & $84.201\pm0.050$ & $84.128\pm0.046$ \\
+ & 4-state / difference & $83.645\pm0.029$ & $84.253\pm0.117$ & $84.165\pm0.092$ \\
+\addlinespace
+BEiT3/Q & Error BCE & $83.961\pm0.043$ & $84.218\pm0.076$ & $84.167\pm0.065$ \\
+ & Rescue BCE & $83.956\pm0.038$ & $84.264\pm0.050$ & $84.235\pm0.036$ \\
+ & Gain regression & $83.922\pm0.073$ & $84.215\pm0.084$ & $84.150\pm0.061$ \\
+ & 4-state / ratio & $84.009\pm0.023$ & $84.318\pm0.032$ & $84.205\pm0.041$ \\
+ & 4-state / difference & $84.077\pm0.044$ & $84.329\pm0.079$ & $84.267\pm0.052$ \\
+\addlinespace
+ViLT/M & Error BCE & $79.258\pm0.040$ & $79.902\pm0.059$ & $80.076\pm0.042$ \\
+ & Rescue BCE & $79.309\pm0.011$ & $79.955\pm0.073$ & $80.115\pm0.073$ \\
+ & Gain regression & $79.328\pm0.042$ & $79.924\pm0.072$ & $80.053\pm0.039$ \\
+ & 4-state / ratio & $79.409\pm0.044$ & $80.073\pm0.081$ & $80.182\pm0.092$ \\
+ & 4-state / difference & $79.373\pm0.023$ & $80.024\pm0.041$ & $80.157\pm0.026$ \\
+\addlinespace
+ViLT/Q & Error BCE & $79.406\pm0.033$ & $79.937\pm0.053$ & $80.100\pm0.035$ \\
+ & Rescue BCE & $79.424\pm0.017$ & $79.949\pm0.074$ & $80.089\pm0.025$ \\
+ & Gain regression & $79.555\pm0.029$ & $80.146\pm0.076$ & $80.248\pm0.059$ \\
+ & 4-state / ratio & $79.661\pm0.038$ & $80.204\pm0.133$ & $80.313\pm0.122$ \\
+ & 4-state / difference & $79.647\pm0.054$ & $80.147\pm0.067$ & $80.253\pm0.060$ \\
+\addlinespace
+\bottomrule\end{tabular}\end{table}
+\begin{table}[H]\centering
+\caption{construction: five-seed objective comparisons. All scores are multiplied by 100. Validation and test ranked use $\mathrm{Score}_{25}^{\mathrm{count}}$. Test fixed uses $\mathrm{Score}_{25}^{\mathrm{thr}}$.}
+\fontsize{7.5}{9}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llccc}\toprule
+Pair & Target / ranking & Validation & Test fixed & Test ranked \\\midrule
+YOLO26x/M & Error BCE & $22.638\pm0.365$ & $21.350\pm0.379$ & $21.196\pm0.356$ \\
+ & Rescue BCE & $23.453\pm0.185$ & $21.490\pm0.271$ & $21.537\pm0.244$ \\
+ & Gain regression & $23.123\pm0.711$ & $21.498\pm0.264$ & $21.553\pm0.327$ \\
+ & 4-state / ratio & $22.827\pm0.153$ & $21.521\pm0.219$ & $21.447\pm0.248$ \\
+ & 4-state / difference & $23.060\pm0.218$ & $21.691\pm0.242$ & $21.618\pm0.265$ \\
+\addlinespace
+YOLO26x/Q & Error BCE & $23.822\pm0.393$ & $21.627\pm0.353$ & $21.321\pm0.354$ \\
+ & Rescue BCE & $24.324\pm0.348$ & $21.502\pm0.130$ & $21.334\pm0.070$ \\
+ & Gain regression & $23.752\pm0.138$ & $21.430\pm0.043$ & $21.269\pm0.053$ \\
+ & 4-state / ratio & $23.109\pm0.151$ & $21.269\pm0.075$ & $21.182\pm0.072$ \\
+ & 4-state / difference & $23.894\pm0.321$ & $21.519\pm0.353$ & $21.425\pm0.248$ \\
+\addlinespace
+RT-DETR-X/M & Error BCE & $10.689\pm0.184$ & $11.228\pm0.079$ & $11.342\pm0.079$ \\
+ & Rescue BCE & $10.808\pm0.267$ & $11.030\pm0.229$ & $11.357\pm0.170$ \\
+ & Gain regression & $10.587\pm0.546$ & $11.589\pm0.370$ & $11.736\pm0.246$ \\
+ & 4-state / ratio & $10.885\pm0.300$ & $10.447\pm0.806$ & $10.521\pm0.882$ \\
+ & 4-state / difference & $10.407\pm0.163$ & $11.028\pm0.309$ & $11.295\pm0.325$ \\
+\addlinespace
+RT-DETR-X/Q & Error BCE & $12.058\pm0.071$ & $11.710\pm0.245$ & $12.042\pm0.265$ \\
+ & Rescue BCE & $11.682\pm0.336$ & $11.758\pm0.220$ & $12.025\pm0.218$ \\
+ & Gain regression & $11.285\pm0.529$ & $11.550\pm0.567$ & $11.798\pm0.552$ \\
+ & 4-state / ratio & $12.609\pm0.393$ & $10.414\pm0.667$ & $10.418\pm0.550$ \\
+ & 4-state / difference & $11.567\pm0.387$ & $11.660\pm0.555$ & $12.052\pm0.574$ \\
+\addlinespace
+\bottomrule\end{tabular}\end{table}
+\begin{table}[H]\centering
+\caption{Main-table uncertainty across seeds 2026--2030. Values are means $\pm$ sample standard deviations, in percent. Each seed uses its own validation-selected threshold.}
+\fontsize{8}{10}\selectfont
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llcccc}\toprule Task & Pair & Val. score & Test score & Val. calls & Test calls \\\midrule
+cub & ResNet/M & $98.65\pm0.07$ & $81.39\pm0.06$ & $1.00\pm0.00$ & $1.38\pm0.46$ \\
+cub & ResNet/Q & $98.58\pm0.00$ & $81.43\pm0.01$ & $1.00\pm0.00$ & $0.81\pm0.18$ \\
+cub & GLSim/M & $98.93\pm0.04$ & $90.15\pm0.01$ & $1.00\pm0.00$ & $1.33\pm0.37$ \\
+cub & GLSim/Q & $98.90\pm0.04$ & $90.14\pm0.04$ & $1.00\pm0.00$ & $0.82\pm0.26$ \\
+grefcoco & GroundingDINO/M & $65.63\pm0.23$ & $49.91\pm0.59$ & $44.40\pm3.36$ & $56.24\pm3.99$ \\
+grefcoco & GroundingDINO/Q & $81.27\pm0.15$ & $75.11\pm0.13$ & $78.60\pm5.94$ & $89.17\pm3.06$ \\
+grefcoco & InstanceVG/M & $75.65\pm0.05$ & $68.03\pm0.12$ & $8.20\pm4.97$ & $15.12\pm5.07$ \\
+grefcoco & InstanceVG/Q & $80.83\pm0.06$ & $74.75\pm0.16$ & $96.80\pm0.84$ & $96.85\pm0.78$ \\
+nlvr2 & BEiT3/M & $89.87\pm0.05$ & $90.71\pm0.08$ & $99.00\pm0.00$ & $99.04\pm0.09$ \\
+nlvr2 & BEiT3/Q & $90.92\pm0.06$ & $90.61\pm0.13$ & $96.99\pm1.00$ & $96.88\pm0.93$ \\
+nlvr2 & ViLT/M & $89.76\pm0.05$ & $90.62\pm0.06$ & $99.00\pm0.00$ & $99.01\pm0.11$ \\
+nlvr2 & ViLT/Q & $90.66\pm0.07$ & $90.31\pm0.08$ & $98.80\pm0.45$ & $98.72\pm0.54$ \\
+construction & YOLO26x/M & $28.40\pm0.24$ & $25.94\pm0.47$ & $46.73\pm2.86$ & $46.45\pm2.84$ \\
+construction & YOLO26x/Q & $32.70\pm0.35$ & $29.87\pm0.29$ & $43.14\pm2.05$ & $43.30\pm1.59$ \\
+construction & RT-DETR-X/M & $21.91\pm0.13$ & $22.91\pm0.58$ & $79.09\pm3.42$ & $80.01\pm3.19$ \\
+construction & RT-DETR-X/Q & $27.14\pm0.20$ & $26.85\pm0.14$ & $80.88\pm1.58$ & $81.47\pm1.33$ \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[H]\centering
+\caption{Same-checkpoint score comparison. Entries are five-seed mean changes when replacing ratio with difference on the indicated checkpoint. Validation uses $100\mathrm{Score}_{25}^{\mathrm{count}}$ and test fixed uses $100\mathrm{Score}_{25}^{\mathrm{thr}}$. All 16 pairs and 4 tasks are equally weighted.}
+\begin{tabular}{lrr}\toprule Checkpoint selection & Validation change & Test fixed change \\\midrule
+4-state / ratio & $-0.243\pm0.092$ & $+1.269\pm0.106$ \\
+4-state / difference & $+1.174\pm0.130$ & $+3.149\pm0.116$ \\
+\bottomrule\end{tabular}\end{table}
+Exact seed-level epochs, thresholds, comparison operators, scores and calls are supplied in the accompanying result records; \texttt{data/per\_seed.csv} lists all score controls. The publicly released seed-42 archive remains the historical release; these new repeat records accompany this revision.

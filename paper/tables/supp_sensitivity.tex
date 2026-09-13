@@ -1,0 +1,31 @@
+\begin{table}[H]
+\centering
+\caption{Validation sensitivity in the common-recipe search. The selection score is the task-balanced mean of validation $100\mathrm{Score}_{25}^{\mathrm{count}}$, not a pooled accuracy. Joint: 4-state cross-entropy; Gain: gain regression; Error: specialist-error prediction. These eighteen settings all contributed to selection, so the differences are comparisons used to choose the final settings. Bold marks the selected recipe.}
+\label{tab:sensitivity}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}rrrrrllr@{}}
+\toprule
+Setting & Student & Width & Learning rate & Depth & Target & Sampling & Selection score \\
+\midrule
+1 & 4M & 512 & 0.001 & 90\% & Joint & Natural & 66.2818 \\
+2 & 4M & 512 & 0.001 & 30\% & Joint & Natural & 66.0601 \\
+3 & 4M & 512 & 0.001 & 60\% & Joint & Natural & 66.1705 \\
+4 & 1M & 512 & 0.001 & 90\% & Joint & Natural & 66.3764 \\
+5 & 2M & 512 & 0.001 & 90\% & Joint & Natural & 66.1689 \\
+6 & 8M & 512 & 0.001 & 90\% & Joint & Natural & 66.5048 \\
+7 & 8M & 32 & 0.001 & 90\% & Joint & Natural & 66.5674 \\
+8 & 8M & 64 & 0.001 & 90\% & Joint & Natural & 66.7630 \\
+9 & 8M & 128 & 0.001 & 90\% & Joint & Natural & 66.7768 \\
+10 & 8M & 256 & 0.001 & 90\% & Joint & Natural & 66.6584 \\
+11 & 8M & 128 & 0.0001 & 90\% & Joint & Natural & 66.6107 \\
+12 & 8M & 128 & 0.0003 & 90\% & Joint & Natural & 66.6167 \\
+\textbf{13} & \textbf{8M} & \textbf{128} & \textbf{0.003} & \textbf{90\%} & \textbf{Joint} & \textbf{Natural} & \textbf{66.7871} \\
+14 & 8M & 128 & 0.01 & 90\% & Joint & Natural & 66.3415 \\
+15 & 8M & 128 & 0.003 & 90\% & Gain & Natural & 66.5283 \\
+16 & 8M & 128 & 0.003 & 90\% & Error & Natural & 65.2940 \\
+17 & 8M & 128 & 0.003 & 90\% & Joint & Weighted & 66.4918 \\
+18 & 8M & 128 & 0.003 & 90\% & Joint & Balanced & 66.3128 \\
+\bottomrule
+\end{tabular}
+\end{table}

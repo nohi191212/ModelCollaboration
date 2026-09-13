@@ -1,0 +1,58 @@
+[
+  {
+    "expert": "cub",
+    "endpoint": "MiniCPM",
+    "single_task_test_fixed25": 0.7119433897134967,
+    "multi_task_test_fixed25": 0.7079737659647911,
+    "delta_multi_minus_single": -0.003969623748705575
+  },
+  {
+    "expert": "glsim",
+    "endpoint": "MiniCPM",
+    "single_task_test_fixed25": 0.759233690024163,
+    "multi_task_test_fixed25": 0.7745944080082844,
+    "delta_multi_minus_single": 0.01536071798412142
+  },
+  {
+    "expert": "nlvr2",
+    "endpoint": "MiniCPM",
+    "single_task_test_fixed25": 0.8346846523642104,
+    "multi_task_test_fixed25": 0.8309535768099304,
+    "delta_multi_minus_single": -0.0037310755542799834
+  },
+  {
+    "expert": "vilt",
+    "endpoint": "MiniCPM",
+    "single_task_test_fixed25": 0.8046925450240368,
+    "multi_task_test_fixed25": 0.802611752887996,
+    "delta_multi_minus_single": -0.002080792136040732
+  },
+  {
+    "expert": "groundingdino",
+    "endpoint": "MiniCPM",
+    "single_task_test_fixed25": 0.3598105663159686,
+    "multi_task_test_fixed25": 0.37004792558772653,
+    "delta_multi_minus_single": 0.010237359271757951
+  },
+  {
+    "expert": "instancevg",
+    "endpoint": "MiniCPM",
+    "single_task_test_fixed25": 0.6394237586138446,
+    "multi_task_test_fixed25": 0.6243654822335025,
+    "delta_multi_minus_single": -0.015058276380342073
+  },
+  {
+    "expert": "yolo26x",
+    "endpoint": "MiniCPM",
+    "single_task_test_fixed25": 0.18032734231886507,
+    "multi_task_test_fixed25": 0.1836164473038217,
+    "delta_multi_minus_single": 0.003289104984956631
+  },
+  {
+    "expert": "rtdetr_x_fp32",
+    "endpoint": "MiniCPM",
+    "single_task_test_fixed25": 0.10367040308754236,
+    "multi_task_test_fixed25": 0.11260360812088349,
+    "delta_multi_minus_single": 0.008933205033341135
+  }
+]

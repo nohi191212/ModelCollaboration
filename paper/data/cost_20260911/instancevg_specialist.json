@@ -1,0 +1,134 @@
+{
+  "component": "specialist",
+  "expert": "instancevg",
+  "task": "grefcoco",
+  "device": "cuda:0",
+  "checkpoint": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/models/grefcoco/instancevg/InstanceVG-grefcoco.pth",
+  "sample_count": 64,
+  "batch_size": 16,
+  "sample_ids": [
+    "testA-30844-84861",
+    "testB-44353-122077",
+    "testB-36889-101643",
+    "testA-49055-135087",
+    "testA-81245-223633",
+    "testB-37669-103833",
+    "testA-5038-13943",
+    "testB-79646-219274",
+    "testA-469-1309",
+    "testB-46644-128438",
+    "testA-24562-67515",
+    "testA-47070-129599",
+    "testA-54554-150141",
+    "testB-12382-34099",
+    "testB-23014-63279",
+    "testB-79647-219275",
+    "testB-69479-191564",
+    "testA-15582-42797",
+    "testB-56692-156000",
+    "testB-42726-117660",
+    "testA-80455-221494",
+    "testB-33115-91174",
+    "testA-62940-173455",
+    "testB-31494-86670",
+    "testA-54586-150233",
+    "testA-81445-224177",
+    "testB-8417-23141",
+    "testA-24438-67190",
+    "testA-59285-163255",
+    "testA-73258-201893",
+    "testB-945-2633",
+    "testA-54307-149426",
+    "testB-60557-166822",
+    "testA-81622-224665",
+    "testA-69466-191525",
+    "testA-60731-167321",
+    "testA-7857-21644",
+    "testA-44142-121499",
+    "testB-66162-182407",
+    "testA-31764-87406",
+    "testB-38637-106482",
+    "testB-52921-145709",
+    "testB-65796-181394",
+    "testB-2936-8113",
+    "testA-79438-218690",
+    "testA-57397-158016",
+    "testB-23920-65743",
+    "testB-15419-42358",
+    "testA-10078-27739",
+    "testA-43890-120793",
+    "testA-55116-151689",
+    "testB-27487-75582",
+    "testA-26856-73830",
+    "testB-50845-140107",
+    "testA-29199-80374",
+    "testB-65935-181778",
+    "testA-17736-48684",
+    "testB-69477-191553",
+    "testB-22290-61227",
+    "testA-58476-160950",
+    "testB-36265-99859",
+    "testA-5734-15837",
+    "testB-67952-187353",
+    "testB-47054-129555"
+  ],
+  "model_load_seconds_excluded_from_latency": true,
+  "forward_latency_ms_per_sample": [
+    11.21629810333252,
+    11.368107795715332,
+    11.16999626159668,
+    11.233466148376465
+  ],
+  "end_to_end_latency_ms_per_sample": [
+    16.296884561597835,
+    16.604527561867144,
+    15.993722627172247,
+    16.3729631822207
+  ],
+  "mean_forward_latency_ms_per_sample": 11.246967077255249,
+  "median_forward_latency_ms_per_sample": 11.224882125854492,
+  "mean_end_to_end_latency_ms_per_sample": 16.31702448321448,
+  "median_end_to_end_latency_ms_per_sample": 16.334923871909268,
+  "flop_profiles": [
+    {
+      "batch_size": 16,
+      "flops_counted": 120042881024,
+      "gflops_counted_per_sample": 7.502680064,
+      "operators": {
+        "aten.bmm": 120010113024,
+        "aten.baddbmm": 32768000
+      }
+    },
+    {
+      "batch_size": 16,
+      "flops_counted": 120042881024,
+      "gflops_counted_per_sample": 7.502680064,
+      "operators": {
+        "aten.bmm": 120010113024,
+        "aten.baddbmm": 32768000
+      }
+    },
+    {
+      "batch_size": 16,
+      "flops_counted": 120042881024,
+      "gflops_counted_per_sample": 7.502680064,
+      "operators": {
+        "aten.bmm": 120010113024,
+        "aten.baddbmm": 32768000
+      }
+    },
+    {
+      "batch_size": 16,
+      "flops_counted": 120042881024,
+      "gflops_counted_per_sample": 7.502680064,
+      "operators": {
+        "aten.bmm": 120010113024,
+        "aten.baddbmm": 32768000
+      }
+    }
+  ],
+  "mean_counted_gflops_per_sample": 7.502680064,
+  "flops_scope": "GPU FlopCounterMode dense products, convolutions and supported attention; multiply-add counted as 2 FLOPs. Elementwise, normalization, custom ops and postprocessing may be missing.",
+  "latency_scope": "A800 wall-clock CUDA forward latency and end-to-end latency including image read/preprocess, excluding model load; batch processing uses the recorded batch size.",
+  "completed": true
+}

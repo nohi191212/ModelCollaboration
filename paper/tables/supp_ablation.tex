@@ -1,0 +1,29 @@
+\begin{table}[H]
+\centering
+\caption{Comparisons around earlier pair-specific configurations, all paired with Q. These are not removals from the new shared recipe. V-area is $100\mathrm{Score}_{25}^{\mathrm{count}}$ on validation. Test threshold performance and calls use the validation 25\% threshold; Test rank fixes test calls to $\lfloor0.25n\rfloor$. Values are percentages. Each block retains its own objective and training configuration. I/T/H/C/P denote image, text, hidden state, confidence and prediction summary.}
+\label{tab:ablation}
+\small
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Pair & Earlier setting / change & V-area & Test threshold & Test calls & Test rank 25\% \\
+\midrule
+ResNet/Q & P+C reference & 92.800 & 68.295 & 60.49 & 80.911 \\
+ & Remove C & 97.908 & 80.652 & 24.77 & 80.652 \\
+ & Remove P & 92.108 & 69.503 & 54.73 & 78.944 \\
+\midrule
+GroundingDINO/Q & I+T+H+C reference & 66.509 & 43.034 & 21.27 & 45.441 \\
+ & Remove I & 66.675 & 43.431 & 21.80 & 45.419 \\
+ & Remove T & 66.438 & 44.171 & 22.87 & 45.532 \\
+ & Remove H & 66.213 & 44.636 & 23.80 & 45.373 \\
+ & Remove C & 66.462 & 42.835 & 21.18 & 45.385 \\
+\midrule
+BEiT3/Q & P+C reference & 83.834 & 87.092 & 25.40 & 86.956 \\
+ & Remove C & 81.813 & 80.003 & 0.00 & 83.555 \\
+ & Remove P & 83.138 & 86.568 & 23.87 & 86.719 \\
+\midrule
+YOLO26x/Q & P reference, width 512 & 24.930 & 25.038 & 18.34 & 26.328 \\
+ & Width 32 & 24.807 & 29.177 & 43.21 & 26.310 \\
+\bottomrule
+\end{tabular}
+\end{table}

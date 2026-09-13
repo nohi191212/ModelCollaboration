@@ -1,0 +1,75 @@
+{
+  "components": {
+    "grefcoco|instancevg|MiniCPM": {
+      "specialist_gflops": 7.502680064,
+      "router_gflops": 3.642171392,
+      "large_gflops": 12916.147709832,
+      "specialist_ms": 46.08042127620138,
+      "router_ms": 13.180577338061994,
+      "large_ms": 3667.173011115665,
+      "large_samples": 64,
+      "flops_probes": 8,
+      "specialist_samples": 64,
+      "router_samples": 64,
+      "batch_size": 1
+    },
+    "construction|yolo26x|Qwen3.8": {
+      "specialist_gflops": 135.97853184000002,
+      "router_gflops": 3.183754752,
+      "large_gflops": 96874.712551641,
+      "specialist_ms": 46.30809425361804,
+      "router_ms": 25.261267359383055,
+      "large_ms": 9822.475872695577,
+      "large_samples": 64,
+      "flops_probes": 8,
+      "specialist_samples": 64,
+      "router_samples": 64,
+      "batch_size": 1
+    }
+  },
+  "selected_points": [
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "nominal_validation_budget": 0.23,
+      "actual_test_call_fraction": 0.30904914499617164,
+      "test_metric": 0.6671865694921022,
+      "estimated_gflops_per_input": 4002.86925782384,
+      "estimated_time_ms_per_input": 1192.5976822525959
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "nominal_validation_budget": 0.65,
+      "actual_test_call_fraction": 0.5209426310864078,
+      "test_metric": 0.6187788900547316,
+      "estimated_gflops_per_input": 6736.074651524562,
+      "estimated_time_ms_per_input": 1956.4671783358606
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "nominal_validation_budget": 0.5,
+      "actual_test_call_fraction": 0.4876830892143808,
+      "test_metric": 0.29875800068449215,
+      "estimated_gflops_per_input": 47383.321370531434,
+      "estimated_time_ms_per_input": 4861.824738942901
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "nominal_validation_budget": 0.93,
+      "actual_test_call_fraction": 0.9221038615179761,
+      "test_metric": 0.2597490004762105,
+      "estimated_gflops_per_input": 89464.5250591521,
+      "estimated_time_ms_per_input": 9103.651026133362
+    }
+  ],
+  "protocol": {
+    "method": "original main-table logit contrast; original checkpoints and validation thresholds; seed 42",
+    "large_timing": "64 measured examples; batch size one; same full task prompt; two separate warmup examples",
+    "cost": "serial component estimates, not a timed integrated service; includes active distilled encoders and routing head only for learned",
+    "flops": "multiply-add=2; supported operators; mean prefill (including visual embedding) plus average generated length times one-token decode probe",
+    "scope_limits": "mean call cost extrapolated across policies; no policy-specific input/output-length costs; specialist-feature extraction overhead is not separately measured; confidence threshold overhead not separately timed"
+  }
+}

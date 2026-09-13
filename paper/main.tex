@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{spconf,amsmath,amssymb,graphicx,booktabs,multirow,placeins,array}
+\usepackage[table]{xcolor}
+\usepackage{flafter,balance,capt-of,float,tabularx}
+\usepackage{hyperref}
+\DeclareMathSizes{8}{8}{6}{5}
+\input{tables/colors}
+\hypersetup{hidelinks,pdftitle={When Should a Vision Specialist Defer? Budgeted Collaboration with Vision-Language Models},pdfauthor={Sihang Cai, Rongjunchen Zhang, Tao Jin}}
+\title{When Should a Vision Specialist Defer?\\Budgeted Collaboration with Vision--Language Models}
+\name{Sihang Cai$^1$ \qquad Rongjunchen Zhang$^1$ \qquad Tao Jin$^2$}
+\address{$^1$HiThink Research \qquad $^2$Zhejiang University}
+\setlength{\emergencystretch}{1em}
+\raggedbottom
+\renewcommand{\dbltopfraction}{0.90}
+\renewcommand{\textfraction}{0.10}
+\setcounter{dbltopnumber}{2}
+\setlength{\dbltextfloatsep}{10pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{9pt plus 2pt minus 2pt}
+\begin{document}
+\ninept
+\maketitle
+\begin{abstract}
+\input{sections/short_abstract}
+\end{abstract}
+\begin{keywords}
+Model collaboration, visual recognition, learning to defer, budgeted inference
+\end{keywords}
+\input{sections/short_introduction}
+\input{sections/preliminary_opening}
+\input{sections/preliminary_decision}
+\input{sections/preliminary_setting}
+
+% Page 2: method illustration, distillation and routing, then selection criterion.
+\twocolumn[{
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/method.pdf}
+\captionof{figure}{\textbf{Deciding when to call the VLM.} After the specialist predicts, LR combines input and specialist features. The illustrated four-state variant estimates paired outcomes and normalizes its score before a validation-selected threshold decides whether to retain the specialist answer or call the VLM. Image-only tasks omit text.}
+\label{fig:method}
+\end{minipage}\vspace{10pt}
+}]
+\nobalance
+\input{sections/method_core}
+\input{sections/selection_criterion}
+
+% Page 3: main table, threshold selection and dataset table left, implementation/results right.
+\clearpage
+\nobalance
+\twocolumn[{\input{tables/main_test}\vspace{10pt}}]
+\input{sections/method_selection}
+{\setlength{\intextsep}{3pt}\input{sections/experiments_data_opening}}
+\input{sections/experiments_metrics}
+{\setlength{\intextsep}{3pt}\input{sections/experiments_setup}}
+\input{sections/experiments_mainresults}
+
+% Page 4: gain figure, analysis/comparisons left, costs/conclusion right.
+\twocolumn[{
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[width=0.96\textwidth]{figures/gains_compact.pdf}
+\captionof{figure}{\textbf{Collaboration gains on test data.} Top: paired outcomes for all 16 pairs; outlines identify the pairs below. Construction counts events, other tasks examples. Bottom: performance versus actual calls, including both endpoints. LR lines average five seeds; dots show mean results at independently selected validation thresholds.}
+\label{fig:gains}
+\end{minipage}\vspace{10pt}
+}]
+\input{sections/experiments_results}
+{\setlength{\intextsep}{1pt}\input{sections/experiments_ablation}}
+\input{sections/experiments_cost}
+\input{sections/short_conclusion}
+\clearpage
+\balance
+\begin{center}\bfseries COMPLIANCE WITH ETHICAL STANDARDS\end{center}
+\noindent This study did not require ethical approval. The authors declare no actual or potential conflicts of interest.
+\bibliographystyle{IEEEbib}
+\bibliography{references}
+\end{document}

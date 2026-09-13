@@ -1,0 +1,129 @@
+{
+  "small_models": [
+    {
+      "model": "ResNet",
+      "expert": "cub",
+      "samples": 32,
+      "mean_gflops_counted": 8.175091712,
+      "min_gflops_counted": 8.175091712,
+      "max_gflops_counted": 8.175091712,
+      "operator_inventory_source": "cub_operator_check.json",
+      "operator_check_samples": 1,
+      "uncovered_spatial_sampling_seen": false
+    },
+    {
+      "model": "YOLO26x",
+      "expert": "yolo26x",
+      "samples": 32,
+      "mean_gflops_counted": 143.2219032,
+      "min_gflops_counted": 116.2238976,
+      "max_gflops_counted": 193.92768,
+      "operator_inventory_source": "yolo26x_operator_check.json",
+      "operator_check_samples": 1,
+      "uncovered_spatial_sampling_seen": false
+    },
+    {
+      "model": "RT-DETR-X",
+      "expert": "rtdetr_x_fp32",
+      "samples": 32,
+      "mean_gflops_counted": 224.6444544,
+      "min_gflops_counted": 224.6444544,
+      "max_gflops_counted": 224.6444544,
+      "operator_inventory_source": "rtdetr_x_fp32_operator_check.json",
+      "operator_check_samples": 1,
+      "uncovered_spatial_sampling_seen": true
+    },
+    {
+      "model": "ViLT",
+      "expert": "vilt",
+      "samples": 32,
+      "mean_gflops_counted": 84.895706112,
+      "min_gflops_counted": 57.611655168,
+      "max_gflops_counted": 120.690972672,
+      "operator_inventory_source": "vilt_operator_check.json",
+      "operator_check_samples": 1,
+      "uncovered_spatial_sampling_seen": false
+    },
+    {
+      "model": "GroundingDINO",
+      "expert": "groundingdino",
+      "samples": 32,
+      "mean_gflops_counted": 668.259162288,
+      "min_gflops_counted": 499.212779776,
+      "max_gflops_counted": 820.17636864,
+      "operator_inventory_source": "groundingdino_operator_check.json",
+      "operator_check_samples": 1,
+      "uncovered_spatial_sampling_seen": true
+    },
+    {
+      "model": "BEiT3",
+      "expert": "nlvr2",
+      "samples": 32,
+      "mean_gflops_counted": 76.799401728,
+      "min_gflops_counted": 73.586743296,
+      "max_gflops_counted": 83.259561984,
+      "operator_inventory_source": "nlvr2_operator_check.json",
+      "operator_check_samples": 1,
+      "uncovered_spatial_sampling_seen": false
+    },
+    {
+      "model": "GLSim",
+      "expert": "glsim",
+      "samples": 32,
+      "mean_gflops_counted": 70.280871936,
+      "min_gflops_counted": 70.280871936,
+      "max_gflops_counted": 70.280871936,
+      "operator_inventory_source": "glsim_ops.json",
+      "operator_check_samples": 32,
+      "uncovered_spatial_sampling_seen": false
+    }
+  ],
+  "large_input_cases": 16,
+  "large_input_check_complete": true,
+  "large_model_probes": [
+    {
+      "model": "MiniCPM",
+      "sample_id": "cub-test-00517",
+      "task": "cub",
+      "prompt_tokens": 1996,
+      "prefill_gflops_counted": 33243.606087168,
+      "one_known_token_gflops_counted": 16.31253312
+    },
+    {
+      "model": "Qwen3.8",
+      "sample_id": "cub-test-00517",
+      "task": "cub",
+      "prompt_tokens": 4864,
+      "prefill_gflops_counted": 249018.23668224,
+      "one_known_token_gflops_counted": 53.164769472
+    }
+  ],
+  "large_gpu_probe_status": {
+    "stage": "finished",
+    "occupancy_original_pid": 157057,
+    "stopped_process_ids": [
+      157068,
+      157342,
+      157343,
+      157587,
+      157588,
+      157589,
+      157590,
+      157057
+    ],
+    "started_at": 1789028871.3039298,
+    "measurement_exit_code": 0,
+    "occupancy_restored": true,
+    "measurement_pid": 159330,
+    "occupancy_new_pid": 159642,
+    "finished_at": 1789029043.4601417
+  },
+  "whole_system_flops_complete": false,
+  "missing_components": [
+    "InstanceVG",
+    "full generation and all-task large-model coverage",
+    "uncovered operations",
+    "per-example routing alignment",
+    "95%/99% resampling intervals"
+  ]
+}

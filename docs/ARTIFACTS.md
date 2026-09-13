@@ -1,4 +1,6 @@
-# Trained weights and compact experiment data
+# Earlier release: trained weights and compact experiment data
+
+For the current paper and its 80 main-table router weights, follow [REPRODUCE.md](REPRODUCE.md). The archives below reproduce an earlier version.
 
 Download the companion release from [nohi191212/ModelCollaboration on Hugging Face](https://huggingface.co/nohi191212/ModelCollaboration).
 

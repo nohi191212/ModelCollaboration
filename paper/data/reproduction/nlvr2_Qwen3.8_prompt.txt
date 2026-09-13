@@ -1,0 +1,3 @@
+The first image is the left image and the second is the right image. Decide whether the sentence below is true about the pair. Count each distinct matching object once in the exact image scope named by the sentence before evaluating more, fewer, equal, at least, at most, or exactly. An identifiable partly visible object still counts, but background patterns do not. Check the named colors, shapes, identities, negations, and spatial relations, and require every stated clause to hold without adding unstated conditions. Reply with exactly True or False and no other text.
+
+Sentence: {sentence}

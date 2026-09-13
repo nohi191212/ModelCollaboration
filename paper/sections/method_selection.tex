@@ -1,0 +1,5 @@
+Each epoch evaluates $\alpha\in\{0,0.25,0.5,0.75,1\}$. Validation $\mathcal A_{100}$ jointly selects the checkpoint and $\alpha$; ties favor smaller $\alpha$ within an epoch and earlier epochs across training. Early stopping uses the same criterion. Cross-entropy itself is unchanged. Table~\ref{tab:main} abbreviates normalized $\mathrm{LR}_{4S}$ as LR.
+
+To select a threshold, validation budgets range from 0 to 100\% in 1\% steps. At each interior budget, a cutoff includes tied scores only if all fit the quota. The highest validation task score selects the threshold; ties favor fewer calls and then a smaller budget. Endpoints mean never or always calling the VLM.
+
+The cutoff and comparison operator transfer unchanged to test inputs; actual test calls can differ from the nominal validation budget. Confidence uses the same threshold search with negative maximum class probability or detection confidence, prioritizing missing confidence. Test labels select neither scores nor thresholds.

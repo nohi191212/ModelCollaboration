@@ -1,0 +1,24 @@
+\begin{table}[H]
+\centering
+\caption{Archived partial operation counts in GFLOPs. Specialist means use 32 inputs; the range is across those inputs. Each VLM row is one fixed CUB prefill probe, not full inference. Uncovered operations are not included.}
+\label{tab:cost}
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+\rowcolor{valfill} Model & Inputs & Mean / probe & Range & Coverage\\
+\midrule
+ResNet & 32 & 8.175 & 8.175--8.175 & Counted specialist operations\\
+GLSim & 32 & 70.281 & 70.281--70.281 & Counted specialist operations\\
+GroundingDINO & 32 & 668.259 & 499.213--820.176 & Spatial sampling uncovered\\
+InstanceVG & -- & -- & -- & Not measured\\
+BEiT3 & 32 & 76.799 & 73.587--83.260 & Counted specialist operations\\
+ViLT & 32 & 84.896 & 57.612--120.691 & Counted specialist operations\\
+YOLO26x & 32 & 143.222 & 116.224--193.928 & Counted specialist operations\\
+RT-DETR-X & 32 & 224.644 & 224.644--224.644 & Spatial sampling uncovered\\
+\midrule
+MiniCPM & 1 & 33,243.606 & -- & CUB prefill only\\
+Qwen3.8 & 1 & 249,018.237 & -- & CUB prefill only\\
+\bottomrule
+\end{tabular}
+\end{table}

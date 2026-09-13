@@ -1,0 +1,27 @@
+{
+  "component": "router",
+  "expert": "yolo26x",
+  "task": "construction",
+  "endpoint": "Qwen3.8",
+  "condition": "both",
+  "seed": 42,
+  "device": "cuda:0",
+  "checkpoint": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/outputs/router_method_improvement_20260911_r1/conditions/both_yolo26x_Qwen3.8_seed42/best.pt",
+  "sample_count": 1024,
+  "batch_size": 256,
+  "row_count_loaded": 3004,
+  "mean_latency_ms_per_sample": 0.004675843752920628,
+  "median_latency_ms_per_sample": 0.004634750075638294,
+  "latency_ms_per_sample": [
+    0.004889749921858311,
+    0.004717750009149313,
+    0.004544124938547611,
+    0.0045517501421272755
+  ],
+  "flops_counted_per_batch": 0,
+  "gflops_counted_per_sample": 0.0,
+  "operators": {},
+  "flops_scope": "GPU FlopCounterMode for the router forward; multiply-add counted as 2 FLOPs.",
+  "latency_scope": "A800 CUDA forward latency on cached router features, excluding feature loading and model load.",
+  "completed": true
+}

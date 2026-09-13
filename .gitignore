@@ -5,8 +5,8 @@ __pycache__/
 *.pt
 *.pth
 *.safetensors
-outputs/
-models/
-data/
+/outputs/
+/models/
+/data/
 *.sqlite*
 *.log

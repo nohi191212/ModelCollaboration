@@ -1,0 +1,41 @@
+{
+  "components": {
+    "grefcoco|instancevg|MiniCPM": {
+      "specialist_gflops": 7.502680064,
+      "router_gflops": 3.642171392,
+      "large_gflops": 12916.147709832,
+      "specialist_ms": 46.08042127620138,
+      "router_ms": 13.180577338061994,
+      "large_ms": 3667.173011115665,
+      "large_samples": 64,
+      "flops_probes": 8,
+      "specialist_samples": 64,
+      "router_samples": 64,
+      "batch_size": 1
+    },
+    "construction|yolo26x|Qwen3.8": {
+      "specialist_gflops": 135.97853184000002,
+      "router_gflops": 3.183754752,
+      "large_gflops": 96874.712551641,
+      "specialist_ms": 46.30809425361804,
+      "router_ms": 25.261267359383055,
+      "large_ms": 9822.475872695577,
+      "large_samples": 64,
+      "flops_probes": 8,
+      "specialist_samples": 64,
+      "router_samples": 64,
+      "batch_size": 1
+    }
+  },
+  "protocol": {
+    "method": "original main-table logit contrast; original checkpoints and validation thresholds; seed 42",
+    "large_timing": "64 measured examples; batch size one; same full task prompt; two separate warmup examples",
+    "cost": "serial component estimates, not a timed integrated service; includes active distilled encoders and routing head only for learned",
+    "flops": "multiply-add=2; supported operators; mean prefill (including visual embedding) plus average generated length times one-token decode probe",
+    "scope_limits": "mean call cost extrapolated across policies; no policy-specific input/output-length costs; specialist-feature extraction overhead is not separately measured; confidence threshold overhead not separately timed"
+  },
+  "source_files": [
+    "dse_results/main_table_cost_20260912/cost_summary.json",
+    "dse_results/main_table_cost_qwen_20260912/cost_summary.json"
+  ]
+}

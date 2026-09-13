@@ -1,0 +1,385 @@
+{
+  "status": "complete",
+  "model_kind": "Qwen3.8",
+  "task": "construction",
+  "expert": "yolo26x",
+  "model_path": "/mnt/HithinkOmniSSD/user_workspace/caisihang/checkpoints/Qwen3.8-27B-FP8",
+  "device": "cuda:0",
+  "gpu_memory_utilization": 0.75,
+  "sample_count_requested": 32,
+  "warmup_count": 2,
+  "measured_count": 30,
+  "batch_size": 4,
+  "sample_ids": [
+    "0000772",
+    "0003400",
+    "0003077",
+    "0004213",
+    "0002162",
+    "0003303",
+    "0004535",
+    "0001299",
+    "0000762",
+    "0001453",
+    "0002112",
+    "0000382",
+    "0003936",
+    "0000833",
+    "0003551",
+    "0001683",
+    "0002571",
+    "0002523",
+    "0001939",
+    "0000904",
+    "0003516",
+    "0003633",
+    "0002690",
+    "0001464",
+    "0001595",
+    "0002168",
+    "0000183",
+    "0003404",
+    "0001727",
+    "0002796",
+    "0002153",
+    "0003848"
+  ],
+  "batches": [
+    {
+      "sample_ids": [
+        "0003077",
+        "0004213",
+        "0002162",
+        "0003303"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 4.881686039967462,
+      "batch_wall_latency_seconds": 4.988335099071264,
+      "amortized_generation_ms_per_sample": 1220.4215099918656,
+      "amortized_batch_wall_ms_per_sample": 1247.083774767816,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0004535",
+        "0001299",
+        "0000762",
+        "0001453"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 7.0890667490893975,
+      "batch_wall_latency_seconds": 7.216836072970182,
+      "amortized_generation_ms_per_sample": 1772.2666872723494,
+      "amortized_batch_wall_ms_per_sample": 1804.2090182425454,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1694,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1531,
+          "completion_tokens": 144,
+          "text_characters": 435
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1531,
+          "completion_tokens": 226,
+          "text_characters": 616
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002112",
+        "0000382",
+        "0003936",
+        "0000833"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 5.4999597480054945,
+      "batch_wall_latency_seconds": 5.588348102988675,
+      "amortized_generation_ms_per_sample": 1374.9899370013736,
+      "amortized_batch_wall_ms_per_sample": 1397.0870257471688,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1405,
+          "completion_tokens": 153,
+          "text_characters": 480
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1531,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1683,
+          "completion_tokens": 139,
+          "text_characters": 409
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003551",
+        "0001683",
+        "0002571",
+        "0002523"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 4.797023626044393,
+      "batch_wall_latency_seconds": 4.88577020005323,
+      "amortized_generation_ms_per_sample": 1199.2559065110981,
+      "amortized_batch_wall_ms_per_sample": 1221.4425500133075,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1694,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001939",
+        "0000904",
+        "0003516",
+        "0003633"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 6.3565617019776255,
+      "batch_wall_latency_seconds": 6.429374794010073,
+      "amortized_generation_ms_per_sample": 1589.1404254944064,
+      "amortized_batch_wall_ms_per_sample": 1607.3436985025182,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 147,
+          "text_characters": 465
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1683,
+          "completion_tokens": 185,
+          "text_characters": 574
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1405,
+          "completion_tokens": 141,
+          "text_characters": 357
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002690",
+        "0001464",
+        "0001595",
+        "0002168"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 11.480005273944698,
+      "batch_wall_latency_seconds": 11.721151808975264,
+      "amortized_generation_ms_per_sample": 2870.0013184861746,
+      "amortized_batch_wall_ms_per_sample": 2930.287952243816,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 177,
+          "text_characters": 545
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 155,
+          "text_characters": 481
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000183",
+        "0003404",
+        "0001727",
+        "0002796"
+      ],
+      "batch_size": 4,
+      "generation_latency_seconds": 13.841306244954467,
+      "batch_wall_latency_seconds": 13.994719217997044,
+      "amortized_generation_ms_per_sample": 3460.3265612386167,
+      "amortized_batch_wall_ms_per_sample": 3498.679804499261,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 157,
+          "text_characters": 510
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 150,
+          "text_characters": 462
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1531,
+          "completion_tokens": 169,
+          "text_characters": 508
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 187,
+          "text_characters": 511
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002153",
+        "0003848"
+      ],
+      "batch_size": 2,
+      "generation_latency_seconds": 14.003285999991931,
+      "batch_wall_latency_seconds": 14.185666976962239,
+      "amortized_generation_ms_per_sample": 7001.6429999959655,
+      "amortized_batch_wall_ms_per_sample": 7092.833488481119,
+      "outputs": [
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 221,
+          "text_characters": 616
+        },
+        {
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "prompt_tokens": 1705,
+          "completion_tokens": 110,
+          "text_characters": 345
+        }
+      ]
+    }
+  ],
+  "mean_generation_ms_per_sample": 2561.0056682489812,
+  "median_generation_ms_per_sample": 1680.7035563833779,
+  "mean_batch_wall_ms_per_sample": 2599.870914062194,
+  "median_batch_wall_ms_per_sample": 1705.7763583725318,
+  "mean_prompt_tokens": 1659.6,
+  "mean_completion_tokens": 137.03333333333333,
+  "latency_scope": "A800 vLLM-0.18.0 native generation latency with the frozen task prompt and structured-output schema; model loading and warmup excluded. Batch wall time includes the real request/image preparation path.",
+  "flops_scope": "This file measures latency only. Counted FLOPs are measured separately by the HF reference probe and are not claimed to be complete vLLM kernel FLOPs."
+}

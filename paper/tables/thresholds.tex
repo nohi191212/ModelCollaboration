@@ -1,0 +1,33 @@
+\begin{table}[H]
+\centering
+\caption{Confidence cutoffs and mean LR validation budgets across five seeds. Each LR seed uses its own validation cutoff unchanged on test; exact per-seed cutoffs are provided in the accompanying data/per\_seed.csv.}
+\label{tab:thresholds}
+\fontsize{9}{10.799999999999999}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}lllrrrr@{}}
+\toprule
+Task & Specialist & VLM & Conf. budget & Conf. cutoff & LR budget & LR cutoff \\
+\midrule
+CUB-200-2011 & ResNet & M & 0 & Never & 0.4 & Per seed \\
+ & ResNet & Q & 0 & Never & 0.0 & Per seed \\
+ & GLSim & M & 0 & Never & 0.4 & Per seed \\
+ & GLSim & Q & 0 & Never & 0.0 & Per seed \\
+\midrule
+gRefCOCO & GroundingDINO & M & 100 & Always & 45.8 & Per seed \\
+ & GroundingDINO & Q & 100 & Always & 77.6 & Per seed \\
+ & InstanceVG & M & 65 & $\geq-0.987771$ & 14.4 & Per seed \\
+ & InstanceVG & Q & 71 & $\geq-0.994979$ & 45.6 & Per seed \\
+\midrule
+NLVR2 & BEiT3 & M & 86 & $>-0.999739$ & 91.4 & Per seed \\
+ & BEiT3 & Q & 86 & $>-0.999739$ & 84.2 & Per seed \\
+ & ViLT & M & 96 & $\geq-0.99984$ & 98.2 & Per seed \\
+ & ViLT & Q & 96 & $\geq-0.99984$ & 99.6 & Per seed \\
+\midrule
+ConstructionSite & YOLO26x & M & 94 & $\geq-0.490234$ & 45.8 & Per seed \\
+ & YOLO26x & Q & 93 & $\geq-0.453369$ & 45.2 & Per seed \\
+ & RT-DETR-X & M & 100 & Always & 77.4 & Per seed \\
+ & RT-DETR-X & Q & 100 & Always & 83.2 & Per seed \\
+\bottomrule
+\end{tabular}
+\end{table}

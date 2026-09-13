@@ -1,0 +1,70 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=0.65in]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,multirow,array,float,tabularx}
+\usepackage[table]{xcolor}
+\usepackage{capt-of,hyperref,fvextra}
+\DeclareMathSizes{8}{8}{6}{5}
+\DeclareMathSizes{8.5}{9}{6}{5}
+\input{tables/colors}
+\hypersetup{hidelinks}
+\setlength{\emergencystretch}{2em}
+\title{When Should a Vision Specialist Defer?\\\large Supplementary Material: Learned Routing}
+\date{}
+\begin{document}
+\maketitle
+\section{Experimental Scope and Naming}
+Learned Routing (LR) denotes the shared pre-call input and routing framework. The four-state instantiation is $\mathrm{LR}_{4S}$; $\mathrm{LR}_{PH}$ adapts the post-hoc deferral loss~\cite{posthocdefer} to the same backbone and visible features. The main experiment uses normalized $\mathrm{LR}_{4S}$, abbreviated LR. These names distinguish our implementations, not newly invented versions of the underlying deferral loss.
+
+The main experiment and Table 3 use different training settings. The main experiment uses 80 newly fitted router heads with full-budget validation selection. The training-objective and scoring comparison uses the earlier 0--25\% checkpoint-selection rule for all trained variants. Its four four-state score rows share identical weights. We do not interpret its comparison with post-hoc deferral as a comparison with the final main results under identical training settings. Test sets have been inspected during method development, so this is an exploratory revision rather than an independent blind confirmation.
+
+\input{sections/supplement_data}
+\input{sections/supp_examples}
+
+\section{Full-Budget Training and Threshold Selection}
+The specialist and 8.07M-parameter distilled image/text backbone are frozen. Image features, task text where present, hidden states at 90\% specialist depth, prediction summaries and confidence enter separate 128-dimensional projections and layer normalization. Their concatenation feeds a 128-hidden-unit GELU MLP. Training uses paired cross-entropy, uniform sampling, AdamW at 0.003, weight decay 0.01, batch size 256, at most 50 epochs and patience 8. Seeds are 2026--2030. Training inputs alone determine feature standardization.
+
+With paired state probabilities $p_R,p_H,p_B$, the score is
+\[
+s_\alpha=\frac{p_R-p_H}{(p_R+p_H+2p_B+10^{-8})^\alpha},\qquad
+\alpha\in\{0,0.25,0.5,0.75,1\}.
+\]
+For every epoch and candidate $\alpha$, we sort validation inputs and evaluate exactly $\lfloor kn/100\rfloor$ calls, $k=0,\ldots,100$, retaining original order at ties. Trapezoidal area over actual call fraction selects the epoch and $\alpha$. A tie within an epoch favors smaller $\alpha$; an epoch tie retains the earlier checkpoint. Early stopping uses this criterion. Cross-entropy itself is unchanged. Historical runs saved only their selected checkpoints, so changing checkpoint selection required refitting the 80 heads.
+
+After weights and $\alpha$ are fixed, a separate validation search selects one threshold. At each interior budget, the threshold is the score of the last allowed input. All threshold ties are included only if they fit the quota; otherwise all equal-score ties are excluded. The highest validation metric wins; ties favor fewer calls, then a smaller budget. Budgets 0 and 100\% explicitly mean never and always call. Confidence uses the same endpoint-inclusive search. Test labels do not select weights, normalization or thresholds. Actual test call rates can differ after a threshold is transferred.
+
+\section{Main Results and Full Curves}
+Table~\ref{tab:full} includes both splits. Numerical per-seed cutoffs, comparison operators, chosen epochs and normalization strengths are stored with the revision data. Higher routed performance and fewer calls are different objectives; selected points need not dominate a baseline on both. Zero- and full-call endpoints agree with direct standalone evaluation.
+\input{tables/main_full}
+\input{tables/thresholds}
+\input{tables/outcomes_full}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth]{figures/budget_all_m.pdf}\caption{LR and confidence results for MiniCPM. Horizontal axes show the nominal validation budget; panels report test performance and transferred test call rates, including both endpoints.}\end{figure}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth]{figures/budget_all_q.pdf}\caption{LR and confidence results for Qwen. Same conventions.}\end{figure}
+\clearpage
+\begin{figure}[p]\centering\includegraphics[width=\textwidth]{figures/full_budget_reselection.pdf}\caption{Old checkpoints with normalization versus full-budget checkpoint/normalization selection at identical actual calls. Five-seed means and standard-deviation bands. This isolates the incremental reselection effect after changing the score.}\end{figure}
+\clearpage
+\section{Training Objectives and Ranking Scores}
+This section gives the settings behind Table 3 of the main paper. The table evaluates the full 0--100\% call curve, but the trained heads were selected using the earlier 0--25\% validation criterion. Evaluation range and training selection range are distinct. In contrast, the main table selects weights using the full-budget criterion. Table 3 therefore compares objectives within the earlier experiments; it should not be read as a comparison of every objective under the final main-table training settings.
+
+Let $c_S,c_L$ denote correctness of the fixed specialist and VLM answers. The three-state target distinguishes rescue, harm and an unchanged result, merging both-correct and both-wrong examples. It uses cross-entropy and ranks by predicted rescue probability minus harm probability. Gain regression uses squared error with target $c_L-c_S$ and ranks by its scalar output. For construction, targets are averaged over the four event labels. The four-state rows change only the score computed from the same trained heads; they do not represent four separate training runs.
+
+Four-state, three-state, gain and post-hoc runs use the same inputs, architecture except necessary head dimensions, optimizer settings, seeds and original 0--25\% validation checkpoint-selection range. All four-state score variants share 80 identical checkpoints. Normalization strength alone is chosen by full-budget validation area.
+
+For $\mathrm{LR}_{PH}$, the scalar loss is $e_S\log(1+e^{-r})+e_L\log(1+e^r)$, where $e_S,e_L$ are observed errors, averaged over construction events. This is the zero-added-cost post-hoc comparison. Its unmodified scalar score is swept for budget curves; this differs from reporting only the native $r>0$ decision. The VLM and specialist answers remain fixed. Other archived cost coefficients are not selected using test results.
+
+The four-state score $r_{4S}=\log[(p_R+p_B)/(p_H+p_B)]$ estimates the conditional minimizer of the zero-cost post-hoc logistic loss when both conditional error rates are positive. This reuses the error-ratio row, not a new training run. The separately trained scalar $r$ need not equal $r_{4S}$ for finite fitted models. Avg. is the arithmetic mean of the four task columns (accuracy for three tasks and macro-F1 for construction), not a pooled accuracy or a significance test.
+\begin{table}[H]\input{tables/objective_main}\end{table}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth]{figures/score_controls.pdf}\caption{Earlier experiments: changing four-state scoring while holding weights fixed, with separately trained zero-cost post-hoc deferral. Both use the archived checkpoint-selection range. These are equal-call curves, not test-selected best-threshold envelopes.}\end{figure}
+\clearpage
+The full-curve three-state versus four-state differences are below 0.1 points for each task. On NLVR2, changing the same four-state checkpoints from probability difference to error-ratio ranking improves the 25--100\% curve mean from 87.82 to 89.09, close to post-hoc's 89.03. On CUB, the ratios instead reduce performance. This supports a task-dependent scoring effect, not a claim that supervision never matters. The true conditional gain remains optimal for equal costs and additive accuracy; estimated probabilities need not preserve its ideal ranking. Construction macro-F1 is non-additive.
+
+The earlier eighteen-setting architecture search, data-fraction studies and joint-training experiments retain their archived settings; they are not ablations of the final full-budget recipe. They are not used here to claim that each input branch is necessary. Similarly, the older objective table that mixed separately selected ratio checkpoints is superseded by the same-checkpoint scoring comparison above.
+
+\section{Choice of Deferral Baselines}
+Post-hoc deferral~\cite{posthocdefer} learns when to replace an existing predictor's answer, which matches the fixed specialist answers used here. Joint classification--deferral methods~\cite{defer,calibrateddefer}, including OvA, instead learn class outputs together with a deferral output. Using their native class branch would change the answer when the VLM is not called; replacing that branch with a fixed specialist would change the original method. Moreover, a single class output does not directly represent a set of grounding boxes or multiple safety-event labels. These methods can be studied on classification subsets or with explicit adaptations, but are not interchangeable baselines for all four tasks under fixed answers. The event-averaged post-hoc loss used for construction is also an adaptation; we do not claim the original classification guarantees for macro-F1.
+
+\section{Cost Estimates}
+Figures use measured component costs for the same router architecture: specialist and router costs are paid on every input, with VLM cost added at the actual call rate. Confidence omits the router. Component measurements used 64 inputs at batch size 1 on an A800. These are serial component-based estimates, not newly measured integrated latency; the extra normalization arithmetic was not separately benchmarked. Costs at the selected thresholds have been recomputed from the new call rates.
+\input{sections/supp_prompts}
+\bibliographystyle{IEEEbib}
+\bibliography{references}
+\end{document}

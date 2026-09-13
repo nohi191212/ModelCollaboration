@@ -1,0 +1,20 @@
+\centering
+\captionof{table}{Training objectives and ranking scores: full-budget curve means (\%). Four $\mathrm{LR}_{4S}$ rows share weights. Training selection differs from the main experiment; details are in the supplement. Avg.: equal-task mean; CS: ConstructionSite.}
+\label{tab:objective}
+\fontsize{8}{9.5}\selectfont
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Variant & Score & CUB & gRef & NLVR & CS & Avg. \\
+\midrule
+3-state & $p_R-p_H$ & 71.27 & 60.13 & 86.34 & 21.77 & 59.88 \\
+Gain & $\widehat\Delta$ & 71.01 & 59.97 & 86.29 & 21.61 & 59.72 \\
+$\mathrm{LR}_{PH}$ & $r$ & 65.86 & 59.37 & 87.33 & 21.24 & 58.45 \\
+\midrule
+$\mathrm{LR}_{4S}$ & $p_R-p_H$ & 71.30 & 60.10 & 86.43 & 21.69 & 59.88 \\
+$\mathrm{LR}_{4S}$ & $\log(p_R/p_H)$ & 67.80 & 59.84 & 87.36 & 21.11 & 59.03 \\
+$\mathrm{LR}_{4S}$ & $r_{4S}$ & 67.63 & 59.90 & 87.36 & 21.30 & 59.05 \\
+\rowcolor{learnfill}
+$\mathrm{LR}_{4S}$ & $s_\alpha$ & 71.37 & 60.66 & 87.36 & 21.63 & 60.25 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,15 @@
+Look at this one construction-site image and report all visible violations from the 4 named categories in one JSON answer. Mark a category true when the image gives clear visual evidence. Do not invent details that are hidden, but do not reject a plainly visible violation merely because the scene is not a close-up.
+
+rule_1_ppe_violation: box every worker on foot who is visibly missing a hard hat or another clearly required item of personal protection. A bare head is positive. Do not assume hidden footwear or clothing is missing, and do not use the lack of a reflective vest in ordinary daylight by itself.
+
+rule_2_fall_protection_violation: box every worker clearly about three metres or more above the lower level when the exposed side has no effective edge protection and no safety harness is being used. Ground workers, low platforms, dirt slopes, effective guardrails, and uncertain heights are negative.
+
+rule_3_unprotected_edge_violation: box every people-accessible, continuous upper edge of a visibly deep excavation or steep drop of about three metres or more when guardrails, fencing, and warning protection are absent. The image must show both a substantial lower level and its hazardous upper edge; excavation activity or exposed soil alone is not enough. Soil piles, excavation walls without an accessible upper edge, shallow trenches, gentle slopes, ordinary uneven ground, uncertain distant cuts, and protected edges are negative. Box the hazardous upper edge and only enough adjacent drop to identify it, never a worker or the whole image.
+
+rule_4_excavator_proximity_violation: box a worker when the worker is clearly in the excavator's rear blind spot, swing radius, boom or bucket path, or close enough beside the body or tracks to be reached by normal machine movement. A worker merely visible in the same scene is not enough. The cab operator, a worker behind a barrier, and a worker separated from the machine by a clearly safe gap are negative. Box only the endangered worker.
+
+Use exactly this JSON shape:
+{"events":{"rule_1_ppe_violation":{"present":false,"reason":null,"boxes":[]},"rule_2_fall_protection_violation":{"present":false,"reason":null,"boxes":[]},"rule_3_unprotected_edge_violation":{"present":false,"reason":null,"boxes":[]},"rule_4_excavator_proximity_violation":{"present":false,"reason":null,"boxes":[]}}}
+
+Change a visible category to present=true, give it a short positive reason, and add one or more worker or edge boxes. The word false must always keep reason=null and boxes=[]. Coordinates are integer image-relative [x1,y1,x2,y2] values from 0 to 1000 with x1 < x2 and y1 < y2. Use at most 13, 6, 3, and 2 boxes for rules 1 through 4. Return only the JSON object, with no Markdown or extra text.
+

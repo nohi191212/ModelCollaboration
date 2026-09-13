@@ -1,0 +1,117 @@
+{
+  "status": "complete",
+  "model_kind": "MiniCPM",
+  "task": "grefcoco",
+  "model_path": "/mnt/HithinkOmniSSD/user_workspace/caisihang/checkpoints/MiniCPM-V-4_5",
+  "sample_count": 4,
+  "records": [
+    {
+      "sample_id": "testB-37890-104442",
+      "prompt_tokens_in_reference_tensor": 528,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          528
+        ],
+        "attention_mask": [
+          1,
+          528
+        ]
+      },
+      "prefill_flops_counted": 7500407080960,
+      "decode_one_token_flops_counted": 15446671488,
+      "prefill_gflops_counted": 7500.40708096,
+      "decode_one_token_gflops_counted": 15.446671488,
+      "prefill_operators": {
+        "aten.bmm": 164433561600,
+        "aten.mm": 7335973519360
+      },
+      "decode_operators": {
+        "aten.bmm": 312017024,
+        "aten.mm": 15134654464
+      }
+    },
+    {
+      "sample_id": "testA-73305-202016",
+      "prompt_tokens_in_reference_tensor": 525,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          525
+        ],
+        "attention_mask": [
+          1,
+          525
+        ]
+      },
+      "prefill_flops_counted": 7456869222016,
+      "decode_one_token_flops_counted": 15444902016,
+      "prefill_gflops_counted": 7456.869222016,
+      "decode_one_token_gflops_counted": 15.444902016,
+      "prefill_operators": {
+        "aten.bmm": 162570307200,
+        "aten.mm": 7294298914816
+      },
+      "decode_operators": {
+        "aten.bmm": 310247552,
+        "aten.mm": 15134654464
+      }
+    },
+    {
+      "sample_id": "testB-24036-66087",
+      "prompt_tokens_in_reference_tensor": 522,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          522
+        ],
+        "attention_mask": [
+          1,
+          522
+        ]
+      },
+      "prefill_flops_counted": 7413341979904,
+      "decode_one_token_flops_counted": 15443132544,
+      "prefill_gflops_counted": 7413.341979904,
+      "decode_one_token_gflops_counted": 15.443132544,
+      "prefill_operators": {
+        "aten.bmm": 160717669632,
+        "aten.mm": 7252624310272
+      },
+      "decode_operators": {
+        "aten.bmm": 308478080,
+        "aten.mm": 15134654464
+      }
+    },
+    {
+      "sample_id": "testA-5038-13945",
+      "prompt_tokens_in_reference_tensor": 528,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          528
+        ],
+        "attention_mask": [
+          1,
+          528
+        ]
+      },
+      "prefill_flops_counted": 7500407080960,
+      "decode_one_token_flops_counted": 15446671488,
+      "prefill_gflops_counted": 7500.40708096,
+      "decode_one_token_gflops_counted": 15.446671488,
+      "prefill_operators": {
+        "aten.bmm": 164433561600,
+        "aten.mm": 7335973519360
+      },
+      "decode_operators": {
+        "aten.bmm": 312017024,
+        "aten.mm": 15134654464
+      }
+    }
+  ],
+  "mean_prefill_gflops_counted": 7467.756340960001,
+  "mean_decode_one_token_gflops_counted": 15.445344384,
+  "scope": "HF reference execution on the A800 with real task inputs; dense products/convolutions/supported attention counted with multiply-add=2 FLOPs. vLLM custom kernels, elementwise/normalization/nonlinearities and other unsupported operations are not complete.",
+  "answer_generation": "not performed; one known-token decode probe only"
+}

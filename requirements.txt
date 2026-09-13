@@ -1,4 +1,4 @@
-numpy
+numpy>=2.0,<2.4
 scipy
 torch
 Pillow
@@ -6,3 +6,4 @@ tokenizers
 transformers
 pyarrow
 matplotlib
+huggingface_hub

@@ -1,0 +1,32 @@
+\section{Specialists, Distillation and Router Training}
+\label{sec:implementation}
+\textbf{Specialists and general models.}
+We pair ResNet-50~\cite{resnet} and GLSim~\cite{glsim} on CUB, GroundingDINO~\cite{groundingdino} and InstanceVG~\cite{instancevg} on gRefCOCO, BEiT3~\cite{beit3} and ViLT~\cite{vilt} on NLVR2. Construction pairs YOLO26x~\cite{yolo26} and RT-DETR-X~\cite{rtdetr}. Each specialist is paired with MiniCPM-V-4.5~\cite{minicpm} and Qwen3.8-27B-FP8~\cite{qwen38}, abbreviated M and Q. ``Small'' identifies the task specialist's role; it does not denote a common parameter budget across specialists.
+
+\input{tables/supp_training}
+Table~\ref{tab:training} separates models trained in this project from reused checkpoints. The construction detectors are converted to event outputs under the recorded task mapping, with fixed detection thresholds of 0.005 for YOLO26x and 0.05 for RT-DETR-X. GroundingDINO uses box and text thresholds of 0.7 and 0.25; InstanceVG uses its recorded 0.7 score threshold. These are fixed specialist operating points, not parameters optimized by the router. Consequently, measured complementarity depends on the underlying specialist configuration as well as on its architecture.
+
+\textbf{Paired predictions and invalid outputs.}
+Task-specific prompts request a bird class, a binary judgment, localization boxes or the 4 safety-event outputs. Sampling temperature is zero; maximum generated lengths are 8 tokens for CUB/NLVR2, 512 for gRefCOCO and 768 for construction. Every image's fixed candidate classes or event categories are supplied in one request. Each model response is parsed once. An invalid response retains its raw text and error reason, yields no valid prediction, and is marked incorrect; no answer is repaired or inferred. For event macro-F1, only literal positive predictions count as positives, so an invalid output can introduce false negatives without adding false positives on negative events. We retain this convention when rebuilding all comparisons. Predictions, labels and features are joined by sample identity.
+
+\textbf{Distillation.}
+We distill frozen image and text representations from SigLIP2-base-patch16-224~\cite{siglip2} into randomly initialized students, using training inputs only. After identity-based image exclusion and normalized-text exclusion against validation and test partitions, the distillation pools contain 115,149 distinct images and 154,118 text strings. The image pool comprises 4,792 CUB, 16,994 gRefCOCO, 87,055 NLVR2 and 6,308 construction images. Text comes from allowed training expressions, statements and construction descriptions; bird labels are not converted to training text. The vocabulary is rebuilt from this permitted pool.
+
+Each student has a two-layer Transformer image encoder and a two-layer text encoder, 4 attention heads, and a feed-forward width 4 times the hidden width. The selected 8M model has hidden width 380 and feed-forward width 1,520 in both encoders. Images are resized to $224\times224$ with $16\times16$ patches. Text uses a 4,096-entry vocabulary, 32-dimensional input embeddings and at most 64 tokens. Mean-pooled representations are projected to 768 dimensions and normalized. Image and text inputs are sampled independently; for normalized teacher and student features $v^T,v^S,t^T,t^S$, the loss is
+\begin{equation}
+\mathcal L_{\rm distill}=(1-\langle v^S,v^T\rangle)
++(1-\langle t^S,t^T\rangle).
+\label{eq:distill}
+\end{equation}
+There is no class-label loss or image--text relation-matrix loss. AdamW uses batch size 2,048, learning rate $10^{-4}$, weight decay 0.01, cosine decay to zero without warmup, and seed 42. Training runs for 300 epochs of 76 steps, with the smaller image pool cycled to match the text pool. 4 sizes, approximately 1M, 2M, 4M and 8M parameters, are trained independently using bfloat16. The shared recipe selects the final 300-epoch 8M checkpoint: 4,135,548 image-encoder and 3,936,780 text-encoder parameters. Only the image encoder is active on CUB and construction.
+
+\textbf{Router fitting and parameter selection.}
+The final router uses the full training splits in Table~\ref{tab:data}, frozen distilled encoders, 128-dimensional branch projections, specialist states at 90\% relative depth, 4-state cross-entropy and natural sampling. AdamW uses learning rate 0.003, weight decay 0.01 and batch size 256. Training lasts at most 50 epochs, with early stopping after eight epochs without improvement in validation $\mathrm{Score}_{25}^{\mathrm{count}}$. The final 16-pair experiment uses five router seeds, 2026--2030, with probability-difference scoring. The distilled encoder remains fixed. The projections and head add about 0.30--0.58M parameters per specialist; encoder cost remains part of inference even though cached features accelerate training.
+
+The common recipe was chosen by a sequential search over hidden depth, student size, projection width, learning rate, supervision and sampling. Eighteen common settings require 288 pair-specific fits. This earlier search used validation ranking scores. The additional five-objective study retains its architecture and selects one objective/score by five-seed validation mean minus sample standard deviation; the final operating threshold follows Sec.~\ref{sec:selection}. This is a validation-selected recipe, not an exhaustive search or a configuration chosen without validation feedback.
+
+\textbf{Baselines and data provenance.}
+We compare specialist-only, VLM-only, fixed confidence-threshold routing and learned routing. Confidence uses the negative of either the maximum class probability or the maximum detection confidence, with missing confidence routed first. It chooses its threshold on the same validation 1--99\% budget grid, including the same tie rule, as the learned router. No test label determines either threshold.
+
+Strict student distillation and router fitting exclude the held-out partitions, but cannot remove earlier exposure by reused models. CUB ResNet training included images later used for router validation: it was trained on the original 5,994 training images before the internal validation split was made. GLSim's earlier training provenance is not independently certified. CUB validation performance is therefore diagnostic. We also inspected earlier test results before comparing shared training settings, so this evaluation is not newly blinded. The new procedure selects settings on validation data, but does not remove this earlier test exposure.
+

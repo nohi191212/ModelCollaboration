@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\caption{Specialist provenance and training performed in this project. Student distillation and router fitting are described in the text. Reused checkpoints are not presented as models trained by this study.}
+\label{tab:training}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{11.1cm}@{}}
+\toprule
+Specialist & Initialization / status & Recorded training or inference settings \\
+\midrule
+ResNet-50 & PyTorch pretrained weights; 200-class head trained here & Original 5,994 CUB training images; 5 epochs, batch 64, AdamW $3\!\times\!10^{-4}$, weight decay 0.05, cosine decay, label smoothing 0.1. Random $224^2$ crops and flips for training; resize 256 and center crop 224 for evaluation. The internal router-validation images were included. \\
+GLSim & Author's CUB checkpoint & Global/local model with ViT-B/16; resize 300 then center crop 224; no test-time flip. Original training provenance is not independently confirmed. \\
+GroundingDINO & Pretrained tiny checkpoint & Reused O365/GoldG/V3Det checkpoint; no project training on gRefCOCO. Fixed box threshold 0.7 and text threshold 0.25. \\
+InstanceVG & Author's gRefCOCO checkpoint & Reused task checkpoint; $320^2$ images, text limit 50 tokens, inference batch 16 and score threshold 0.7. \\
+BEiT3 & Existing NLVR2 checkpoint & Reused base patch16/224 task checkpoint; no new training. Original third-party fine-tuning logs are not available in the archive. \\
+ViLT & Existing NLVR2 checkpoint & Reused B/32 task checkpoint; ordered two-image input and text limit 40 tokens. Original fine-tuning parameters are not independently audited. \\
+YOLO26x & Pretrained; fine-tuned here & Construction 6,308/701 train/validation; $640^2$ input, batch 16, maximum 100 epochs, patience 20, seed 20260831; 92 recorded epochs, mixed precision disabled. \\
+RT-DETR-X & Pretrained; fine-tuned here & Same construction split and training limits; 39 recorded epochs. Both construction runs use automatic optimizer selection; the nominal configured learning rate 0.01 is not treated as the verified effective optimizer rate. \\
+\bottomrule
+\end{tabular}
+\end{table}

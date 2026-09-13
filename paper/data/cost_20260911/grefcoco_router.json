@@ -1,0 +1,27 @@
+{
+  "component": "router",
+  "expert": "instancevg",
+  "task": "grefcoco",
+  "endpoint": "MiniCPM",
+  "condition": "both",
+  "seed": 42,
+  "device": "cuda:0",
+  "checkpoint": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/outputs/router_method_improvement_20260911_r1/conditions/both_instancevg_MiniCPM_seed42/best.pt",
+  "sample_count": 1024,
+  "batch_size": 256,
+  "row_count_loaded": 35263,
+  "mean_latency_ms_per_sample": 0.001830718741985038,
+  "median_latency_ms_per_sample": 0.0018171250121667981,
+  "latency_ms_per_sample": [
+    0.001949499943293631,
+    0.0018388750031590462,
+    0.00179537502117455,
+    0.0017391250003129244
+  ],
+  "flops_counted_per_batch": 0,
+  "gflops_counted_per_sample": 0.0,
+  "operators": {},
+  "flops_scope": "GPU FlopCounterMode for the router forward; multiply-add counted as 2 FLOPs.",
+  "latency_scope": "A800 CUDA forward latency on cached router features, excluding feature loading and model load.",
+  "completed": true
+}

@@ -1,0 +1,341 @@
+{
+  "status": "complete",
+  "model_kind": "Qwen3.8",
+  "task": "grefcoco",
+  "model_path": "/mnt/HithinkOmniSSD/user_workspace/caisihang/checkpoints/Qwen3.8-27B-FP8",
+  "sample_count": 8,
+  "records": [
+    {
+      "sample_id": "testA-5038-13945",
+      "prompt_tokens_in_reference_tensor": 608,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          608
+        ],
+        "attention_mask": [
+          1,
+          608
+        ],
+        "mm_token_type_ids": [
+          1,
+          608
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "prefill_flops_counted": 31223201515520,
+      "decode_one_token_flops_counted": 51491242176,
+      "prefill_gflops_counted": 31223.20151552,
+      "decode_one_token_gflops_counted": 51.491242176,
+      "prefill_operators": {
+        "aten.convolution": 6649282560,
+        "aten.addmm": 1013465088000,
+        "aten.bmm": 590268057600,
+        "aten.mm": 29612819087360
+      },
+      "decode_operators": {
+        "aten.bmm": 239468736,
+        "aten.mm": 51243909120,
+        "aten.convolution": 7864320
+      }
+    },
+    {
+      "sample_id": "testA-73305-202014",
+      "prompt_tokens_in_reference_tensor": 608,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          608
+        ],
+        "attention_mask": [
+          1,
+          608
+        ],
+        "mm_token_type_ids": [
+          1,
+          608
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "prefill_flops_counted": 31223201515520,
+      "decode_one_token_flops_counted": 51491242176,
+      "prefill_gflops_counted": 31223.20151552,
+      "decode_one_token_gflops_counted": 51.491242176,
+      "prefill_operators": {
+        "aten.convolution": 6649282560,
+        "aten.addmm": 1013465088000,
+        "aten.bmm": 590268057600,
+        "aten.mm": 29612819087360
+      },
+      "decode_operators": {
+        "aten.bmm": 239468736,
+        "aten.mm": 51243909120,
+        "aten.convolution": 7864320
+      }
+    },
+    {
+      "sample_id": "testA-26952-74099",
+      "prompt_tokens_in_reference_tensor": 562,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          562
+        ],
+        "attention_mask": [
+          1,
+          562
+        ],
+        "mm_token_type_ids": [
+          1,
+          562
+        ],
+        "pixel_values": [
+          1040,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "prefill_flops_counted": 28754745861504,
+      "decode_one_token_flops_counted": 51473154240,
+      "prefill_gflops_counted": 28754.745861504,
+      "decode_one_token_gflops_counted": 51.47315424,
+      "prefill_operators": {
+        "aten.convolution": 5902172160,
+        "aten.addmm": 878336409600,
+        "aten.bmm": 497939359104,
+        "aten.mm": 27372567920640
+      },
+      "decode_operators": {
+        "aten.bmm": 221380800,
+        "aten.mm": 51243909120,
+        "aten.convolution": 7864320
+      }
+    },
+    {
+      "sample_id": "testB-53254-146620",
+      "prompt_tokens_in_reference_tensor": 560,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          560
+        ],
+        "attention_mask": [
+          1,
+          560
+        ],
+        "mm_token_type_ids": [
+          1,
+          560
+        ],
+        "pixel_values": [
+          1040,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "prefill_flops_counted": 28656453395456,
+      "decode_one_token_flops_counted": 51472367808,
+      "prefill_gflops_counted": 28656.453395456,
+      "decode_one_token_gflops_counted": 51.472367808,
+      "prefill_operators": {
+        "aten.convolution": 5894307840,
+        "aten.addmm": 878336409600,
+        "aten.bmm": 497056982016,
+        "aten.mm": 27275165696000
+      },
+      "decode_operators": {
+        "aten.bmm": 220594368,
+        "aten.mm": 51243909120,
+        "aten.convolution": 7864320
+      }
+    },
+    {
+      "sample_id": "testB-37889-104439",
+      "prompt_tokens_in_reference_tensor": 687,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          687
+        ],
+        "attention_mask": [
+          1,
+          687
+        ],
+        "mm_token_type_ids": [
+          1,
+          687
+        ],
+        "pixel_values": [
+          1520,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "prefill_flops_counted": 35517384622912,
+      "decode_one_token_flops_counted": 51522306240,
+      "prefill_gflops_counted": 35517.384622912,
+      "decode_one_token_gflops_counted": 51.52230624,
+      "prefill_operators": {
+        "aten.convolution": 8092385280,
+        "aten.addmm": 1283722444800,
+        "aten.bmm": 765362832192,
+        "aten.mm": 33460206960640
+      },
+      "decode_operators": {
+        "aten.bmm": 270532800,
+        "aten.mm": 51243909120,
+        "aten.convolution": 7864320
+      }
+    },
+    {
+      "sample_id": "testA-58523-161084",
+      "prompt_tokens_in_reference_tensor": 500,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          500
+        ],
+        "attention_mask": [
+          1,
+          500
+        ],
+        "mm_token_type_ids": [
+          1,
+          500
+        ],
+        "pixel_values": [
+          768,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "prefill_flops_counted": 25390700918528,
+      "decode_one_token_flops_counted": 51448774848,
+      "prefill_gflops_counted": 25390.700918528,
+      "decode_one_token_gflops_counted": 51.448774848,
+      "prefill_operators": {
+        "aten.convolution": 4695785472,
+        "aten.addmm": 648617656320,
+        "aten.bmm": 384288519936,
+        "aten.mm": 24353098956800
+      },
+      "decode_operators": {
+        "aten.bmm": 197001408,
+        "aten.mm": 51243909120,
+        "aten.convolution": 7864320
+      }
+    },
+    {
+      "sample_id": "testB-3419-9449",
+      "prompt_tokens_in_reference_tensor": 568,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          568
+        ],
+        "attention_mask": [
+          1,
+          568
+        ],
+        "mm_token_type_ids": [
+          1,
+          568
+        ],
+        "pixel_values": [
+          1040,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "prefill_flops_counted": 29049642134016,
+      "decode_one_token_flops_counted": 51475513536,
+      "prefill_gflops_counted": 29049.642134016,
+      "decode_one_token_gflops_counted": 51.475513536,
+      "prefill_operators": {
+        "aten.convolution": 5925765120,
+        "aten.addmm": 878336409600,
+        "aten.bmm": 500605364736,
+        "aten.mm": 27664774594560
+      },
+      "decode_operators": {
+        "aten.bmm": 223740096,
+        "aten.mm": 51243909120,
+        "aten.convolution": 7864320
+      }
+    },
+    {
+      "sample_id": "testB-24035-66084",
+      "prompt_tokens_in_reference_tensor": 561,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          561
+        ],
+        "attention_mask": [
+          1,
+          561
+        ],
+        "mm_token_type_ids": [
+          1,
+          561
+        ],
+        "pixel_values": [
+          1040,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "prefill_flops_counted": 28705599235264,
+      "decode_one_token_flops_counted": 51472761024,
+      "prefill_gflops_counted": 28705.599235264,
+      "decode_one_token_gflops_counted": 51.472761024,
+      "prefill_operators": {
+        "aten.convolution": 5898240000,
+        "aten.addmm": 878336409600,
+        "aten.bmm": 497497777344,
+        "aten.mm": 27323866808320
+      },
+      "decode_operators": {
+        "aten.bmm": 220987584,
+        "aten.mm": 51243909120,
+        "aten.convolution": 7864320
+      }
+    }
+  ],
+  "mean_prefill_gflops_counted": 29815.11614984,
+  "mean_decode_one_token_gflops_counted": 51.480920256000005,
+  "scope": "HF reference execution on the A800 with real task inputs; dense products/convolutions/supported attention counted with multiply-add=2 FLOPs. vLLM custom kernels, elementwise/normalization/nonlinearities and other unsupported operations are not complete.",
+  "answer_generation": "not performed; one known-token decode probe only"
+}

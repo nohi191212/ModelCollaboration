@@ -1,0 +1,134 @@
+{
+  "component": "specialist",
+  "expert": "yolo26x",
+  "task": "construction",
+  "device": "cuda:0",
+  "checkpoint": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/models/construction/yolo26x.pt",
+  "sample_count": 64,
+  "batch_size": 16,
+  "sample_ids": [
+    "0000944",
+    "0003511",
+    "0003365",
+    "0001351",
+    "0002149",
+    "0003368",
+    "0000176",
+    "0004487",
+    "0000013",
+    "0003583",
+    "0000758",
+    "0001291",
+    "0001451",
+    "0002755",
+    "0003088",
+    "0004538",
+    "0004324",
+    "0000516",
+    "0003893",
+    "0003475",
+    "0002137",
+    "0003272",
+    "0001711",
+    "0003262",
+    "0001470",
+    "0002145",
+    "0002662",
+    "0000756",
+    "0001631",
+    "0001924",
+    "0002496",
+    "0001443",
+    "0004053",
+    "0002168",
+    "0001881",
+    "0001666",
+    "0000304",
+    "0001252",
+    "0004844",
+    "0000949",
+    "0003430",
+    "0003807",
+    "0004199",
+    "0002538",
+    "0002091",
+    "0001569",
+    "0003048",
+    "0002854",
+    "0000380",
+    "0001234",
+    "0001484",
+    "0003180",
+    "0000824",
+    "0003784",
+    "0000894",
+    "0004168",
+    "0000564",
+    "0004296",
+    "0003054",
+    "0001583",
+    "0003386",
+    "0000205",
+    "0004214",
+    "0003625"
+  ],
+  "model_load_seconds_excluded_from_latency": true,
+  "forward_latency_ms_per_sample": [
+    28.76109504699707,
+    28.29251480102539,
+    28.306396484375,
+    42.96271896362305
+  ],
+  "end_to_end_latency_ms_per_sample": [
+    28.19202906539431,
+    27.162021433468908,
+    28.371096690534614,
+    43.443599628517404
+  ],
+  "mean_forward_latency_ms_per_sample": 32.08068132400513,
+  "median_forward_latency_ms_per_sample": 28.533745765686035,
+  "mean_end_to_end_latency_ms_per_sample": 31.79218670447881,
+  "median_end_to_end_latency_ms_per_sample": 28.28156287796446,
+  "flop_profiles": [
+    {
+      "batch_size": 16,
+      "flops_counted": 3110687539200,
+      "gflops_counted_per_sample": 194.4179712,
+      "operators": {
+        "aten.convolution": 3101840179200,
+        "aten.bmm": 8847360000
+      }
+    },
+    {
+      "batch_size": 16,
+      "flops_counted": 3110687539200,
+      "gflops_counted_per_sample": 194.4179712,
+      "operators": {
+        "aten.convolution": 3101840179200,
+        "aten.bmm": 8847360000
+      }
+    },
+    {
+      "batch_size": 16,
+      "flops_counted": 3110687539200,
+      "gflops_counted_per_sample": 194.4179712,
+      "operators": {
+        "aten.convolution": 3101840179200,
+        "aten.bmm": 8847360000
+      }
+    },
+    {
+      "batch_size": 16,
+      "flops_counted": 3110687539200,
+      "gflops_counted_per_sample": 194.4179712,
+      "operators": {
+        "aten.convolution": 3101840179200,
+        "aten.bmm": 8847360000
+      }
+    }
+  ],
+  "mean_counted_gflops_per_sample": 194.4179712,
+  "flops_scope": "GPU FlopCounterMode around the real Ultralytics predict path; multiply-add counted as 2 FLOPs. Elementwise, postprocessing and unsupported custom ops may be missing.",
+  "latency_scope": "A800 wall-clock latency for real Ultralytics prediction including image loading/preprocess, forward and result postprocessing, excluding model load; batch processing uses the recorded batch size.",
+  "completed": true
+}

@@ -1,0 +1,7 @@
+\subsection{Full-Budget Selection}
+\label{sec:selection}
+For a score, let $M(u_k)$ be validation performance after delegating its top $\lfloor kn/100\rfloor$ inputs, with $u_k=\lfloor kn/100\rfloor/n$. We evaluate the full curve,
+\begin{equation}
+\mathcal A_{100}=\sum_{k=1}^{100}\frac{M(u_{k-1})+M(u_k)}2(u_k-u_{k-1}).
+\label{eq:area}
+\end{equation}

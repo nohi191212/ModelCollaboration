@@ -1,0 +1,37 @@
+[
+  {
+    "pair_key": "grefcoco|instancevg|MiniCPM",
+    "task": "grefcoco",
+    "expert": "instancevg",
+    "endpoint": "MiniCPM",
+    "branches": ["image", "text", "hidden", "confidence", "output"],
+    "input_dimensions": {
+      "image_flat_plus_valid": 1538,
+      "text": 768,
+      "hidden": 768,
+      "confidence": 8,
+      "output": 2
+    },
+    "representation_dim": 128,
+    "head_hidden_dim": 128,
+    "class_count": 4,
+    "source_checkpoint": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/outputs/router_method_improvement_20260911_r1/conditions/both_instancevg_MiniCPM_seed42/best.pt"
+  },
+  {
+    "pair_key": "construction|yolo26x|Qwen3.8",
+    "task": "construction",
+    "expert": "yolo26x",
+    "endpoint": "Qwen3.8",
+    "branches": ["image", "hidden", "confidence", "output"],
+    "input_dimensions": {
+      "image_flat_plus_valid": 1538,
+      "hidden": 768,
+      "confidence": 8,
+      "output": 8
+    },
+    "representation_dim": 128,
+    "head_hidden_dim": 128,
+    "class_count": 4,
+    "source_checkpoint": "/mnt/HithinkOmniSSD/user_workspace/caisihang/research/ICASSP_ModelCollaboration/outputs/router_method_improvement_20260911_r1/conditions/both_yolo26x_Qwen3.8_seed42/best.pt"
+  }
+]

@@ -1,0 +1,5 @@
+CUB~\cite{cub} evaluates bird recognition and NLVR2~\cite{nlvr2} evaluates two-image reasoning. Both use accuracy. Table~\ref{tab:data} counts images for CUB and ConstructionSite, expressions for gRefCOCO, and paired-image statements for NLVR2.
+
+gRefCOCO~\cite{gref} evaluates whole-expression box correctness. After filtering boxes with scores below 0.7, greedy matching at generalized IoU $\geq 0.5$ must leave no missed or extra instances. No-target expressions require valid empty outputs. This differs from official segmentation evaluation.
+
+ConstructionSite~\cite{construction} uses macro-F1 across personal-protection, fall-protection, unprotected-edge and excavator-proximity violations, with one routing decision per image.

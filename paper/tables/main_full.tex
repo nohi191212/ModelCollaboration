@@ -1,0 +1,34 @@
+\begin{table}[H]
+\centering
+\caption{LR results are means over five router seeds (2026--2030); the supplement reports standard deviations. Complete four-way comparison. Scores and actual call rates are percentages. Thresholds selected on the 0--100\% validation grid transfer unchanged to test. Parentheses give LR-minus-confidence differences in percentage points before rounding. Green marks improvement and red degradation: higher scores and fewer calls are better. Bold marks the higher routed score; $\dagger$ exceeds both test endpoints. M: MiniCPM-V-4.5; Q: Qwen3.8-27B-FP8.}
+\label{tab:full}
+\fontsize{7}{8.4}\selectfont
+\setlength{\tabcolsep}{1.2pt}
+\renewcommand{\arraystretch}{1.12}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lll>{\columncolor{basefill}}r>{\columncolor{basefill}}r>{\columncolor{conffill}}r>{\columncolor{conffill}}r>{\columncolor{learnfill}}r>{\columncolor{learnfill}}r>{\columncolor{basefill}}r>{\columncolor{basefill}}r>{\columncolor{conffill}}r>{\columncolor{conffill}}r>{\columncolor{learnfill}}r>{\columncolor{learnfill}}r@{}}
+\toprule
+\multirow{2}{*}{Task} & \multirow{2}{*}{Specialist} & \multirow{2}{*}{VLM} & \multicolumn{6}{c}{\cellcolor{valfill}\textcolor{valink}{Validation}} & \multicolumn{6}{c}{\cellcolor{testfill}\textcolor{testink}{Test}} \\ \cmidrule(lr){4-9}\cmidrule(l){10-15} & & & \textcolor{testink}{spec.} & \textcolor{testink}{vlm.} & \textcolor{confink}{conf.} & \textcolor{confink}{call$_{\rm conf}$} & \textcolor{learnink}{LR$\uparrow$} & \textcolor{learnink}{call$_{\rm LR}\downarrow$} & \textcolor{testink}{spec.} & \textcolor{testink}{vlm.} & \textcolor{confink}{conf.} & \textcolor{confink}{call$_{\rm conf}$} & \textcolor{learnink}{LR$\uparrow$} & \textcolor{learnink}{call$_{\rm LR}\downarrow$} \\
+\midrule
+CUB-200-2011 & ResNet & M & 98.58 & 27.75 & 98.58 & 0.00 & \textbf{98.62}\upchg{0.03} & 0.40\callup{0.40} & 81.43 & 26.56 & 81.43 & 0.00 & \textbf{81.43}\samechg{0.00} & 0.59\callup{0.59} \\
+ & ResNet & Q & 98.58 & 55.08 & 98.58 & 0.00 & \textbf{98.58}\samechg{0.00} & 0.00\samechg{0.00} & 81.43 & 54.82 & 81.43 & 0.00 & \textbf{81.43}\samechg{0.00} & 0.00\samechg{0.00} \\
+ & GLSim & M & 98.92 & 27.75 & 98.92 & 0.00 & \textbf{98.95}\upchg{0.03} & 0.40\callup{0.40} & 90.16 & 26.56 & \textbf{90.16} & 0.00 & 90.13\downchg{0.03} & 0.85\callup{0.85} \\
+ & GLSim & Q & 98.92 & 55.08 & \textbf{98.92} & 0.00 & 98.92\samechg{0.00} & 0.00\samechg{0.00} & 90.16 & 54.82 & 90.16 & 0.00 & \textbf{90.16}\samechg{0.00} & 0.00\samechg{0.00} \\
+\midrule
+gRefCOCO & GroundingDINO & M & 56.05 & 64.12 & 64.12 & 100.00 & \textbf{65.91}\upchg{1.79} & 45.80\calldown{54.20} & 26.69 & 50.01 & 50.01 & 100.00 & \textbf{50.23}$^\dagger$\upchg{0.22} & 58.19\calldown{41.81} \\
+ & GroundingDINO & Q & 56.05 & 80.60 & 80.60 & 100.00 & \textbf{81.41}\upchg{0.80} & 77.60\calldown{22.40} & 26.69 & 74.47 & 74.47 & 100.00 & \textbf{75.12}$^\dagger$\upchg{0.65} & 88.47\calldown{11.53} \\
+ & InstanceVG & M & 75.03 & 64.12 & \textbf{77.17} & 64.99 & 75.67\downchg{1.50} & 14.40\calldown{50.60} & 66.95 & 50.01 & 61.88 & 52.09 & \textbf{67.91}$^\dagger$\upchg{6.04} & 19.04\calldown{33.06} \\
+ & InstanceVG & Q & 75.03 & 80.60 & 82.02 & 71.00 & \textbf{83.38}\upchg{1.36} & 45.60\calldown{25.40} & 66.95 & 74.47 & 72.43 & 68.39 & \textbf{76.24}$^\dagger$\upchg{3.81} & 62.00\calldown{6.38} \\
+\midrule
+NLVR2 & BEiT3 & M & 79.82 & 89.90 & \textbf{90.05} & 85.88 & 89.99\downchg{0.05} & 91.39\callup{5.51} & 80.00 & 90.74 & 90.77 & 85.80 & \textbf{90.80}$^\dagger$\upchg{0.03} & 91.10\callup{5.30} \\
+ & BEiT3 & Q & 79.82 & 90.50 & 90.58 & 85.88 & \textbf{91.09}\upchg{0.51} & 84.19\calldown{1.69} & 80.00 & 90.06 & 90.24 & 85.80 & \textbf{90.60}$^\dagger$\upchg{0.36} & 84.34\calldown{1.46} \\
+ & ViLT & M & 75.57 & 89.90 & \textbf{89.97} & 95.99 & 89.93\downchg{0.04} & 98.20\callup{2.21} & 76.42 & 90.74 & 90.64 & 95.93 & \textbf{90.69}\upchg{0.05} & 98.06\callup{2.13} \\
+ & ViLT & Q & 75.57 & 90.50 & \textbf{90.59} & 95.99 & 90.50\downchg{0.09} & 99.60\callup{3.61} & 76.42 & 90.06 & 89.96 & 95.93 & \textbf{90.07}$^\dagger$\upchg{0.10} & 99.62\callup{3.69} \\
+\midrule
+ConstructionSite & YOLO26x & M & 18.25 & 20.67 & 22.64 & 93.87 & \textbf{28.71}\upchg{6.06} & 45.73\calldown{48.13} & 18.13 & 22.36 & 25.23 & 92.54 & \textbf{25.88}$^\dagger$\upchg{0.65} & 45.32\calldown{47.22} \\
+ & YOLO26x & Q & 18.25 & 25.45 & 26.43 & 92.87 & \textbf{32.80}\upchg{6.37} & 45.14\calldown{47.73} & 18.13 & 27.00 & 25.97 & 92.21 & \textbf{29.80}$^\dagger$\upchg{3.82} & 44.77\calldown{47.44} \\
+ & RT-DETR-X & M & 7.64 & 20.67 & 20.67 & 100.00 & \textbf{21.99}\upchg{1.33} & 77.29\calldown{22.71} & 7.89 & 22.36 & 22.36 & 100.00 & \textbf{22.80}$^\dagger$\upchg{0.44} & 78.44\calldown{21.56} \\
+ & RT-DETR-X & Q & 7.64 & 25.45 & 25.45 & 100.00 & \textbf{27.23}\upchg{1.78} & 83.08\calldown{16.92} & 7.89 & 27.00 & \textbf{27.00} & 100.00 & 26.78\downchg{0.22} & 83.57\calldown{16.43} \\
+\bottomrule
+\end{tabular}}
+\end{table}

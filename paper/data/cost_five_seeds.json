@@ -1,0 +1,3299 @@
+{
+  "components": {
+    "grefcoco|instancevg|MiniCPM": {
+      "specialist_gflops": 7.502680064,
+      "router_gflops": 3.642171392,
+      "large_gflops": 12916.147709832,
+      "specialist_ms": 46.08042127620138,
+      "router_ms": 13.180577338061994,
+      "large_ms": 3667.173011115665,
+      "large_samples": 64,
+      "flops_probes": 8,
+      "specialist_samples": 64,
+      "router_samples": 64,
+      "batch_size": 1
+    },
+    "construction|yolo26x|Qwen3.8": {
+      "specialist_gflops": 135.97853184000002,
+      "router_gflops": 3.183754752,
+      "large_gflops": 96874.712551641,
+      "specialist_ms": 46.30809425361804,
+      "router_ms": 25.261267359383055,
+      "large_ms": 9822.475872695577,
+      "large_samples": 64,
+      "flops_probes": 8,
+      "specialist_samples": 64,
+      "router_samples": 64,
+      "batch_size": 1
+    }
+  },
+  "selected": [
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6791367722542041,
+      "calls": 0.19038085245157815,
+      "gflops": 2470.132062844315,
+      "ms": 757.4205225578843
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6187788900547316,
+      "calls": 0.5209426310864078,
+      "gflops": 6736.074651524562,
+      "ms": 1956.4671783358606
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2979678330127048,
+      "calls": 0.44766977363515315,
+      "gflops": 43507.04292555566,
+      "ms": 4468.794912079384
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2597490004762105,
+      "calls": 0.9221038615179761,
+      "gflops": 89464.5250591521,
+      "ms": 9103.651026133362
+    }
+  ],
+  "curves": [
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6695119530385957,
+      "calls": 0.0,
+      "gflops": 11.144851456,
+      "ms": 59.26099861426337
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6736239117488585,
+      "calls": 0.020332926863851627,
+      "gflops": 273.76793820271877,
+      "ms": 133.82535924636875
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6766298953577403,
+      "calls": 0.04462467742392876,
+      "gflops": 587.5237765670691,
+      "ms": 222.90741129303743
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6786603522105323,
+      "calls": 0.07091285483367836,
+      "gflops": 927.0657590136638,
+      "ms": 319.31070600149167
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6797663273119132,
+      "calls": 0.09045174829141027,
+      "gflops": 1179.4329930003992,
+      "ms": 390.9632087567506
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6804072257039957,
+      "calls": 0.11004735842100785,
+      "gflops": 1432.5327878985618,
+      "ms": 462.8237013603555
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6805717040524062,
+      "calls": 0.12548563650285,
+      "gflops": 1631.9358679890966,
+      "ms": 519.4385380801856
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6804015540368091,
+      "calls": 0.13746986926807134,
+      "gflops": 1786.725988573704,
+      "ms": 563.3867930357333
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6803391656977569,
+      "calls": 0.15023112043785272,
+      "gflops": 1951.5521936448667,
+      "ms": 610.1845089136239
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6802767773587046,
+      "calls": 0.16403595836996285,
+      "gflops": 2129.857519486293,
+      "ms": 660.8092380010838
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6802881206930778,
+      "calls": 0.1779372146442447,
+      "gflops": 2309.4081988771463,
+      "ms": 711.7875498307326
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6802824490258912,
+      "calls": 0.18960383404701814,
+      "gflops": 2460.09597835776,
+      "ms": 754.5710616355417
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6801293140118538,
+      "calls": 0.2002041800187165,
+      "gflops": 2597.011612703539,
+      "ms": 793.4443642914426
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6800839406743613,
+      "calls": 0.2103564642826759,
+      "gflops": 2728.1400158490414,
+      "ms": 830.6745471454087
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6799818506650028,
+      "calls": 0.21922695176247053,
+      "gflops": 2842.7125423962843,
+      "ms": 863.2041594267511
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6798684173212717,
+      "calls": 0.2273317641720784,
+      "gflops": 2947.395496639259,
+      "ms": 892.9259087554203
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6796925956384878,
+      "calls": 0.2348580665286561,
+      "gflops": 3044.606329585673,
+      "ms": 920.5261616309583
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6796018489635027,
+      "calls": 0.24202705385247994,
+      "gflops": 3137.202028790095,
+      "ms": 946.8160784619154
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6794316989479057,
+      "calls": 0.24939454952783371,
+      "gflops": 3232.361691184513,
+      "ms": 973.8339597620842
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6793693106088534,
+      "calls": 0.25641040183762015,
+      "gflops": 3322.9794759280803,
+      "ms": 999.5623040025065
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6792615489323086,
+      "calls": 0.2633184924708618,
+      "gflops": 3412.2053949399365,
+      "ms": 1024.895467531071
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6791027422510847,
+      "calls": 0.2692510563480135,
+      "gflops": 3488.8312662752414,
+      "ms": 1046.6512056680817
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6789496072370473,
+      "calls": 0.27534242690638916,
+      "gflops": 3567.508308162543,
+      "ms": 1068.9893153804614
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6787681138870771,
+      "calls": 0.2815245441397499,
+      "gflops": 3647.3574475081286,
+      "ms": 1091.660208850195
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6786490088761592,
+      "calls": 0.28715650965601336,
+      "gflops": 3720.1007460128676,
+      "ms": 1112.3136007909704
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6784902021949353,
+      "calls": 0.29289056518163514,
+      "gflops": 3794.162654158177,
+      "ms": 1133.3413744587692
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6783540821824576,
+      "calls": 0.2986983523806823,
+      "gflops": 3869.1768914883414,
+      "ms": 1154.639534929418
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6781215438278082,
+      "calls": 0.30438703456881144,
+      "gflops": 3942.6527509045077,
+      "ms": 1175.5009167185397
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6777301987919349,
+      "calls": 0.31002467175226156,
+      "gflops": 4015.469305500391,
+      "ms": 1196.17510764415
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6775146754388452,
+      "calls": 0.31561126393103256,
+      "gflops": 4087.626555275989,
+      "ms": 1216.662107706249
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6773048237529421,
+      "calls": 0.3206477043927063,
+      "gflops": 4152.677964210741,
+      "ms": 1235.1316062393896
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6772084054107704,
+      "calls": 0.3267560899526416,
+      "gflops": 4231.57477437147,
+      "ms": 1257.5321129062731
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6769191503842554,
+      "calls": 0.3326829821626067,
+      "gflops": 4308.127389615633,
+      "ms": 1279.2670520584488
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6765788503530613,
+      "calls": 0.33824688767263134,
+      "gflops": 4379.991615026658,
+      "ms": 1299.6708561812088
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6762782519921732,
+      "calls": 0.3451209483027536,
+      "gflops": 4468.777997491658,
+      "ms": 1324.8792258007659
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6760173553015909,
+      "calls": 0.3511272438533307,
+      "gflops": 4546.356198011819,
+      "ms": 1346.9053507406265
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6754955619204265,
+      "calls": 0.35775175112724383,
+      "gflops": 4631.919312466537,
+      "ms": 1371.19856502746
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6750021268751949,
+      "calls": 0.36507387346510506,
+      "gflops": 4726.492926131814,
+      "ms": 1398.0500544489519
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6744406318237245,
+      "calls": 0.3725207724810708,
+      "gflops": 4822.678173802229,
+      "ms": 1425.3591215368053
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6740152567847318,
+      "calls": 0.37905453307999887,
+      "gflops": 4907.069190798665,
+      "ms": 1449.3195520662853
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6733346567223435,
+      "calls": 0.38662053710688254,
+      "gflops": 5004.792816383078,
+      "ms": 1477.0653978356654
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6728752516802314,
+      "calls": 0.39437937781810967,
+      "gflops": 5105.007149066346,
+      "ms": 1505.5184090894231
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6721946516178432,
+      "calls": 0.40177523182939623,
+      "gflops": 5200.533091916476,
+      "ms": 1532.6402853137647
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6716388282335591,
+      "calls": 0.4089045174829141,
+      "gflops": 5292.6159984829,
+      "ms": 1558.7846092508796
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6709298698352381,
+      "calls": 0.4166690298613277,
+      "gflops": 5392.903587257309,
+      "ms": 1587.2584194894714
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.670351359782208,
+      "calls": 0.42493832061934605,
+      "gflops": 5499.710968143422,
+      "ms": 1617.5833393783444
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6695743413776479,
+      "calls": 0.43286731134617024,
+      "gflops": 5602.122983560971,
+      "ms": 1646.6603201771404
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6687065762981028,
+      "calls": 0.4409891387573377,
+      "gflops": 5707.025706077373,
+      "ms": 1676.4444664603132
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6676913478717068,
+      "calls": 0.4495646995434308,
+      "gflops": 5817.788915885195,
+      "ms": 1707.8925315302556
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6667838811218558,
+      "calls": 0.45795309531236705,
+      "gflops": 5926.134674685305,
+      "ms": 1738.6542301006555
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.665910444375124,
+      "calls": 0.46621671440319884,
+      "gflops": 6032.868799480276,
+      "ms": 1768.9583510046941
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6649065592831013,
+      "calls": 0.47530839690326976,
+      "gflops": 6150.298313582086,
+      "ms": 1802.2991236945866
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6638005841817202,
+      "calls": 0.4846496327595496,
+      "gflops": 6270.951095694176,
+      "ms": 1836.555051717202
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6626946090803392,
+      "calls": 0.4937072852565011,
+      "gflops": 6387.94107324913,
+      "ms": 1869.771030498087
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6615659473102118,
+      "calls": 0.5040467345376174,
+      "gflops": 6521.486927402344,
+      "ms": 1907.687579851596
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6605280322150696,
+      "calls": 0.5130249836939569,
+      "gflops": 6637.4513196812995,
+      "ms": 1940.612372844796
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6591214587528004,
+      "calls": 0.5229674162720132,
+      "gflops": 6765.8692474545205,
+      "ms": 1977.0729932598813
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6579020503076879,
+      "calls": 0.5324504438079574,
+      "gflops": 6888.35343184518,
+      "ms": 2011.8488959033625
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6562969684938889,
+      "calls": 0.5418654113376628,
+      "gflops": 7009.9585431421265,
+      "ms": 2046.3752107288285
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6548733800300598,
+      "calls": 0.5520120239344355,
+      "gflops": 7141.013690196485,
+      "ms": 2083.58459459796
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6530811331991039,
+      "calls": 0.5628449082607834,
+      "gflops": 7280.932824279119,
+      "ms": 2123.3106556320804
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6512435130306553,
+      "calls": 0.5729631625216232,
+      "gflops": 7411.621690877762,
+      "ms": 2160.416044577038
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6493945495278337,
+      "calls": 0.5823667867169554,
+      "gflops": 7533.080289992424,
+      "ms": 2194.9007614328348
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.647755437710915,
+      "calls": 0.5923942943028104,
+      "gflops": 7662.597059132788,
+      "ms": 2231.67336662044
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6456966225221904,
+      "calls": 0.6029662819385759,
+      "gflops": 7799.146413022853,
+      "ms": 2270.4426743521676
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6438760173553015,
+      "calls": 0.6129314011853785,
+      "gflops": 7927.857365160644,
+      "ms": 2306.986490706591
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.641459887133823,
+      "calls": 0.6240138388679352,
+      "gflops": 8070.999767253555,
+      "ms": 2347.6277070734345
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6394010719450983,
+      "calls": 0.6343873181521709,
+      "gflops": 8204.985157953626,
+      "ms": 2385.669050335951
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6372458384142019,
+      "calls": 0.6447324391004736,
+      "gflops": 8338.604268197982,
+      "ms": 2423.6063986742943
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6348240365255367,
+      "calls": 0.655871593454896,
+      "gflops": 8482.479231202318,
+      "ms": 2464.4556048894833
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6324419363071774,
+      "calls": 0.6665116410969005,
+      "gflops": 8619.907658186099,
+      "ms": 2503.4745004392275
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6297138643904374,
+      "calls": 0.6780421404871962,
+      "gflops": 8768.837291479285,
+      "ms": 2545.7588366080054
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6270595241471231,
+      "calls": 0.687848453052775,
+      "gflops": 8895.497073065082,
+      "ms": 2581.7202813870604
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.624359810566316,
+      "calls": 0.6985792473697643,
+      "gflops": 9034.097597507143,
+      "ms": 2621.0719606941566
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.62159203697927,
+      "calls": 0.7093157133539403,
+      "gflops": 9172.771378040346,
+      "ms": 2660.4444389860882
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6185803817032016,
+      "calls": 0.7205569577177211,
+      "gflops": 9317.964950685257,
+      "ms": 2701.6680269283015
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6154042480787226,
+      "calls": 0.7306752119785611,
+      "gflops": 9448.653817283903,
+      "ms": 2738.77341587326
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6121713977823781,
+      "calls": 0.7409692879221847,
+      "gflops": 9581.613622707973,
+      "ms": 2776.5235733480918
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6087967558063693,
+      "calls": 0.7520970989422342,
+      "gflops": 9725.342073530028,
+      "ms": 2817.3311815936127
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6053710688256813,
+      "calls": 0.7639338683606047,
+      "gflops": 9878.227535744925,
+      "ms": 2860.73866294346
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.6012931401185378,
+      "calls": 0.7769787028897144,
+      "gflops": 10046.716545373221,
+      "ms": 2908.576328063081
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5976405864503871,
+      "calls": 0.7888154723080849,
+      "gflops": 10199.602007588117,
+      "ms": 2951.9838094129286
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5939540027791168,
+      "calls": 0.799671043303179,
+      "gflops": 10339.81416603532,
+      "ms": 2991.793066386387
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5896775657204435,
+      "calls": 0.8114284093809374,
+      "gflops": 10491.674042974217,
+      "ms": 3034.90936194855
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5853273969883448,
+      "calls": 0.823225477129002,
+      "gflops": 10644.046712551113,
+      "ms": 3078.1712504045554
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5808467799109548,
+      "calls": 0.8346992598474321,
+      "gflops": 10792.243784932874,
+      "ms": 3120.2475967249875
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5766554178600799,
+      "calls": 0.8458951308737204,
+      "gflops": 10936.851308848642,
+      "ms": 3161.304792788524
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5724016674701529,
+      "calls": 0.8569038368828519,
+      "gflops": 11079.0413817567,
+      "ms": 3201.6756223525176
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5677111987068598,
+      "calls": 0.868638516291864,
+      "gflops": 11230.608234331025,
+      "ms": 3244.7087219753416
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5631284916201118,
+      "calls": 0.8793125939369878,
+      "gflops": 11368.476197861659,
+      "ms": 3283.852411434093
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5585287695318039,
+      "calls": 0.8898675665711936,
+      "gflops": 11504.805783478296,
+      "ms": 3322.5593222113166
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5539857641153618,
+      "calls": 0.9006267192241161,
+      "gflops": 11643.772588376074,
+      "ms": 3362.0149964425877
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5498227604004197,
+      "calls": 0.9102855684428437,
+      "gflops": 11768.527711592154,
+      "ms": 3397.435667615941
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5444630349091115,
+      "calls": 0.9222641295408784,
+      "gflops": 11923.244576085619,
+      "ms": 3441.363123586654
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.539069279414684,
+      "calls": 0.9331140288687859,
+      "gflops": 12063.38347844168,
+      "ms": 3481.151581575278
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5336868672546294,
+      "calls": 0.9439185548592007,
+      "gflops": 12202.936332068595,
+      "ms": 3520.7736476852256
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5275557950259478,
+      "calls": 0.9553469642401383,
+      "gflops": 12350.547355721215,
+      "ms": 3562.683602126981
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.520874571080169,
+      "calls": 0.966695970280464,
+      "gflops": 12497.132794097837,
+      "ms": 3604.3023707810516
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5142840938093752,
+      "calls": 0.977761392961461,
+      "gflops": 12640.05542791732,
+      "ms": 3644.8811901933914
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5079318265604174,
+      "calls": 0.9880441255707115,
+      "gflops": 12772.868721159106,
+      "ms": 3682.5897496985535
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "learned",
+      "metric": 0.5000708958398321,
+      "calls": 1.0,
+      "gflops": 12927.292561287999,
+      "ms": 3726.434009729928
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6695119530385957,
+      "calls": 0.0,
+      "gflops": 7.502680064,
+      "ms": 46.08042127620138
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6686044862887446,
+      "calls": 0.002467175226157729,
+      "gflops": 39.3690797110914,
+      "ms": 55.12797967926019
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6678388112185577,
+      "calls": 0.004849275444516916,
+      "gflops": 70.13663799104171,
+      "ms": 63.86355330979973
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.667214927828035,
+      "calls": 0.007600034030003119,
+      "gflops": 105.66584219527005,
+      "ms": 73.95106095458944
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6666761194453109,
+      "calls": 0.009811984232765221,
+      "gflops": 134.23571774093818,
+      "ms": 82.06266504009045
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6662791027422511,
+      "calls": 0.012534384482318578,
+      "gflops": 169.39864148945287,
+      "ms": 92.04617776070705
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6658537277032583,
+      "calls": 0.01607917647392451,
+      "gflops": 215.18369845366465,
+      "ms": 105.04554328234329
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6654850693361314,
+      "calls": 0.019709043473328986,
+      "gflops": 262.0675967850175,
+      "ms": 118.35689357649878
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6652865609846014,
+      "calls": 0.02353741882426339,
+      "gflops": 311.5154583063662,
+      "ms": 132.3962083398659
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6648611859456087,
+      "calls": 0.028868785979638715,
+      "gflops": 380.3761839805407,
+      "ms": 151.94725408440678
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6645208859144145,
+      "calls": 0.0345971698380739,
+      "gflops": 454.3648360347069,
+      "ms": 172.9542287673709
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6642089442191532,
+      "calls": 0.03981510364971783,
+      "gflops": 521.7604398860266,
+      "ms": 192.08929481521943
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6640387942035562,
+      "calls": 0.045855429203414344,
+      "gflops": 599.7781769530435,
+      "ms": 214.24021366408755
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6637268525082948,
+      "calls": 0.05317187987408899,
+      "gflops": 694.2785345271766,
+      "ms": 241.0709041007447
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6633581941411678,
+      "calls": 0.05960922213084536,
+      "gflops": 777.4241979741852,
+      "ms": 264.6777518880361
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6630178941099736,
+      "calls": 0.0675211978561098,
+      "gflops": 879.6164451183058,
+      "ms": 293.69233573232816
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6626492357428466,
+      "calls": 0.07551824858917279,
+      "gflops": 982.9075336295676,
+      "ms": 323.01890434913946
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6621671440319882,
+      "calls": 0.08212574086152624,
+      "gflops": 1068.2508798108586,
+      "ms": 347.24972168146934
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6619969940163911,
+      "calls": 0.08856308311828262,
+      "gflops": 1151.396543257867,
+      "ms": 370.85656946876077
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6615716189773984,
+      "calls": 0.09480191702350906,
+      "gflops": 1231.9782435148798,
+      "ms": 393.7354527868405
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6612029606102714,
+      "calls": 0.10007656750701868,
+      "gflops": 1300.1064082776268,
+      "ms": 413.0785086830352
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6608910189150101,
+      "calls": 0.10554972634205825,
+      "gflops": 1370.79853623037,
+      "ms": 433.14952904844154
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6605790772197487,
+      "calls": 0.11005870175538099,
+      "gflops": 1429.0371286888474,
+      "ms": 449.68472199196276
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6602671355244875,
+      "calls": 0.11527663556702493,
+      "gflops": 1496.432732540167,
+      "ms": 468.8197880398113
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6599835521651589,
+      "calls": 0.12029606102713893,
+      "gflops": 1561.264373201491,
+      "ms": 487.2268896184482
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6596999688058305,
+      "calls": 0.12477667810452883,
+      "gflops": 1619.1366852042547,
+      "ms": 503.6580876377964
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.659217877094972,
+      "calls": 0.12914386183818732,
+      "gflops": 1675.5438753841634,
+      "ms": 519.6733059604521
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6587925020559794,
+      "calls": 0.1322916371267334,
+      "gflops": 1716.2010059683835,
+      "ms": 531.2167425436651
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6582253353373224,
+      "calls": 0.13626180415733205,
+      "gflops": 1767.4802697683008,
+      "ms": 545.7760319278977
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6578283186342625,
+      "calls": 0.14023197118793068,
+      "gflops": 1818.7595335682179,
+      "ms": 560.3353213121303
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6573178685874713,
+      "calls": 0.14326631313274538,
+      "gflops": 1857.9515423295834,
+      "ms": 571.462778198651
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6569208518844114,
+      "calls": 0.14766185520233674,
+      "gflops": 1914.725012965206,
+      "ms": 587.5819914454798
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6565805518532173,
+      "calls": 0.15066783881121856,
+      "gflops": 1953.5507412708575,
+      "ms": 598.6054534078274
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6561268184782917,
+      "calls": 0.15452457249808582,
+      "gflops": 2003.36488324792,
+      "ms": 612.7487630953676
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6558715934548961,
+      "calls": 0.15806936448969175,
+      "gflops": 2049.1499402121317,
+      "ms": 625.7481286170038
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6555596517596347,
+      "calls": 0.16201117318435754,
+      "gflops": 2100.0629235563347,
+      "ms": 640.2034230770632
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6551626350565749,
+      "calls": 0.1657544735274934,
+      "gflops": 2148.4119437105423,
+      "ms": 653.930753067911
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6545954683379179,
+      "calls": 0.17012165726115192,
+      "gflops": 2204.8191338904517,
+      "ms": 669.9459713905669
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6540850182911266,
+      "calls": 0.17536794940872868,
+      "gflops": 2272.581018197485,
+      "ms": 689.1850323625886
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6534044182287383,
+      "calls": 0.17965005813458867,
+      "gflops": 2327.889367010253,
+      "ms": 704.8882659127252
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.653092476533477,
+      "calls": 0.18401724186824717,
+      "gflops": 2384.2965571901614,
+      "ms": 720.9034842353809
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6527521765022829,
+      "calls": 0.18858293395343562,
+      "gflops": 2443.2677105600665,
+      "ms": 737.6466670272484
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6523835181351558,
+      "calls": 0.19238295096843716,
+      "gflops": 2492.3492916257014,
+      "ms": 751.5819868664424
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6517596347446332,
+      "calls": 0.19689192638175992,
+      "gflops": 2550.5878840841788,
+      "ms": 768.1171798099638
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6511641096900433,
+      "calls": 0.20182627683407536,
+      "gflops": 2614.3206833783615,
+      "ms": 786.2122966160813
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6505402262995208,
+      "calls": 0.20718600232538353,
+      "gflops": 2683.5476895082497,
+      "ms": 805.8673372847952
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6500864929245952,
+      "calls": 0.21189348609023623,
+      "gflops": 2744.350245156723,
+      "ms": 823.1304946975282
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6500581345886624,
+      "calls": 0.217139778237813,
+      "gflops": 2812.1121294637564,
+      "ms": 842.3695556695498
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6507670929869835,
+      "calls": 0.22198905368232993,
+      "gflops": 2874.7460873907985,
+      "ms": 860.1526877031482
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6515611263931033,
+      "calls": 0.22763236253296656,
+      "gflops": 2947.635898077823,
+      "ms": 880.8476776135931
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6527521765022829,
+      "calls": 0.2345234381646485,
+      "gflops": 3036.6420488162507,
+      "ms": 906.1184441876538
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6537447182599325,
+      "calls": 0.24382497235062248,
+      "gflops": 3156.782038290343,
+      "ms": 940.2287793164273
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6545387516660522,
+      "calls": 0.252644414825738,
+      "gflops": 3270.6952600173017,
+      "ms": 972.5712007342581
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6538581516036639,
+      "calls": 0.26401610753480986,
+      "gflops": 3417.573722758493,
+      "ms": 1014.2731653276672
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6537163599239997,
+      "calls": 0.2760116836344043,
+      "gflops": 3572.5103555253854,
+      "ms": 1058.2630182528842
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6533477015568726,
+      "calls": 0.2893401015228426,
+      "gflops": 3744.6621697108217,
+      "ms": 1107.1406326142362
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6525536681507529,
+      "calls": 0.3036043444970649,
+      "gflops": 3928.90123893481,
+      "ms": 1159.4500794733005
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6509088846666478,
+      "calls": 0.3175850041119587,
+      "gflops": 4109.477503601662,
+      "ms": 1210.719577090634
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6498312679011996,
+      "calls": 0.33462836400760004,
+      "gflops": 4329.612057485591,
+      "ms": 1273.2205265186608
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6465984176048549,
+      "calls": 0.35637920766809406,
+      "gflops": 4610.549167017995,
+      "ms": 1352.9846333594207
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6442730340583614,
+      "calls": 0.37968975980489467,
+      "gflops": 4911.631701614652,
+      "ms": 1438.4684610297004
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6405580920511584,
+      "calls": 0.4046450954258004,
+      "gflops": 5233.958502642702,
+      "ms": 1529.9839943020195
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6357371749425744,
+      "calls": 0.43141536454640844,
+      "gflops": 5579.72725283643,
+      "ms": 1628.1552027214163
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.630604316138729,
+      "calls": 0.4610214672603012,
+      "gflops": 5962.124048601527,
+      "ms": 1736.725903558122
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6244221989053682,
+      "calls": 0.4916484700677764,
+      "gflops": 6357.706940772317,
+      "ms": 1849.0404216650588
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6187788900547316,
+      "calls": 0.5209426310864078,
+      "gflops": 6736.074651524562,
+      "ms": 1956.4671783358606
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6118310977511839,
+      "calls": 0.5529308340186598,
+      "gflops": 7149.2390055696105,
+      "ms": 2073.773452803106
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.6045146470805093,
+      "calls": 0.5888041289737118,
+      "gflops": 7612.583782047433,
+      "ms": 2205.3270318820646
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5983608881830814,
+      "calls": 0.6175027649377535,
+      "gflops": 7983.2596032296915,
+      "ms": 2310.5698951452314
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5925474293168477,
+      "calls": 0.6421461588633979,
+      "gflops": 8301.557319244892,
+      "ms": 2400.941484251646
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5877548705441965,
+      "calls": 0.665910444375124,
+      "gflops": 8608.500341132967,
+      "ms": 2488.0892307086956
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5829339534356124,
+      "calls": 0.6838612710206166,
+      "gflops": 8840.355869599738,
+      "ms": 2553.9180177102617
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5779996029832969,
+      "calls": 0.7029464311034228,
+      "gflops": 9086.862616295053,
+      "ms": 2623.9066016787506
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5745966026713553,
+      "calls": 0.7180614241556306,
+      "gflops": 9282.090099190453,
+      "ms": 2679.3358962630077
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5710234523438165,
+      "calls": 0.7352465757309361,
+      "gflops": 9504.05605535295,
+      "ms": 2742.3568203119
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.567762243711539,
+      "calls": 0.7478093185491875,
+      "gflops": 9666.318297234116,
+      "ms": 2788.426571720579
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.565153276805717,
+      "calls": 0.759804894648782,
+      "gflops": 9821.254930001009,
+      "ms": 2832.416424645796
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5620622181890367,
+      "calls": 0.7729064458497575,
+      "gflops": 9990.476500540737,
+      "ms": 2880.4620796137633
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5588860845645578,
+      "calls": 0.7855259053398747,
+      "gflops": 10153.47130333333,
+      "ms": 2926.739820870788
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5562771176587358,
+      "calls": 0.7964722230099538,
+      "gflops": 10294.855559238817,
+      "ms": 2966.881861601601
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5536114340810481,
+      "calls": 0.8082125740861527,
+      "gflops": 10446.495667904286,
+      "ms": 3009.93576020926
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5504920171284349,
+      "calls": 0.8197544168108215,
+      "gflops": 10595.57181337976,
+      "ms": 3052.2616943477074
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5469188668008961,
+      "calls": 0.8333380597226555,
+      "gflops": 10771.02015166662,
+      "ms": 3102.075263026618
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5450188582933954,
+      "calls": 0.8426112355726966,
+      "gflops": 10890.793860684997,
+      "ms": 3136.0816032312177
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5423531747157077,
+      "calls": 0.8529903865241187,
+      "gflops": 11024.85250747621,
+      "ms": 3174.1437454785687
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5395456994583557,
+      "calls": 0.8635396874911381,
+      "gflops": 11161.108837001704,
+      "ms": 3212.829857270958
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5378725576383178,
+      "calls": 0.8710262881774098,
+      "gflops": 11257.806877310119,
+      "ms": 3240.284517252654
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.535774040779287,
+      "calls": 0.8809517057539064,
+      "gflops": 11386.005036809911,
+      "ms": 3276.6827407132355
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5330516405297338,
+      "calls": 0.8913024983693957,
+      "gflops": 11519.69740314541,
+      "ms": 3314.640888036413
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5304710319598446,
+      "calls": 0.900915974250631,
+      "gflops": 11643.866477632353,
+      "ms": 3349.8951673310903
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5277486317102913,
+      "calls": 0.910954825170859,
+      "gflops": 11773.529758955001,
+      "ms": 3386.7093704883646
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5245724980858123,
+      "calls": 0.921901142840938,
+      "gflops": 11914.914014860486,
+      "ms": 3426.851411219177
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5217366644925275,
+      "calls": 0.9303235686129938,
+      "gflops": 12023.699310207454,
+      "ms": 3457.737903698585
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5187306808836457,
+      "calls": 0.9393698777755721,
+      "gflops": 12140.542775580121,
+      "ms": 3490.9122845098004
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.515526188923234,
+      "calls": 0.9490117119927403,
+      "gflops": 12265.078130522777,
+      "ms": 3526.270558728651
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5122366219550237,
+      "calls": 0.9587953378895726,
+      "gflops": 12391.444887744003,
+      "ms": 3562.1488075683665
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5097694467288659,
+      "calls": 0.9673595553412926,
+      "gflops": 12502.061585369538,
+      "ms": 3593.55527466864
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5075574965261038,
+      "calls": 0.9746192893401016,
+      "gflops": 12595.829382032243,
+      "ms": 3620.177975256951
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5046365879250205,
+      "calls": 0.9830984317840229,
+      "gflops": 12705.347238290638,
+      "ms": 3651.2724575847046
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5019425460114001,
+      "calls": 0.9908118991577575,
+      "gflops": 12804.975522244764,
+      "ms": 3679.559076959785
+    },
+    {
+      "pair": "grefcoco|instancevg|MiniCPM",
+      "method": "confidence",
+      "metric": 0.5000708958398321,
+      "calls": 1.0,
+      "gflops": 12923.650389896,
+      "ms": 3713.253432391866
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.18129624718318374,
+      "calls": 0.0,
+      "gflops": 139.16228659200002,
+      "ms": 71.56936161300109
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.18372855448704165,
+      "calls": 0.007789613848202396,
+      "gflops": 893.7788890248893,
+      "ms": 148.08265569458447
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.18685908224889786,
+      "calls": 0.018908122503328895,
+      "gflops": 1970.8812189932014,
+      "ms": 257.29393869992145
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.1884468119835047,
+      "calls": 0.029227696404793613,
+      "gflops": 2970.5869743530125,
+      "ms": 358.6577043635576
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.19016333859244455,
+      "calls": 0.037150466045272966,
+      "gflops": 3738.1030058873175,
+      "ms": 436.47891800209106
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.19203936879648048,
+      "calls": 0.047203728362183756,
+      "gflops": 4712.009903044295,
+      "ms": 535.226844551827
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.1973276972772499,
+      "calls": 0.06245006657789613,
+      "gflops": 6188.99453515653,
+      "ms": 684.9836338226183
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.19856778453770563,
+      "calls": 0.07423435419440745,
+      "gflops": 7330.594010631928,
+      "ms": 800.734514612706
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.19964444666304987,
+      "calls": 0.08342210386151798,
+      "gflops": 8220.654618629695,
+      "ms": 890.980964042266
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2008447299915772,
+      "calls": 0.09094540612516644,
+      "gflops": 8949.47236285975,
+      "ms": 964.878419009949
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2053760837500663,
+      "calls": 0.10252996005326231,
+      "gflops": 10071.722694683021,
+      "ms": 1078.6674204646115
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2084699431938867,
+      "calls": 0.11284953395472704,
+      "gflops": 11071.428450042833,
+      "ms": 1180.0311861282478
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.21117730070554924,
+      "calls": 0.12343541944074565,
+      "gflops": 12096.933063605475,
+      "ms": 1284.0107909057838
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.21355089822347736,
+      "calls": 0.1318908122503329,
+      "gflops": 12916.04681154545,
+      "ms": 1367.0636827721182
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.21604151501630087,
+      "calls": 0.14500665778961386,
+      "gflops": 14186.640578035016,
+      "ms": 1495.8937591317074
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.21788898058414213,
+      "calls": 0.1533288948069241,
+      "gflops": 14992.854896873574,
+      "ms": 1577.6387314410913
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2206453715306817,
+      "calls": 0.16624500665778957,
+      "gflops": 16244.09951971101,
+      "ms": 1704.5069284652548
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.22256047317491415,
+      "calls": 0.17569906790945405,
+      "gflops": 17159.958985911613,
+      "ms": 1797.3692170087152
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.22392279063908965,
+      "calls": 0.18202396804260984,
+      "gflops": 17772.681868228916,
+      "ms": 1859.495395963847
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.22639256671969005,
+      "calls": 0.1914780292942743,
+      "gflops": 18688.541334429516,
+      "ms": 1952.3576845073073
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2303544739053073,
+      "calls": 0.2051264980026631,
+      "gflops": 20010.73281732475,
+      "ms": 2086.419439094697
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2328940374950383,
+      "calls": 0.2138482023968043,
+      "gflops": 20855.645423467562,
+      "ms": 2172.088170074932
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.23741897056590364,
+      "calls": 0.22656458055925435,
+      "gflops": 22087.540902652876,
+      "ms": 2296.9944877636703
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.24026689104972293,
+      "calls": 0.23794940079893476,
+      "gflops": 23190.44209082402,
+      "ms": 2408.8216098829075
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2431042580703525,
+      "calls": 0.2474034620505992,
+      "gflops": 24106.30155702462,
+      "ms": 2501.6838984263677
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2446393126551028,
+      "calls": 0.2549267643142477,
+      "gflops": 24835.11930125468,
+      "ms": 2575.581353394051
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.24855675020919854,
+      "calls": 0.26198402130492676,
+      "gflops": 25518.78904362977,
+      "ms": 2644.901089912408
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.25234723459722813,
+      "calls": 0.2728362183754993,
+      "gflops": 26570.09251539525,
+      "ms": 2751.4965338038446
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2555614615399192,
+      "calls": 0.28169107856191744,
+      "gflops": 27427.904550639476,
+      "ms": 2838.4731843410295
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.25818509905301673,
+      "calls": 0.2905459387483355,
+      "gflops": 28285.716585883696,
+      "ms": 2925.4498348782136
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2606012166289425,
+      "calls": 0.30099866844207723,
+      "gflops": 29298.321770344926,
+      "ms": 3028.1215200988004
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2653611798288512,
+      "calls": 0.31178428761651134,
+      "gflops": 30343.1755275597,
+      "ms": 3134.063004211762
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.26884911383364996,
+      "calls": 0.3237017310252996,
+      "gflops": 31497.674432136508,
+      "ms": 3251.1218045588
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2729730863348169,
+      "calls": 0.336884154460719,
+      "gflops": 32774.717913176784,
+      "ms": 3380.6058406968637
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.27765278557626005,
+      "calls": 0.34800266311584555,
+      "gflops": 33851.8202431451,
+      "ms": 3489.817123702201
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2796074774091736,
+      "calls": 0.3575233022636485,
+      "gflops": 34774.129423896404,
+      "ms": 3583.333372024136
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.28204715333825625,
+      "calls": 0.3648468708388815,
+      "gflops": 35483.59802447434,
+      "ms": 3655.268947656394
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2865153302629788,
+      "calls": 0.37490013315579224,
+      "gflops": 36457.504921631305,
+      "ms": 3754.0168742061296
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2895286620478625,
+      "calls": 0.3859520639147802,
+      "gflops": 37528.15753704891,
+      "ms": 3862.574197432991
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2924523439388038,
+      "calls": 0.39387483355525965,
+      "gflops": 38295.673568583225,
+      "ms": 3940.3954110715254
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29493220967499056,
+      "calls": 0.403595206391478,
+      "gflops": 39237.33189298665,
+      "ms": 4035.8735387288853
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29679244853296216,
+      "calls": 0.4097869507323568,
+      "gflops": 39837.15534620254,
+      "ms": 4096.691798127067
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29824032060818284,
+      "calls": 0.4171105193075899,
+      "gflops": 40546.62394678048,
+      "ms": 4168.627373759326
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.30060258544213647,
+      "calls": 0.42676431424766975,
+      "gflops": 41481.8325566332,
+      "ms": 4263.45154163821
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.30092311829652235,
+      "calls": 0.4334886817576565,
+      "gflops": 42133.253726254756,
+      "ms": 4329.501479264193
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29908337970039717,
+      "calls": 0.44560585885486015,
+      "gflops": 43307.101774483686,
+      "ms": 4448.5221589466555
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2977899223131896,
+      "calls": 0.4533288948069242,
+      "gflops": 44055.26866236588,
+      "ms": 4524.381493249765
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2982768381293317,
+      "calls": 0.45952063914780295,
+      "gflops": 44655.09211558176,
+      "ms": 4585.199752647946
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29713930300206126,
+      "calls": 0.46677762982689747,
+      "gflops": 45358.11100160898,
+      "ms": 4656.481368501729
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2981419006299502,
+      "calls": 0.4787616511318243,
+      "gflops": 46519.05962073651,
+      "ms": 4774.194128627242
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.30134517763453006,
+      "calls": 0.4900133155792277,
+      "gflops": 47609.06137980623,
+      "ms": 4884.7133311895295
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.3013386133731364,
+      "calls": 0.5019973368841545,
+      "gflops": 48770.009998933754,
+      "ms": 5002.426091315042
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.3006032949818893,
+      "calls": 0.5176431424766977,
+      "gflops": 50285.69291835024,
+      "ms": 5156.106639256684
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29926650757486717,
+      "calls": 0.5346205059920106,
+      "gflops": 51930.370128780894,
+      "ms": 5322.8663827678265
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29911586063303675,
+      "calls": 0.5474700399467377,
+      "gflops": 53175.16503706763,
+      "ms": 5449.080620013516
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29813893282180814,
+      "calls": 0.5575898801597869,
+      "gflops": 54155.52164877531,
+      "ms": 5548.482506341727
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2974509950363013,
+      "calls": 0.5675765645805592,
+      "gflops": 55122.97883138157,
+      "ms": 5646.576473112987
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29724357969129245,
+      "calls": 0.5804260985352863,
+      "gflops": 56367.773739668315,
+      "ms": 5772.790710358676
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29665775151403084,
+      "calls": 0.5938082556591212,
+      "gflops": 57664.16636436072,
+      "ms": 5904.236625832166
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2975661409457673,
+      "calls": 0.603595206391478,
+      "gflops": 58612.274403314856,
+      "ms": 6000.368713268001
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29631335243812956,
+      "calls": 0.6135153129161118,
+      "gflops": 59573.28187137042,
+      "ms": 6097.808720260787
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2960348088956203,
+      "calls": 0.6214380825565912,
+      "gflops": 60340.79790290472,
+      "ms": 6175.62993389932
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2951989613231927,
+      "calls": 0.6318242343541943,
+      "gflops": 61346.95337281523,
+      "ms": 6277.647659341431
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29386485972911613,
+      "calls": 0.6431424766977363,
+      "gflops": 62443.404846435675,
+      "ms": 6388.820821682193
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.292479005789999,
+      "calls": 0.6534620505992011,
+      "gflops": 63443.110601795495,
+      "ms": 6490.184587345831
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2926539927366717,
+      "calls": 0.6655126498002664,
+      "gflops": 64610.50893547373,
+      "ms": 6608.551307249818
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29278795045342987,
+      "calls": 0.6742343541944075,
+      "gflops": 65455.42154161653,
+      "ms": 6694.2200382300525
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29144368638516527,
+      "calls": 0.6844207723035952,
+      "gflops": 66442.22786787493,
+      "ms": 6794.275884336738
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2913839507485529,
+      "calls": 0.6950732356857523,
+      "gflops": 67474.18219598828,
+      "ms": 6898.909448892749
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2916685120367808,
+      "calls": 0.70219707057257,
+      "gflops": 68164.30165291409,
+      "ms": 6968.883145189583
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2908903102338221,
+      "calls": 0.70745672436751,
+      "gflops": 68673.82910242004,
+      "ms": 7020.545967689112
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29068952549932253,
+      "calls": 0.7203728362183754,
+      "gflops": 69925.07372525749,
+      "ms": 7147.4141647132765
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.28982721462710204,
+      "calls": 0.7292942743009322,
+      "gflops": 70789.33547505244,
+      "ms": 7235.044775028938
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.289887284031958,
+      "calls": 0.7372836218375498,
+      "gflops": 71563.30122113743,
+      "ms": 7313.519948445944
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2914457139433469,
+      "calls": 0.7460719041278296,
+      "gflops": 72414.66354183097,
+      "ms": 7399.842639204656
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29113442803741185,
+      "calls": 0.7552596537949402,
+      "gflops": 73304.72414982873,
+      "ms": 7490.089088634216
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.29031315276962183,
+      "calls": 0.7674434087882822,
+      "gflops": 74485.02191260837,
+      "ms": 7609.763728095152
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.289990968297447,
+      "calls": 0.7755659121171771,
+      "gflops": 75271.8870877948,
+      "ms": 7689.5468210691115
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2901920651624007,
+      "calls": 0.7833555259653795,
+      "gflops": 76026.50369022769,
+      "ms": 7766.060115150694
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2901181158873772,
+      "calls": 0.7904793608521972,
+      "gflops": 76716.62314715351,
+      "ms": 7836.033811447528
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.28973901353907683,
+      "calls": 0.7987350199733687,
+      "gflops": 77516.38775144133,
+      "ms": 7917.124823978435
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.28888237446044834,
+      "calls": 0.8127829560585885,
+      "gflops": 78877.27752164083,
+      "ms": 8055.110337236676
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2890360783246395,
+      "calls": 0.8225699067909453,
+      "gflops": 79825.38556059496,
+      "ms": 8151.242424672511
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.28767900194586976,
+      "calls": 0.8346205059920105,
+      "gflops": 80992.78389427319,
+      "ms": 8269.6091445765
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.28869706841582,
+      "calls": 0.8463382157123837,
+      "gflops": 82127.9336551979,
+      "ms": 8384.706065588114
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2875418385011496,
+      "calls": 0.8567243675099867,
+      "gflops": 83134.08912510841,
+      "ms": 8486.723791030225
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.28776751513017684,
+      "calls": 0.86491344873502,
+      "gflops": 83927.40401484555,
+      "ms": 8567.160843782658
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2880879394318149,
+      "calls": 0.8767643142476697,
+      "gflops": 85075.45320487165,
+      "ms": 8683.565684351219
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.287273877029594,
+      "calls": 0.8856857523302264,
+      "gflops": 85939.71495466659,
+      "ms": 8771.196294666881
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.28547632945289336,
+      "calls": 0.8951398135818909,
+      "gflops": 86855.5744208672,
+      "ms": 8864.05858321034
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.284269379519687,
+      "calls": 0.9029960053262316,
+      "gflops": 87616.64073785077,
+      "ms": 8941.225837070398
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.28250852235623786,
+      "calls": 0.9131824234354193,
+      "gflops": 88603.44706410918,
+      "ms": 9041.281683177083
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2814829677111451,
+      "calls": 0.9243675099866845,
+      "gflops": 89686.99910862821,
+      "ms": 9151.146925960897
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2800886018148173,
+      "calls": 0.9328229027962717,
+      "gflops": 90506.11285656819,
+      "ms": 9234.199817827232
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.27854520316604037,
+      "calls": 0.9400798934753661,
+      "gflops": 91209.13174259539,
+      "ms": 9305.481433681012
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.27746458817138653,
+      "calls": 0.9482689747003995,
+      "gflops": 92002.44663233255,
+      "ms": 9385.918486433447
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2760878894837333,
+      "calls": 0.9603861517976032,
+      "gflops": 93176.29468056148,
+      "ms": 9504.939166115912
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.27468746115763226,
+      "calls": 0.9677762982689748,
+      "gflops": 93892.21299569013,
+      "ms": 9577.528701526644
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.2732948963509506,
+      "calls": 0.9782290279627164,
+      "gflops": 94904.81818015134,
+      "ms": 9680.20038674723
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.27348968306795485,
+      "calls": 0.9849533954727031,
+      "gflops": 95556.2393497729,
+      "ms": 9746.250324373212
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "learned",
+      "metric": 0.27001009067886245,
+      "calls": 1.0,
+      "gflops": 97013.87483823301,
+      "ms": 9894.045234308578
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18129624718318377,
+      "calls": 0.0,
+      "gflops": 135.97853184000002,
+      "ms": 46.30809425361804
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1784481207469488,
+      "calls": 0.17942743009320905,
+      "gflops": 17517.959245999285,
+      "ms": 1808.7296972439362
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1780928651788194,
+      "calls": 0.19340878828229027,
+      "gflops": 18872.39930164806,
+      "ms": 1946.0612507237013
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17829989216687975,
+      "calls": 0.20306258322237017,
+      "gflops": 19807.60791150079,
+      "ms": 2040.8854186025867
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1779854683890517,
+      "calls": 0.20838881491344874,
+      "gflops": 20323.585075557465,
+      "ms": 2093.2022008805925
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17917657728013692,
+      "calls": 0.21537949400798934,
+      "gflops": 21000.805103381852,
+      "ms": 2161.867977620475
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17803687432776102,
+      "calls": 0.23135818908122505,
+      "gflops": 22548.736595551884,
+      "ms": 2318.8183244544925
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18026802885144627,
+      "calls": 0.24800266311584554,
+      "gflops": 24161.165233228996,
+      "ms": 2482.3082690732604
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18119827871024874,
+      "calls": 0.2589880159786951,
+      "gflops": 25225.368134095894,
+      "ms": 2590.211632521647
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17963665085316138,
+      "calls": 0.27430093209054596,
+      "gflops": 26708.802480758837,
+      "ms": 2740.6223815709136
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17924095839307458,
+      "calls": 0.281624500665779,
+      "gflops": 27418.271081336767,
+      "ms": 2812.5579572031716
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1789157174618718,
+      "calls": 0.28761651131824234,
+      "gflops": 27998.745390900527,
+      "ms": 2871.4143372659278
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1787206845800119,
+      "calls": 0.2969374167776298,
+      "gflops": 28901.70542799971,
+      "ms": 2962.9687062524376
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17813242189706796,
+      "calls": 0.30459387483355527,
+      "gflops": 29643.422601331185,
+      "ms": 3038.174080777071
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17772000842137498,
+      "calls": 0.3129161118508655,
+      "gflops": 30449.636920169738,
+      "ms": 3119.919053086455
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17791259734473341,
+      "calls": 0.31990679094540614,
+      "gflops": 31126.85694799413,
+      "ms": 3188.5848298263377
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1789653934599337,
+      "calls": 0.3322237017310253,
+      "gflops": 32320.05413987519,
+      "ms": 3309.5673888442257
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18042682200794885,
+      "calls": 0.34054593874833555,
+      "gflops": 33126.268458713756,
+      "ms": 3391.31236115361
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17962877325912951,
+      "calls": 0.3488681757656458,
+      "gflops": 33932.48277755231,
+      "ms": 3473.057333462994
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18158304685510065,
+      "calls": 0.3581890812250333,
+      "gflops": 34835.44281465149,
+      "ms": 3564.611702449504
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18069239723097547,
+      "calls": 0.37017310252996005,
+      "gflops": 35996.39143377901,
+      "ms": 3682.3244625750167
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1812845803851709,
+      "calls": 0.37683089214380827,
+      "gflops": 36641.362888849864,
+      "ms": 3747.720440422524
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1824781664689562,
+      "calls": 0.38348868175765644,
+      "gflops": 37286.3343439207,
+      "ms": 3813.116418270031
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18220594501399923,
+      "calls": 0.4021304926764314,
+      "gflops": 39092.254418119075,
+      "ms": 3996.225156243051
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18162498930772586,
+      "calls": 0.41311584553928093,
+      "gflops": 40156.457318985966,
+      "ms": 4104.128519691438
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18066434967152634,
+      "calls": 0.42676431424766975,
+      "gflops": 41478.6488018812,
+      "ms": 4238.190274278827
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1803913789289444,
+      "calls": 0.4324234354194407,
+      "gflops": 42026.874538691416,
+      "ms": 4293.776855449209
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17959468902865128,
+      "calls": 0.44107856191744343,
+      "gflops": 42865.33743028352,
+      "ms": 4378.791626650968
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17863383514615866,
+      "calls": 0.45772303595206393,
+      "gflops": 44477.766067960634,
+      "ms": 4542.281571269737
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17957308538379646,
+      "calls": 0.4717043941411451,
+      "gflops": 45832.20612360941,
+      "ms": 4679.6131247495005
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17910245145856155,
+      "calls": 0.4826897470039947,
+      "gflops": 46896.40902447631,
+      "ms": 4787.516488197888
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.17871833907402393,
+      "calls": 0.4896804260985353,
+      "gflops": 47573.62905230069,
+      "ms": 4856.182264937771
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18015785955296285,
+      "calls": 0.5013315579227696,
+      "gflops": 48702.32909867467,
+      "ms": 4970.625226170908
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1810878167493375,
+      "calls": 0.5116511318242344,
+      "gflops": 49702.034854034486,
+      "ms": 5071.988991834544
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18177962418520882,
+      "calls": 0.5183089214380826,
+      "gflops": 50347.00630910533,
+      "ms": 5137.384969682052
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18246323539519374,
+      "calls": 0.5252996005326231,
+      "gflops": 51024.226336929714,
+      "ms": 5206.050746421934
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1839876166906015,
+      "calls": 0.5396138482023968,
+      "gflops": 52410.914965332035,
+      "ms": 5346.652098794074
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1846674213907964,
+      "calls": 0.5452729693741678,
+      "gflops": 52959.14070214226,
+      "ms": 5402.2386799644555
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18676294233791663,
+      "calls": 0.559254327563249,
+      "gflops": 54313.58075779103,
+      "ms": 5539.57023344422
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.18938663221175195,
+      "calls": 0.572237017310253,
+      "gflops": 55571.275095179175,
+      "ms": 5667.092390246859
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1909571002676625,
+      "calls": 0.5862183754993342,
+      "gflops": 56925.71515082795,
+      "ms": 5804.423943726624
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1934300101790686,
+      "calls": 0.5998668442077231,
+      "gflops": 58247.90663372319,
+      "ms": 5938.485698314014
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1973701682130997,
+      "calls": 0.6191744340878829,
+      "gflops": 60118.32385342864,
+      "ms": 6128.134034071785
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.1986727924998457,
+      "calls": 0.6264980026631158,
+      "gflops": 60827.792454006565,
+      "ms": 6200.069609704043
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.20186289191698192,
+      "calls": 0.6384820239680427,
+      "gflops": 61988.74107313409,
+      "ms": 6317.782369829556
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.20246031058520178,
+      "calls": 0.6461384820239681,
+      "gflops": 62730.45824646557,
+      "ms": 6392.987744354189
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.20349944137622245,
+      "calls": 0.653462050599201,
+      "gflops": 63439.92684704349,
+      "ms": 6464.923319986447
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.20442990090722246,
+      "calls": 0.6597869507323568,
+      "gflops": 64052.64972936079,
+      "ms": 6527.049498941578
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2044993942500819,
+      "calls": 0.6661118508655126,
+      "gflops": 64665.372611678096,
+      "ms": 6589.17567789671
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2064379542733177,
+      "calls": 0.6734354194407457,
+      "gflops": 65374.84121225603,
+      "ms": 6661.1112535289685
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2065831206227621,
+      "calls": 0.6820905459387483,
+      "gflops": 66213.30410384812,
+      "ms": 6746.126024730727
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.20802802394105854,
+      "calls": 0.6927430093209055,
+      "gflops": 67245.25843196148,
+      "ms": 6850.759589286739
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.21169680596278434,
+      "calls": 0.7090545938748336,
+      "gflops": 68825.43849688505,
+      "ms": 7010.979735013132
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2139280527103987,
+      "calls": 0.7170439414114514,
+      "gflops": 69599.40424297006,
+      "ms": 7089.454908430141
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2146900231025185,
+      "calls": 0.7243675099866844,
+      "gflops": 70308.87284354799,
+      "ms": 7161.390484062398
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.21653561577692484,
+      "calls": 0.7330226364846871,
+      "gflops": 71147.33573514009,
+      "ms": 7246.405255264158
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.21721689648133474,
+      "calls": 0.7363515312916112,
+      "gflops": 71469.82146267552,
+      "ms": 7279.1032441879115
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.22103445955201576,
+      "calls": 0.7486684420772304,
+      "gflops": 72663.01865455658,
+      "ms": 7400.0858032057995
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.22340134248367294,
+      "calls": 0.757323568575233,
+      "gflops": 73501.48154614867,
+      "ms": 7485.100574407558
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2269322568854726,
+      "calls": 0.7639813581890812,
+      "gflops": 74146.45300121952,
+      "ms": 7550.496552255066
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.22757452798038888,
+      "calls": 0.7733022636484687,
+      "gflops": 75049.4130383187,
+      "ms": 7642.050921241575
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.227821050912831,
+      "calls": 0.784953395472703,
+      "gflops": 76178.11308469268,
+      "ms": 7756.493882474713
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.22991865671924006,
+      "calls": 0.7939414114513982,
+      "gflops": 77048.82454903833,
+      "ms": 7844.7784525688485
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.23486191981046528,
+      "calls": 0.8039280958721704,
+      "gflops": 78016.28173164459,
+      "ms": 7942.8724193401085
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.23803916047544685,
+      "calls": 0.8122503328894807,
+      "gflops": 78822.49605048315,
+      "ms": 8024.617391649493
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.24022947987632814,
+      "calls": 0.8215712383488681,
+      "gflops": 79725.45608758234,
+      "ms": 8116.171760636003
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.24528627405740036,
+      "calls": 0.8388814913448736,
+      "gflops": 81402.38187076653,
+      "ms": 8286.201303039523
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.249537136326177,
+      "calls": 0.8535286284953395,
+      "gflops": 82821.3190719224,
+      "ms": 8430.072454304036
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.25211074301800224,
+      "calls": 0.8638482023968043,
+      "gflops": 83821.0248272822,
+      "ms": 8531.436219967674
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2540042317315216,
+      "calls": 0.8745006657789614,
+      "gflops": 84852.97915539556,
+      "ms": 8636.069784523685
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2540996517958595,
+      "calls": 0.8764980026631158,
+      "gflops": 85046.4705919168,
+      "ms": 8655.688577877936
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.25436194678023316,
+      "calls": 0.8841544607190412,
+      "gflops": 85788.18776524828,
+      "ms": 8730.89395240257
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2534339447803836,
+      "calls": 0.8891478029294274,
+      "gflops": 86271.91635655142,
+      "ms": 8779.9409357882
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2563240880787248,
+      "calls": 0.8981358189081226,
+      "gflops": 87142.62782089706,
+      "ms": 8868.225505882336
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.25551845731687656,
+      "calls": 0.9054593874833555,
+      "gflops": 87852.09642147498,
+      "ms": 8940.161081514594
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2597490004762105,
+      "calls": 0.9221038615179761,
+      "gflops": 89464.5250591521,
+      "ms": 9103.651026133362
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.26306323674307786,
+      "calls": 0.9254327563249002,
+      "gflops": 89787.01078668753,
+      "ms": 9136.349015057116
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.26218185491449153,
+      "calls": 0.9364181091877497,
+      "gflops": 90851.21368755442,
+      "ms": 9244.252378505502
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.26357052137555514,
+      "calls": 0.953728362183755,
+      "gflops": 92528.13947073862,
+      "ms": 9414.281920909021
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.26400290307863034,
+      "calls": 0.96271637816245,
+      "gflops": 93398.85093508427,
+      "ms": 9502.566491003154
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2647475724296899,
+      "calls": 0.9700399467376831,
+      "gflops": 94108.3195356622,
+      "ms": 9574.502066635414
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.2649306125590882,
+      "calls": 0.987017310252996,
+      "gflops": 95752.99674609285,
+      "ms": 9741.261810146556
+    },
+    {
+      "pair": "construction|yolo26x|Qwen3.8",
+      "method": "confidence",
+      "metric": 0.27001009067886245,
+      "calls": 1.0,
+      "gflops": 97010.691083481,
+      "ms": 9868.783966949195
+    }
+  ],
+  "protocol": "Five-seed mean call rates times existing measured mean component costs; not integrated latency measurements."
+}

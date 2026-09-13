@@ -1,0 +1,33 @@
+\begin{table}[H]
+\centering
+\caption{Selected outcome counts and gains are five-seed means; available outcome counts are fixed. Test outcome counts at the LR operating point. BC/BW: both correct/wrong; R/H: rescue/harm. Selected rescues, selected harms, missed rescues and avoided harms are counted separately. Construction counts 12,016 events, with routing over 3,004 images. Metric gains are recomputed; macro-F1 is not an event-count ratio.}
+\label{tab:outcomes_full}
+\fontsize{8.5}{10.2}\selectfont
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}lllrrrrrrrrr@{}}
+\toprule
+Task & Specialist & VLM & BC & R & H & BW & Sel. R & Sel. H & Miss R & Avoid H & Gain (pp) \\
+\midrule
+CUB-200-2011 & ResNet & M & 1,307 & 232 & 3,411 & 844 & 4.6 & 4.6 & 227.4 & 3,406.4 & +0.000 \\
+ & ResNet & Q & 2,811 & 365 & 1,907 & 711 & 0.0 & 0.0 & 365.0 & 1,907.0 & +0.000 \\
+ & GLSim & M & 1,433 & 106 & 3,791 & 464 & 1.0 & 2.8 & 105.0 & 3,788.2 & -0.031 \\
+ & GLSim & Q & 3,032 & 144 & 2,192 & 426 & 0.0 & 0.0 & 144.0 & 2,192.0 & +0.000 \\
+\midrule
+gRefCOCO & GroundingDINO & M & 6,911 & 10,723 & 2,500 & 15,129 & 9,475.4 & 1,174.4 & 1,247.6 & 1,325.6 & +23.540 \\
+ & GroundingDINO & Q & 7,441 & 18,820 & 1,970 & 7,032 & 18,720.8 & 1,641.6 & 99.2 & 328.4 & +48.434 \\
+ & InstanceVG & M & 15,007 & 2,627 & 8,602 & 9,027 & 727.6 & 388.2 & 1,899.4 & 8,213.8 & +0.962 \\
+ & InstanceVG & Q & 20,838 & 5,423 & 2,771 & 6,231 & 4,753.6 & 1,476.8 & 669.4 & 1,294.2 & +9.292 \\
+\midrule
+NLVR2 & BEiT3 & M & 10,421 & 2,225 & 729 & 562 & 2,189.4 & 684.6 & 35.6 & 44.4 & +10.797 \\
+ & BEiT3 & Q & 10,305 & 2,247 & 845 & 540 & 2,163.4 & 686.4 & 83.6 & 158.6 & +10.598 \\
+ & ViLT & M & 9,940 & 2,706 & 711 & 580 & 2,693.8 & 704.8 & 12.2 & 6.2 & +14.271 \\
+ & ViLT & Q & 9,761 & 2,791 & 890 & 495 & 2,788.2 & 886.8 & 2.8 & 3.2 & +13.643 \\
+\midrule
+ConstructionSite & YOLO26x & M & 8,176 & 1,198 & 2,109 & 533 & 1,139.6 & 803.4 & 58.4 & 1,305.6 & +7.751 \\
+ & YOLO26x & Q & 9,508 & 1,282 & 777 & 449 & 1,231.6 & 315.0 & 50.4 & 462.0 & +11.667 \\
+ & RT-DETR-X & M & 6,060 & 3,314 & 1,945 & 697 & 3,288.6 & 1,452.4 & 25.4 & 492.6 & +14.912 \\
+ & RT-DETR-X & Q & 7,329 & 3,461 & 676 & 550 & 3,448.0 & 574.8 & 13.0 & 101.2 & +18.896 \\
+\bottomrule
+\end{tabular}
+\end{table}

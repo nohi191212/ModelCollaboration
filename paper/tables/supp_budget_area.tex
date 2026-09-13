@@ -1,0 +1,34 @@
+\begin{table}[H]
+\centering
+\caption{Five-seed low-budget test comparison. Fixed-threshold $\mathrm{Score}_{25}^{\mathrm{thr}}$ applies each validation cutoff and tie rule on test data. Fixed-count $\mathrm{Score}_{25}^{\mathrm{count}}$ ranks the test batch to enforce equal call counts. Values are multiplied by 100. Learned values average seeds 2026--2030. Differences use unrounded values.}
+\label{tab:budgetarea}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lllrrrrrr@{}}
+\toprule
+Task & Specialist & VLM & \multicolumn{3}{c}{Fixed threshold} & \multicolumn{3}{c}{Fixed count} \\
+\cmidrule(lr){4-6}\cmidrule(l){7-9}
+ & & & Conf. & Learned & Difference & Conf. & Learned & Difference \\
+\midrule
+CUB & ResNet & M & 64.729 & 80.645 & +15.916 & 78.959 & 80.889 & +1.929 \\
+ & ResNet & Q & 73.162 & 81.297 & +8.135 & 81.015 & 81.175 & +0.160 \\
+ & GLSim & M & 72.534 & 89.154 & +16.620 & 85.198 & 89.244 & +4.046 \\
+ & GLSim & Q & 78.605 & 89.744 & +11.138 & 86.912 & 89.690 & +2.778 \\
+\midrule
+gRefCOCO & GroundingDINO & M & 27.538 & 37.619 & +10.081 & 27.866 & 34.934 & +7.068 \\
+ & GroundingDINO & Q & 28.625 & 42.231 & +13.606 & 29.324 & 37.489 & +8.164 \\
+ & InstanceVG & M & 66.393 & 67.895 & +1.503 & 65.900 & 67.848 & +1.947 \\
+ & InstanceVG & Q & 66.407 & 71.326 & +4.919 & 66.114 & 70.617 & +4.503 \\
+\midrule
+NLVR2 & BEiT3 & M & 83.390 & 84.253 & +0.862 & 83.588 & 84.165 & +0.577 \\
+ & BEiT3 & Q & 83.440 & 84.329 & +0.890 & 83.613 & 84.267 & +0.654 \\
+ & ViLT & M & 79.874 & 80.024 & +0.150 & 80.052 & 80.157 & +0.105 \\
+ & ViLT & Q & 79.887 & 80.147 & +0.260 & 80.062 & 80.253 & +0.191 \\
+\midrule
+Construction & YOLO26X & M & 17.698 & 21.691 & +3.993 & 17.166 & 21.618 & +4.453 \\
+ & YOLO26X & Q & 18.055 & 21.519 & +3.464 & 17.933 & 21.425 & +3.491 \\
+ & RT-DETR-X & M & 8.325 & 11.028 & +2.703 & 8.357 & 11.295 & +2.938 \\
+ & RT-DETR-X & Q & 8.911 & 11.660 & +2.749 & 8.908 & 12.052 & +3.145 \\
+\bottomrule
+\end{tabular}
+\end{table}

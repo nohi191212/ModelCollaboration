@@ -1,0 +1,3066 @@
+{
+  "status": "complete",
+  "model_kind": "Qwen3.8",
+  "task": "construction",
+  "expert": "yolo26x",
+  "model_path": "/mnt/HithinkOmniSSD/user_workspace/caisihang/checkpoints/Qwen3.8-27B-FP8",
+  "device": "cuda:0",
+  "gpu_memory_utilization": 0.85,
+  "sample_count_requested": 66,
+  "warmup_count": 2,
+  "measured_count": 64,
+  "batch_size": 1,
+  "sample_ids": [
+    "0000894",
+    "0003510",
+    "0002450",
+    "0003360",
+    "0001470",
+    "0004484",
+    "0004166",
+    "0002167",
+    "0000380",
+    "0000516",
+    "0000176",
+    "0000943",
+    "0002853",
+    "0003176",
+    "0002495",
+    "0000756",
+    "0004213",
+    "0003472",
+    "0004290",
+    "0001443",
+    "0003365",
+    "0003782",
+    "0002089",
+    "0001710",
+    "0002148",
+    "0001289",
+    "0002751",
+    "0001252",
+    "0001922",
+    "0003581",
+    "0001233",
+    "0003383",
+    "0003266",
+    "0000824",
+    "0002144",
+    "0001450",
+    "0003429",
+    "0000205",
+    "0004209",
+    "0003623",
+    "0002496",
+    "0004049",
+    "0001483",
+    "0004197",
+    "0003082",
+    "0000758",
+    "0000564",
+    "0001580",
+    "0002136",
+    "0000949",
+    "0003045",
+    "0000013",
+    "0003889",
+    "0003261",
+    "0001629",
+    "0001569",
+    "0002536",
+    "0003053",
+    "0002661",
+    "0001664",
+    "0001351",
+    "0000304",
+    "0004537",
+    "0003801",
+    "0004321",
+    "0001878"
+  ],
+  "batches": [
+    {
+      "sample_ids": [
+        "0002450"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.705359333078377,
+      "batch_wall_latency_seconds": 10.720781230949797,
+      "amortized_generation_ms_per_sample": 10705.359333078377,
+      "amortized_batch_wall_ms_per_sample": 10720.781230949797,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": true, \"reason\": \"A worker standing in the middle of the site is clearly bareheaded, missing a hard hat.\", \"boxes\": [[518, 668, 532, 745]]}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": true,
+                "reason": "A worker standing in the middle of the site is clearly bareheaded, missing a hard hat.",
+                "boxes": [
+                  [
+                    518,
+                    668,
+                    532,
+                    745
+                  ]
+                ]
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 147,
+          "prompt_tokens": 1473
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003360"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.7157509700628,
+      "batch_wall_latency_seconds": 11.733416861039586,
+      "amortized_generation_ms_per_sample": 11715.7509700628,
+      "amortized_batch_wall_ms_per_sample": 11733.416861039586,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The edge of the excavation is visible on the right side of the image, bordering a deep drop with no guardrails or fencing.\", \"boxes\": [[590, 315, 1000, 495]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}\n}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The edge of the excavation is visible on the right side of the image, bordering a deep drop with no guardrails or fencing.",
+                "boxes": [
+                  [
+                    590,
+                    315,
+                    1000,
+                    495
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 158,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001470"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.342743383022025,
+      "batch_wall_latency_seconds": 11.35942490492016,
+      "amortized_generation_ms_per_sample": 11342.743383022025,
+      "amortized_batch_wall_ms_per_sample": 11359.42490492016,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": true, \"reason\": \"A worker on the ground is clearly visible without a hard hat.\", \"boxes\": [[560, 849, 582, 905]]}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": true,
+                "reason": "A worker on the ground is clearly visible without a hard hat.",
+                "boxes": [
+                  [
+                    560,
+                    849,
+                    582,
+                    905
+                  ]
+                ]
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 141,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0004484"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 13.103367771022022,
+      "batch_wall_latency_seconds": 13.121180747984909,
+      "amortized_generation_ms_per_sample": 13103.367771022022,
+      "amortized_batch_wall_ms_per_sample": 13121.180747984909,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": true, \"reason\": \"Workers are standing directly beside the tracks and rear of the yellow excavator, within its normal swing and travel zone.\", \"boxes\": [[608, 505, 640, 655], [658, 502, 690, 646]]}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": true,
+                "reason": "Workers are standing directly beside the tracks and rear of the yellow excavator, within its normal swing and travel zone.",
+                "boxes": [
+                  [
+                    608,
+                    505,
+                    640,
+                    655
+                  ],
+                  [
+                    658,
+                    502,
+                    690,
+                    646
+                  ]
+                ]
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 171,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0004166"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.62961833900772,
+      "batch_wall_latency_seconds": 11.636370092979632,
+      "amortized_generation_ms_per_sample": 11629.61833900772,
+      "amortized_batch_wall_ms_per_sample": 11636.370092979632,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The edge of the concrete structure where the workers are standing lacks guardrails or fencing, bordering a deep drop/excavation area.\", \"boxes\": [[0, 620, 510, 835]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The edge of the concrete structure where the workers are standing lacks guardrails or fencing, bordering a deep drop/excavation area.",
+                "boxes": [
+                  [
+                    0,
+                    620,
+                    510,
+                    835
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 154,
+          "prompt_tokens": 1129
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002167"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.212190569960512,
+      "batch_wall_latency_seconds": 11.235628957045265,
+      "amortized_generation_ms_per_sample": 11212.190569960512,
+      "amortized_batch_wall_ms_per_sample": 11235.628957045265,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The edge of the concrete platform borders a deep excavation area without guardrails or fencing, creating a significant fall hazard.\", \"boxes\": [[0, 315, 515, 620]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}\n}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The edge of the concrete platform borders a deep excavation area without guardrails or fencing, creating a significant fall hazard.",
+                "boxes": [
+                  [
+                    0,
+                    315,
+                    515,
+                    620
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 151,
+          "prompt_tokens": 1405
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000380"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.91931619006209,
+      "batch_wall_latency_seconds": 8.942373727913946,
+      "amortized_generation_ms_per_sample": 8919.31619006209,
+      "amortized_batch_wall_ms_per_sample": 8942.373727913946,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1683
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000516"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.323322776006535,
+      "batch_wall_latency_seconds": 8.3395675040083,
+      "amortized_generation_ms_per_sample": 8323.322776006535,
+      "amortized_batch_wall_ms_per_sample": 8339.5675040083,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1405
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000176"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.365567820030265,
+      "batch_wall_latency_seconds": 8.383442353922874,
+      "amortized_generation_ms_per_sample": 8365.567820030265,
+      "amortized_batch_wall_ms_per_sample": 8383.442353922874,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000943"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.261911686044186,
+      "batch_wall_latency_seconds": 8.284466639976017,
+      "amortized_generation_ms_per_sample": 8261.911686044186,
+      "amortized_batch_wall_ms_per_sample": 8284.466639976017,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002853"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.991469252971001,
+      "batch_wall_latency_seconds": 11.013957520015538,
+      "amortized_generation_ms_per_sample": 10991.469252971001,
+      "amortized_batch_wall_ms_per_sample": 11013.957520015538,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The upper edge of the deep excavation in the foreground lacks guardrails or fencing, exposing a significant drop.\", \"boxes\": [[0, 580, 998, 998]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The upper edge of the deep excavation in the foreground lacks guardrails or fencing, exposing a significant drop.",
+                "boxes": [
+                  [
+                    0,
+                    580,
+                    998,
+                    998
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 147,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003176"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.860358019010164,
+      "batch_wall_latency_seconds": 10.878267464926466,
+      "amortized_generation_ms_per_sample": 10860.358019010164,
+      "amortized_batch_wall_ms_per_sample": 10878.267464926466,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The top edge of the deep excavation on the left side lacks guardrails or fencing, exposing a significant drop.\", \"boxes\": [[0, 500, 640, 998]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The top edge of the deep excavation on the left side lacks guardrails or fencing, exposing a significant drop.",
+                "boxes": [
+                  [
+                    0,
+                    500,
+                    640,
+                    998
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 148,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002495"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.56970894197002,
+      "batch_wall_latency_seconds": 10.593795233988203,
+      "amortized_generation_ms_per_sample": 10569.70894197002,
+      "amortized_batch_wall_ms_per_sample": 10593.795233988203,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": true, \"reason\": \"A worker crouching on the ground is clearly bareheaded, missing a hard hat.\", \"boxes\": [[475, 525, 571, 688]]}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": true,
+                "reason": "A worker crouching on the ground is clearly bareheaded, missing a hard hat.",
+                "boxes": [
+                  [
+                    475,
+                    525,
+                    571,
+                    688
+                  ]
+                ]
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 146,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000756"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.038495411048643,
+      "batch_wall_latency_seconds": 8.052992713986896,
+      "amortized_generation_ms_per_sample": 8038.495411048643,
+      "amortized_batch_wall_ms_per_sample": 8052.992713986896,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0004213"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.011779504013248,
+      "batch_wall_latency_seconds": 8.047042324091308,
+      "amortized_generation_ms_per_sample": 8011.779504013248,
+      "amortized_batch_wall_ms_per_sample": 8047.042324091308,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003472"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.286275054095313,
+      "batch_wall_latency_seconds": 8.304093755898066,
+      "amortized_generation_ms_per_sample": 8286.275054095313,
+      "amortized_batch_wall_ms_per_sample": 8304.093755898066,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0004290"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.341199293034151,
+      "batch_wall_latency_seconds": 8.358467961079441,
+      "amortized_generation_ms_per_sample": 8341.199293034151,
+      "amortized_batch_wall_ms_per_sample": 8358.467961079441,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001443"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 15.180880905943923,
+      "batch_wall_latency_seconds": 15.206637792987749,
+      "amortized_generation_ms_per_sample": 15180.880905943923,
+      "amortized_batch_wall_ms_per_sample": 15206.637792987749,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": true, \"reason\": \"A worker on the left side of the image, standing on the ground near the scaffolding, is clearly bareheaded and not wearing a hard hat.\", \"boxes\": [[238, 458, 278, 688]]}, \"rule_2_fall_protection_violation\": {\"present\": true, \"reason\": \"A worker is standing on a low concrete beam/ledge without a safety harness, exposed to a fall from a height of approximately 3 meters or more.\", \"boxes\": [[315, 325, 368, 505]]}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": true,
+                "reason": "A worker on the left side of the image, standing on the ground near the scaffolding, is clearly bareheaded and not wearing a hard hat.",
+                "boxes": [
+                  [
+                    238,
+                    458,
+                    278,
+                    688
+                  ]
+                ]
+              },
+              "rule_2_fall_protection_violation": {
+                "present": true,
+                "reason": "A worker is standing on a low concrete beam/ledge without a safety harness, exposed to a fall from a height of approximately 3 meters or more.",
+                "boxes": [
+                  [
+                    315,
+                    325,
+                    368,
+                    505
+                  ]
+                ]
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 207,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003365"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.154706532950513,
+      "batch_wall_latency_seconds": 8.171265691053122,
+      "amortized_generation_ms_per_sample": 8154.706532950513,
+      "amortized_batch_wall_ms_per_sample": 8171.265691053122,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003782"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.263969205901958,
+      "batch_wall_latency_seconds": 8.278776310035028,
+      "amortized_generation_ms_per_sample": 8263.969205901958,
+      "amortized_batch_wall_ms_per_sample": 8278.776310035028,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002089"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.21782910998445,
+      "batch_wall_latency_seconds": 8.233122498961166,
+      "amortized_generation_ms_per_sample": 8217.82910998445,
+      "amortized_batch_wall_ms_per_sample": 8233.122498961166,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1531
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001710"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.018760634935461,
+      "batch_wall_latency_seconds": 8.032283170963638,
+      "amortized_generation_ms_per_sample": 8018.760634935461,
+      "amortized_batch_wall_ms_per_sample": 8032.2831709636375,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1405
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002148"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.378318366943859,
+      "batch_wall_latency_seconds": 10.404688362963498,
+      "amortized_generation_ms_per_sample": 10378.318366943859,
+      "amortized_batch_wall_ms_per_sample": 10404.688362963498,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": true, \"reason\": \"A worker in the middle distance is clearly bareheaded, missing a hard hat.\", \"boxes\": [[561, 300, 582, 408]]}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": true,
+                "reason": "A worker in the middle distance is clearly bareheaded, missing a hard hat.",
+                "boxes": [
+                  [
+                    561,
+                    300,
+                    582,
+                    408
+                  ]
+                ]
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 144,
+          "prompt_tokens": 1531
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001289"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.48702211806085,
+      "batch_wall_latency_seconds": 11.514577882946469,
+      "amortized_generation_ms_per_sample": 11487.02211806085,
+      "amortized_batch_wall_ms_per_sample": 11514.577882946469,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The upper edge of the deep excavation on the right side lacks guardrails or fencing, bordering a steep drop of several meters.\", \"boxes\": [[430, 240, 998, 480]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}\n}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The upper edge of the deep excavation on the right side lacks guardrails or fencing, bordering a steep drop of several meters.",
+                "boxes": [
+                  [
+                    430,
+                    240,
+                    998,
+                    480
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 156,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002751"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.446506896987557,
+      "batch_wall_latency_seconds": 8.467677644919604,
+      "amortized_generation_ms_per_sample": 8446.506896987557,
+      "amortized_batch_wall_ms_per_sample": 8467.677644919604,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001252"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.315838309004903,
+      "batch_wall_latency_seconds": 8.333076176000759,
+      "amortized_generation_ms_per_sample": 8315.838309004903,
+      "amortized_batch_wall_ms_per_sample": 8333.076176000759,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001922"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.236222366103902,
+      "batch_wall_latency_seconds": 8.253340549999848,
+      "amortized_generation_ms_per_sample": 8236.222366103902,
+      "amortized_batch_wall_ms_per_sample": 8253.340549999848,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1107
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003581"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.227389317005873,
+      "batch_wall_latency_seconds": 8.240366365062073,
+      "amortized_generation_ms_per_sample": 8227.389317005873,
+      "amortized_batch_wall_ms_per_sample": 8240.366365062073,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1694
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001233"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.756323368987069,
+      "batch_wall_latency_seconds": 11.764942721929401,
+      "amortized_generation_ms_per_sample": 11756.323368987069,
+      "amortized_batch_wall_ms_per_sample": 11764.942721929401,
+      "outputs": [
+        {
+          "raw_response": "{\n  \"events\": {\n    \"rule_1_ppe_violation\": {\n      \"present\": false,\n      \"reason\": null,\n      \"boxes\": []\n    },\n    \"rule_2_fall_protection_violation\": {\n      \"present\": false,\n      \"reason\": null,\n      \"boxes\": []\n    },\n    \"rule_3_unprotected_edge_violation\": {\n      \"present\": false,\n      \"reason\": null,\n      \"boxes\": []\n    },\n    \"rule_4_excavator_proximity_violation\": {\n      \"present\": false,\n      \"reason\": null,\n      \"boxes\": []\n    }\n  }\n}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 163,
+          "prompt_tokens": 1453
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003383"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.106548791052774,
+      "batch_wall_latency_seconds": 8.117786544025876,
+      "amortized_generation_ms_per_sample": 8106.548791052774,
+      "amortized_batch_wall_ms_per_sample": 8117.786544025876,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1573
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003266"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.274491983000189,
+      "batch_wall_latency_seconds": 8.288345888955519,
+      "amortized_generation_ms_per_sample": 8274.491983000189,
+      "amortized_batch_wall_ms_per_sample": 8288.345888955519,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000824"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.22929672000464,
+      "batch_wall_latency_seconds": 11.251729905954562,
+      "amortized_generation_ms_per_sample": 11229.29672000464,
+      "amortized_batch_wall_ms_per_sample": 11251.729905954562,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": true, \"reason\": \"A worker is standing on the ground within the normal reach of the excavator's boom and bucket, which are positioned close to the worker.\", \"boxes\": [[155, 592, 191, 700]]}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": true,
+                "reason": "A worker is standing on the ground within the normal reach of the excavator's boom and bucket, which are positioned close to the worker.",
+                "boxes": [
+                  [
+                    155,
+                    592,
+                    191,
+                    700
+                  ]
+                ]
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 156,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002144"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.366267680074088,
+      "batch_wall_latency_seconds": 10.379591763019562,
+      "amortized_generation_ms_per_sample": 10366.267680074088,
+      "amortized_batch_wall_ms_per_sample": 10379.591763019562,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": true, \"reason\": \"Worker on the left is clearly bareheaded, missing a hard hat.\", \"boxes\": [[46, 383, 112, 545]]}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": true,
+                "reason": "Worker on the left is clearly bareheaded, missing a hard hat.",
+                "boxes": [
+                  [
+                    46,
+                    383,
+                    112,
+                    545
+                  ]
+                ]
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 141,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001450"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.482930272002704,
+      "batch_wall_latency_seconds": 8.493541297968477,
+      "amortized_generation_ms_per_sample": 8482.930272002704,
+      "amortized_batch_wall_ms_per_sample": 8493.541297968477,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1683
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003429"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.942747003980912,
+      "batch_wall_latency_seconds": 11.023728625965305,
+      "amortized_generation_ms_per_sample": 10942.747003980912,
+      "amortized_batch_wall_ms_per_sample": 11023.728625965305,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": true, \"reason\": \"A worker on the left is clearly bareheaded, missing a hard hat.\", \"boxes\": [[129, 331, 202, 555]]}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": true,
+                "reason": "A worker on the left is clearly bareheaded, missing a hard hat.",
+                "boxes": [
+                  [
+                    129,
+                    331,
+                    202,
+                    555
+                  ]
+                ]
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 143,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000205"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 12.731149753089994,
+      "batch_wall_latency_seconds": 12.753692528931424,
+      "amortized_generation_ms_per_sample": 12731.149753089994,
+      "amortized_batch_wall_ms_per_sample": 12753.692528931424,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The circular concrete structure has a deep opening in the center and the worker is standing near the edge without guardrails or fencing, indicating an unprotected edge over a deep drop.\", \"boxes\": [[0, 100, 1000, 1000]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}\n}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The circular concrete structure has a deep opening in the center and the worker is standing near the edge without guardrails or fencing, indicating an unprotected edge over a deep drop.",
+                "boxes": [
+                  [
+                    0,
+                    100,
+                    1000,
+                    1000
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 164,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0004209"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.481906582019292,
+      "batch_wall_latency_seconds": 8.510338544961996,
+      "amortized_generation_ms_per_sample": 8481.906582019292,
+      "amortized_batch_wall_ms_per_sample": 8510.338544961996,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003623"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.558857796015218,
+      "batch_wall_latency_seconds": 11.585797557956539,
+      "amortized_generation_ms_per_sample": 11558.857796015218,
+      "amortized_batch_wall_ms_per_sample": 11585.79755795654,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": true, \"reason\": \"Worker on the upper level is exposed to a fall hazard without a safety harness or effective edge protection.\", \"boxes\": [[508, 31, 646, 152]]}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": true,
+                "reason": "Worker on the upper level is exposed to a fall hazard without a safety harness or effective edge protection.",
+                "boxes": [
+                  [
+                    508,
+                    31,
+                    646,
+                    152
+                  ]
+                ]
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 147,
+          "prompt_tokens": 1694
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002496"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.345404008985497,
+      "batch_wall_latency_seconds": 11.363981842063367,
+      "amortized_generation_ms_per_sample": 11345.404008985497,
+      "amortized_batch_wall_ms_per_sample": 11363.981842063367,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The top edge of the deep excavation pit lacks guardrails or fencing, exposing workers to a significant fall hazard.\", \"boxes\": [[42, 442, 998, 685]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The top edge of the deep excavation pit lacks guardrails or fencing, exposing workers to a significant fall hazard.",
+                "boxes": [
+                  [
+                    42,
+                    442,
+                    998,
+                    685
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 149,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0004049"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.281572339008562,
+      "batch_wall_latency_seconds": 8.321087789023295,
+      "amortized_generation_ms_per_sample": 8281.572339008562,
+      "amortized_batch_wall_ms_per_sample": 8321.087789023295,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001483"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.35940665891394,
+      "batch_wall_latency_seconds": 8.414654169930145,
+      "amortized_generation_ms_per_sample": 8359.40665891394,
+      "amortized_batch_wall_ms_per_sample": 8414.654169930145,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0004197"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.471120469039306,
+      "batch_wall_latency_seconds": 11.495890544028953,
+      "amortized_generation_ms_per_sample": 11471.120469039306,
+      "amortized_batch_wall_ms_per_sample": 11495.890544028953,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": true, \"reason\": \"A worker is standing on the ground directly in the path of the excavator's bucket and within the machine's active swing zone.\", \"boxes\": [[638, 545, 668, 682]]}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": true,
+                "reason": "A worker is standing on the ground directly in the path of the excavator's bucket and within the machine's active swing zone.",
+                "boxes": [
+                  [
+                    638,
+                    545,
+                    668,
+                    682
+                  ]
+                ]
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 154,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003082"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.027026457944885,
+      "batch_wall_latency_seconds": 11.062949666986242,
+      "amortized_generation_ms_per_sample": 11027.026457944885,
+      "amortized_batch_wall_ms_per_sample": 11062.949666986242,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The top edge of the deep excavation on the left side lacks guardrails or fencing, exposing workers to a significant drop.\", \"boxes\": [[0, 0, 670, 640]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The top edge of the deep excavation on the left side lacks guardrails or fencing, exposing workers to a significant drop.",
+                "boxes": [
+                  [
+                    0,
+                    0,
+                    670,
+                    640
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 148,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000758"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.055003611021675,
+      "batch_wall_latency_seconds": 11.07016703102272,
+      "amortized_generation_ms_per_sample": 11055.003611021675,
+      "amortized_batch_wall_ms_per_sample": 11070.16703102272,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": true, \"reason\": \"A worker is standing within the normal reach of the excavator's boom and bucket in the active work area.\", \"boxes\": [[636, 330, 725, 582]]}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": true,
+                "reason": "A worker is standing within the normal reach of the excavator's boom and bucket in the active work area.",
+                "boxes": [
+                  [
+                    636,
+                    330,
+                    725,
+                    582
+                  ]
+                ]
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 150,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000564"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 13.539180523017421,
+      "batch_wall_latency_seconds": 13.570679377065971,
+      "amortized_generation_ms_per_sample": 13539.180523017421,
+      "amortized_batch_wall_ms_per_sample": 13570.679377065971,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": true, \"reason\": \"A worker on the right is walking on the construction site without a hard hat.\", \"boxes\": [[576, 515, 611, 632]]}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": true, \"reason\": \"A worker is standing very close to the excavator's tracks and rear counterweight, within its normal swing and travel zone.\", \"boxes\": [[472, 466, 508, 603]]}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": true,
+                "reason": "A worker on the right is walking on the construction site without a hard hat.",
+                "boxes": [
+                  [
+                    576,
+                    515,
+                    611,
+                    632
+                  ]
+                ]
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": true,
+                "reason": "A worker is standing very close to the excavator's tracks and rear counterweight, within its normal swing and travel zone.",
+                "boxes": [
+                  [
+                    472,
+                    466,
+                    508,
+                    603
+                  ]
+                ]
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 187,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001580"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.109316511079669,
+      "batch_wall_latency_seconds": 8.123522659065202,
+      "amortized_generation_ms_per_sample": 8109.316511079669,
+      "amortized_batch_wall_ms_per_sample": 8123.522659065202,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1333
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002136"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.921932367025875,
+      "batch_wall_latency_seconds": 10.956237377016805,
+      "amortized_generation_ms_per_sample": 10921.932367025875,
+      "amortized_batch_wall_ms_per_sample": 10956.237377016805,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The upper edge of the deep excavation is accessible and lacks guardrails or fencing, exposing workers to a significant drop.\", \"boxes\": [[0, 62, 1000, 312]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The upper edge of the deep excavation is accessible and lacks guardrails or fencing, exposing workers to a significant drop.",
+                "boxes": [
+                  [
+                    0,
+                    62,
+                    1000,
+                    312
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 149,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000949"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.729247406939976,
+      "batch_wall_latency_seconds": 10.767821826972067,
+      "amortized_generation_ms_per_sample": 10729.247406939976,
+      "amortized_batch_wall_ms_per_sample": 10767.821826972067,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": true, \"reason\": \"The driver inside the truck cab is clearly visible with a bare head, missing a hard hat.\", \"boxes\": [[378, 208, 408, 258]]}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": true,
+                "reason": "The driver inside the truck cab is clearly visible with a bare head, missing a hard hat.",
+                "boxes": [
+                  [
+                    378,
+                    208,
+                    408,
+                    258
+                  ]
+                ]
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 147,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003045"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 7.96182514692191,
+      "batch_wall_latency_seconds": 7.970436848932877,
+      "amortized_generation_ms_per_sample": 7961.82514692191,
+      "amortized_batch_wall_ms_per_sample": 7970.436848932877,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1129
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000013"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.21879173698835,
+      "batch_wall_latency_seconds": 8.24058064003475,
+      "amortized_generation_ms_per_sample": 8218.79173698835,
+      "amortized_batch_wall_ms_per_sample": 8240.58064003475,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003889"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.273510461091064,
+      "batch_wall_latency_seconds": 8.289232861017808,
+      "amortized_generation_ms_per_sample": 8273.510461091064,
+      "amortized_batch_wall_ms_per_sample": 8289.232861017808,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003261"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.405189790995792,
+      "batch_wall_latency_seconds": 8.4461084890645,
+      "amortized_generation_ms_per_sample": 8405.189790995792,
+      "amortized_batch_wall_ms_per_sample": 8446.1084890645,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001629"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.233813347993419,
+      "batch_wall_latency_seconds": 8.26478240697179,
+      "amortized_generation_ms_per_sample": 8233.813347993419,
+      "amortized_batch_wall_ms_per_sample": 8264.78240697179,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001569"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.24229718092829,
+      "batch_wall_latency_seconds": 8.27361940103583,
+      "amortized_generation_ms_per_sample": 8242.29718092829,
+      "amortized_batch_wall_ms_per_sample": 8273.61940103583,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002536"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.316832296084613,
+      "batch_wall_latency_seconds": 8.332275224965997,
+      "amortized_generation_ms_per_sample": 8316.832296084613,
+      "amortized_batch_wall_ms_per_sample": 8332.275224965997,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003053"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.387920169043355,
+      "batch_wall_latency_seconds": 8.417040045023896,
+      "amortized_generation_ms_per_sample": 8387.920169043355,
+      "amortized_batch_wall_ms_per_sample": 8417.040045023896,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0002661"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.386560487910174,
+      "batch_wall_latency_seconds": 11.400971814990044,
+      "amortized_generation_ms_per_sample": 11386.560487910174,
+      "amortized_batch_wall_ms_per_sample": 11400.971814990044,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The top edge of the deep excavation trench lacks guardrails or fencing, exposing workers to a significant fall hazard.\", \"boxes\": [[0, 200, 780, 650]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}\n}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The top edge of the deep excavation trench lacks guardrails or fencing, exposing workers to a significant fall hazard.",
+                "boxes": [
+                  [
+                    0,
+                    200,
+                    780,
+                    650
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 150,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001664"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.633664096007124,
+      "batch_wall_latency_seconds": 8.660372731043026,
+      "amortized_generation_ms_per_sample": 8633.664096007124,
+      "amortized_batch_wall_ms_per_sample": 8660.372731043026,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001351"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 12.240043157013133,
+      "batch_wall_latency_seconds": 12.259637883980758,
+      "amortized_generation_ms_per_sample": 12240.043157013133,
+      "amortized_batch_wall_ms_per_sample": 12259.637883980758,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": true, \"reason\": \"The top edge of the concrete retaining wall borders a deep excavation area and lacks guardrails or fencing, creating a fall hazard for workers on the upper level.\", \"boxes\": [[0, 500, 998, 580]]}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}\n}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": true,
+                "reason": "The top edge of the concrete retaining wall borders a deep excavation area and lacks guardrails or fencing, creating a fall hazard for workers on the upper level.",
+                "boxes": [
+                  [
+                    0,
+                    500,
+                    998,
+                    580
+                  ]
+                ]
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 159,
+          "prompt_tokens": 1683
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0000304"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.286614268901758,
+      "batch_wall_latency_seconds": 8.305405738996342,
+      "amortized_generation_ms_per_sample": 8286.614268901758,
+      "amortized_batch_wall_ms_per_sample": 8305.405738996342,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1243
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0004537"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.83758004498668,
+      "batch_wall_latency_seconds": 10.849978967919014,
+      "amortized_generation_ms_per_sample": 10837.58004498668,
+      "amortized_batch_wall_ms_per_sample": 10849.978967919014,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": true, \"reason\": \"Worker is standing on rebar at a significant height without a safety harness, exposed to a fall.\", \"boxes\": [[538, 292, 706, 568]]}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": true,
+                "reason": "Worker is standing on rebar at a significant height without a safety harness, exposed to a fall.",
+                "boxes": [
+                  [
+                    538,
+                    292,
+                    706,
+                    568
+                  ]
+                ]
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 148,
+          "prompt_tokens": 1405
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0003801"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 8.35220990900416,
+      "batch_wall_latency_seconds": 8.370414639008231,
+      "amortized_generation_ms_per_sample": 8352.20990900416,
+      "amortized_batch_wall_ms_per_sample": 8370.414639008231,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 110,
+          "prompt_tokens": 1705
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0004321"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.045618020929396,
+      "batch_wall_latency_seconds": 11.056004835991189,
+      "amortized_generation_ms_per_sample": 11045.618020929396,
+      "amortized_batch_wall_ms_per_sample": 11056.004835991189,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": true, \"reason\": \"A worker on foot near the concrete pump hose is clearly bareheaded, missing a hard hat.\", \"boxes\": [[451, 686, 468, 758]]}, \"rule_2_fall_protection_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": true,
+                "reason": "A worker on foot near the concrete pump hose is clearly bareheaded, missing a hard hat.",
+                "boxes": [
+                  [
+                    451,
+                    686,
+                    468,
+                    758
+                  ]
+                ]
+              },
+              "rule_2_fall_protection_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 147,
+          "prompt_tokens": 1393
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "0001878"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 12.032795147038996,
+      "batch_wall_latency_seconds": 12.044023220078088,
+      "amortized_generation_ms_per_sample": 12032.795147038996,
+      "amortized_batch_wall_ms_per_sample": 12044.023220078088,
+      "outputs": [
+        {
+          "raw_response": "{\"events\": {\"rule_1_ppe_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_2_fall_protection_violation\": {\"present\": true, \"reason\": \"A worker is standing on the top of the concrete pump truck chassis, which is elevated above the ground, without any visible safety harness or fall protection equipment.\", \"boxes\": [[483, 526, 518, 625]]}, \"rule_3_unprotected_edge_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}, \"rule_4_excavator_proximity_violation\": {\"present\": false, \"reason\": null, \"boxes\": []}}}",
+          "valid_prediction": {
+            "events": {
+              "rule_1_ppe_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_2_fall_protection_violation": {
+                "present": true,
+                "reason": "A worker is standing on the top of the concrete pump truck chassis, which is elevated above the ground, without any visible safety harness or fall protection equipment.",
+                "boxes": [
+                  [
+                    483,
+                    526,
+                    518,
+                    625
+                  ]
+                ]
+              },
+              "rule_3_unprotected_edge_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              },
+              "rule_4_excavator_proximity_violation": {
+                "present": false,
+                "reason": null,
+                "boxes": []
+              }
+            }
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 159,
+          "prompt_tokens": 1705
+        }
+      ]
+    }
+  ],
+  "mean_generation_ms_per_sample": 9800.482400676628,
+  "median_generation_ms_per_sample": 8558.297184004914,
+  "mean_batch_wall_ms_per_sample": 9822.475872695577,
+  "median_batch_wall_ms_per_sample": 8585.355638002511,
+  "mean_prompt_tokens": 1624.5625,
+  "mean_completion_tokens": 130.796875,
+  "latency_scope": "A800 vLLM-0.18.0 native generation latency with the frozen task prompt and structured-output schema; model loading and warmup excluded. Batch wall time includes the real request/image preparation path.",
+  "flops_scope": "This file measures latency only. Counted FLOPs are measured separately by the HF reference probe and are not claimed to be complete vLLM kernel FLOPs."
+}

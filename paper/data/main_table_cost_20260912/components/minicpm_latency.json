@@ -1,0 +1,2105 @@
+{
+  "status": "complete",
+  "model_kind": "MiniCPM",
+  "task": "grefcoco",
+  "expert": "instancevg",
+  "model_path": "/mnt/HithinkOmniSSD/user_workspace/caisihang/checkpoints/MiniCPM-V-4_5",
+  "device": "cuda:0",
+  "gpu_memory_utilization": 0.85,
+  "sample_count_requested": 66,
+  "warmup_count": 2,
+  "measured_count": 64,
+  "batch_size": 1,
+  "sample_ids": [
+    "testA-29199-80373",
+    "testB-44351-122075",
+    "testA-91850-253019",
+    "testB-36888-101641",
+    "testA-54586-150233",
+    "testB-79644-219272",
+    "testB-65935-181776",
+    "testA-81622-224664",
+    "testA-10078-27739",
+    "testA-15582-42797",
+    "testA-5038-13943",
+    "testA-30844-84861",
+    "testB-15419-42356",
+    "testB-27486-75580",
+    "testB-945-2632",
+    "testA-24438-67190",
+    "testB-66161-182405",
+    "testB-42726-117659",
+    "testB-69439-191450",
+    "testA-54307-149426",
+    "testB-37669-103831",
+    "testB-50844-140105",
+    "testA-79438-218690",
+    "testA-62940-173454",
+    "testA-81245-223632",
+    "testA-47070-129599",
+    "testB-12381-34098",
+    "testA-44142-121498",
+    "testA-73258-201893",
+    "testB-46644-128436",
+    "testA-43889-120792",
+    "testB-36082-99363",
+    "testB-33108-91152",
+    "testA-26856-73830",
+    "testA-81271-223709",
+    "testA-54554-150141",
+    "testB-38636-106481",
+    "testA-5734-15837",
+    "testB-67558-186325",
+    "testB-47053-129554",
+    "testA-93064-256422",
+    "testB-60557-166821",
+    "testA-55116-151688",
+    "testB-65796-181392",
+    "testB-23014-63278",
+    "testA-24562-67515",
+    "testA-17736-48684",
+    "testA-58475-160949",
+    "testA-80455-221493",
+    "testA-31763-87405",
+    "testB-23920-65742",
+    "testA-469-1309",
+    "testB-56691-155998",
+    "testB-31493-86668",
+    "testA-59284-163254",
+    "testA-57397-158015",
+    "testB-2935-8111",
+    "testB-22290-61226",
+    "testB-8416-23140",
+    "testA-60731-167320",
+    "testA-49055-135086",
+    "testA-7857-21644",
+    "testB-79645-219273",
+    "testB-52921-145707",
+    "testB-69479-191562",
+    "testA-69466-191524"
+  ],
+  "batches": [
+    {
+      "sample_ids": [
+        "testA-91850-253019"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.8861644599819556,
+      "batch_wall_latency_seconds": 0.9864439839730039,
+      "amortized_generation_ms_per_sample": 886.1644599819556,
+      "amortized_batch_wall_ms_per_sample": 986.4439839730039,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[420  ,220  ,710  ,640  ],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  420,
+                  220,
+                  710,
+                  640
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 39,
+          "prompt_tokens": 530
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-36888-101641"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.3824354230891913,
+      "batch_wall_latency_seconds": 1.3937634559115395,
+      "amortized_generation_ms_per_sample": 1382.4354230891913,
+      "amortized_batch_wall_ms_per_sample": 1393.7634559115395,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[30,570,720,900],\"score\":0.95},{\"bbox_2d\":[390,260,960,860],\"score\":0.93}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  30,
+                  570,
+                  720,
+                  900
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  390,
+                  260,
+                  960,
+                  860
+                ],
+                "score": 0.93
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 60,
+          "prompt_tokens": 528
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-54586-150233"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.028413712978363,
+      "batch_wall_latency_seconds": 10.048457957920618,
+      "amortized_generation_ms_per_sample": 10028.413712978363,
+      "amortized_batch_wall_ms_per_sample": 10048.457957920618,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[480                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 660
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-79644-219272"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 7.480462849023752,
+      "batch_wall_latency_seconds": 7.510920200962573,
+      "amortized_generation_ms_per_sample": 7480.462849023752,
+      "amortized_batch_wall_ms_per_sample": 7510.920200962573,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\": [{\"bbox_2d\":[120,390,270,790],\"score\":0.92},{\"bbox_2d\":[160,430,300,730],\"score\":0.91},{\"bbox_2d\":[270,560,320,740],\"score\":0.90},{\"bbox_2d\":[300,550,350,720],\"score\":0.89},{\"bbox_2d\":[340,540,380,700],\"score\":0.88},{\"bbox_2d\":[450,560,500,770],\"score\":0.87},{\"bbox_2d\":[480,580,530,760],\"score\":0.86},{\"bbox_2d\":[530,560,570,710],\"score\":0.85},{\"bbox_2d\":[570,530,740,780],\"score\":0.84},{\"bbox_2d\":[670,550,740,810],\"score\":0.83},{\"bbox_2d\":[740,540,800,760],\"score\":0.82},{\"bbox_2d\":[800,540,840,700],\"score\":0.81},{\"bbox_2d\":[840,540,900,780],\"score\":0.80}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  120,
+                  390,
+                  270,
+                  790
+                ],
+                "score": 0.92
+              },
+              {
+                "bbox_2d": [
+                  160,
+                  430,
+                  300,
+                  730
+                ],
+                "score": 0.91
+              },
+              {
+                "bbox_2d": [
+                  270,
+                  560,
+                  320,
+                  740
+                ],
+                "score": 0.9
+              },
+              {
+                "bbox_2d": [
+                  300,
+                  550,
+                  350,
+                  720
+                ],
+                "score": 0.89
+              },
+              {
+                "bbox_2d": [
+                  340,
+                  540,
+                  380,
+                  700
+                ],
+                "score": 0.88
+              },
+              {
+                "bbox_2d": [
+                  450,
+                  560,
+                  500,
+                  770
+                ],
+                "score": 0.87
+              },
+              {
+                "bbox_2d": [
+                  480,
+                  580,
+                  530,
+                  760
+                ],
+                "score": 0.86
+              },
+              {
+                "bbox_2d": [
+                  530,
+                  560,
+                  570,
+                  710
+                ],
+                "score": 0.85
+              },
+              {
+                "bbox_2d": [
+                  570,
+                  530,
+                  740,
+                  780
+                ],
+                "score": 0.84
+              },
+              {
+                "bbox_2d": [
+                  670,
+                  550,
+                  740,
+                  810
+                ],
+                "score": 0.83
+              },
+              {
+                "bbox_2d": [
+                  740,
+                  540,
+                  800,
+                  760
+                ],
+                "score": 0.82
+              },
+              {
+                "bbox_2d": [
+                  800,
+                  540,
+                  840,
+                  700
+                ],
+                "score": 0.81
+              },
+              {
+                "bbox_2d": [
+                  840,
+                  540,
+                  900,
+                  780
+                ],
+                "score": 0.8
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 370,
+          "prompt_tokens": 520
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-65935-181776"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.180860323016532,
+      "batch_wall_latency_seconds": 10.195898448000662,
+      "amortized_generation_ms_per_sample": 10180.860323016532,
+      "amortized_batch_wall_ms_per_sample": 10195.898448000662,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[340                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 524
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-81622-224664"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.2510422539198771,
+      "batch_wall_latency_seconds": 0.26205689006019384,
+      "amortized_generation_ms_per_sample": 251.0422539198771,
+      "amortized_batch_wall_ms_per_sample": 262.05689006019384,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 524
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-10078-27739"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.26944356702733785,
+      "batch_wall_latency_seconds": 0.2834722528932616,
+      "amortized_generation_ms_per_sample": 269.44356702733785,
+      "amortized_batch_wall_ms_per_sample": 283.4722528932616,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 525
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-15582-42797"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.9161002039909363,
+      "batch_wall_latency_seconds": 1.9308117219479755,
+      "amortized_generation_ms_per_sample": 1916.1002039909363,
+      "amortized_batch_wall_ms_per_sample": 1930.8117219479755,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[80,280,400,980],\"score\":0.95},{\"bbox_2d\":[310,390,510,980],\"score\":0.93},{\"bbox_2d\":[540,400,640,870],\"score\":0.88}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  80,
+                  280,
+                  400,
+                  980
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  310,
+                  390,
+                  510,
+                  980
+                ],
+                "score": 0.93
+              },
+              {
+                "bbox_2d": [
+                  540,
+                  400,
+                  640,
+                  870
+                ],
+                "score": 0.88
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 88,
+          "prompt_tokens": 539
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-5038-13943"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.7828407019842416,
+      "batch_wall_latency_seconds": 0.7960362600861117,
+      "amortized_generation_ms_per_sample": 782.8407019842416,
+      "amortized_batch_wall_ms_per_sample": 796.0362600861117,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[490,240,780,980],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  490,
+                  240,
+                  780,
+                  980
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 33,
+          "prompt_tokens": 524
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-30844-84861"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.480434139957651,
+      "batch_wall_latency_seconds": 10.485813157982193,
+      "amortized_generation_ms_per_sample": 10480.434139957651,
+      "amortized_batch_wall_ms_per_sample": 10485.813157982193,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[470    \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 499 column 1 (char 2020)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 543
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-15419-42356"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.714943284052424,
+      "batch_wall_latency_seconds": 10.730338808032684,
+      "amortized_generation_ms_per_sample": 10714.943284052424,
+      "amortized_batch_wall_ms_per_sample": 10730.338808032684,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[110                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 526
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-27486-75580"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.180824494105764,
+      "batch_wall_latency_seconds": 10.188868912984617,
+      "amortized_generation_ms_per_sample": 10180.824494105764,
+      "amortized_batch_wall_ms_per_sample": 10188.868912984617,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[530    \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 499 column 1 (char 2020)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 530
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-945-2632"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 3.843070151982829,
+      "batch_wall_latency_seconds": 3.859969821991399,
+      "amortized_generation_ms_per_sample": 3843.070151982829,
+      "amortized_batch_wall_ms_per_sample": 3859.969821991399,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[120,530,220,910] ,\"score\":0.92},{\"bbox_2d\":[250,530,350,910] ,\"score\":0.92},{\"bbox_2d\":[380,530,480,910] ,\"score\":0.92},{\"bbox_2d\":[500,520,600,910] ,\"score\":0.92},{\"bbox_2d\":[620,530,720,910] ,\"score\":0.92},{\"bbox_2d\":[740,530,840,910] ,\"score\":0.92}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  120,
+                  530,
+                  220,
+                  910
+                ],
+                "score": 0.92
+              },
+              {
+                "bbox_2d": [
+                  250,
+                  530,
+                  350,
+                  910
+                ],
+                "score": 0.92
+              },
+              {
+                "bbox_2d": [
+                  380,
+                  530,
+                  480,
+                  910
+                ],
+                "score": 0.92
+              },
+              {
+                "bbox_2d": [
+                  500,
+                  520,
+                  600,
+                  910
+                ],
+                "score": 0.92
+              },
+              {
+                "bbox_2d": [
+                  620,
+                  530,
+                  720,
+                  910
+                ],
+                "score": 0.92
+              },
+              {
+                "bbox_2d": [
+                  740,
+                  530,
+                  840,
+                  910
+                ],
+                "score": 0.92
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 179,
+          "prompt_tokens": 530
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-24438-67190"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.143939319998026,
+      "batch_wall_latency_seconds": 10.162826716084965,
+      "amortized_generation_ms_per_sample": 10143.939319998026,
+      "amortized_batch_wall_ms_per_sample": 10162.826716084965,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[290,240,590,920],\"score\":0.95},{\"bbox_2d\":[730   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 472 column 1 (char 1954)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 525
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-66161-182405"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.25821736396756,
+      "batch_wall_latency_seconds": 10.271643411950208,
+      "amortized_generation_ms_per_sample": 10258.21736396756,
+      "amortized_batch_wall_ms_per_sample": 10271.643411950208,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[100                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 523
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-42726-117659"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.9900629689218476,
+      "batch_wall_latency_seconds": 1.0045652500120923,
+      "amortized_generation_ms_per_sample": 990.0629689218476,
+      "amortized_batch_wall_ms_per_sample": 1004.5652500120923,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[775    ,775  ,999   ,999  ],\"score\":0.92}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  775,
+                  775,
+                  999,
+                  999
+                ],
+                "score": 0.92
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 43,
+          "prompt_tokens": 525
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-69439-191450"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.19075044698547572,
+      "batch_wall_latency_seconds": 0.20009391102939844,
+      "amortized_generation_ms_per_sample": 190.75044698547572,
+      "amortized_batch_wall_ms_per_sample": 200.09391102939844,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 388
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-54307-149426"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.2734235550742596,
+      "batch_wall_latency_seconds": 1.2819705069996417,
+      "amortized_generation_ms_per_sample": 1273.4235550742596,
+      "amortized_batch_wall_ms_per_sample": 1281.9705069996417,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[170,0,560,420] ,\"score\":0.95},{\"bbox_2d\":[540,40,830,910] ,\"score\":0.96}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  170,
+                  0,
+                  560,
+                  420
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  540,
+                  40,
+                  830,
+                  910
+                ],
+                "score": 0.96
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 60,
+          "prompt_tokens": 524
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-37669-103831"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.21837474894709885,
+      "batch_wall_latency_seconds": 0.23633889202028513,
+      "amortized_generation_ms_per_sample": 218.37474894709885,
+      "amortized_batch_wall_ms_per_sample": 236.33889202028513,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 528
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-50844-140105"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.23954864998813719,
+      "batch_wall_latency_seconds": 0.2525435209972784,
+      "amortized_generation_ms_per_sample": 239.54864998813719,
+      "amortized_batch_wall_ms_per_sample": 252.5435209972784,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 522
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-79438-218690"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.7543689489830285,
+      "batch_wall_latency_seconds": 0.7701102939900011,
+      "amortized_generation_ms_per_sample": 754.3689489830285,
+      "amortized_batch_wall_ms_per_sample": 770.1102939900011,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[260,170,520,910],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  260,
+                  170,
+                  520,
+                  910
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 33,
+          "prompt_tokens": 522
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-62940-173454"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.8060770370066166,
+      "batch_wall_latency_seconds": 0.8215904459357262,
+      "amortized_generation_ms_per_sample": 806.0770370066166,
+      "amortized_batch_wall_ms_per_sample": 821.5904459357262,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[620,270,750,690],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  620,
+                  270,
+                  750,
+                  690
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 33,
+          "prompt_tokens": 525
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-81245-223632"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 2.46771560003981,
+      "batch_wall_latency_seconds": 2.4794425220461562,
+      "amortized_generation_ms_per_sample": 2467.71560003981,
+      "amortized_batch_wall_ms_per_sample": 2479.4425220461562,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[530,110,760,880] ,\"score\":0.95},{\"bbox_2d\":[560,180,630,610] ,\"score\":0.93},{\"bbox_2d\":[690,130,790,740] ,\"score\":0.91},{\"bbox_2d\":[790,110,920,660] ,\"score\":0.90}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  530,
+                  110,
+                  760,
+                  880
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  560,
+                  180,
+                  630,
+                  610
+                ],
+                "score": 0.93
+              },
+              {
+                "bbox_2d": [
+                  690,
+                  130,
+                  790,
+                  740
+                ],
+                "score": 0.91
+              },
+              {
+                "bbox_2d": [
+                  790,
+                  110,
+                  920,
+                  660
+                ],
+                "score": 0.9
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 121,
+          "prompt_tokens": 530
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-47070-129599"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.22282294591423124,
+      "batch_wall_latency_seconds": 0.2299416270107031,
+      "amortized_generation_ms_per_sample": 222.82294591423124,
+      "amortized_batch_wall_ms_per_sample": 229.9416270107031,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 521
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-12381-34098"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.451599241001531,
+      "batch_wall_latency_seconds": 10.457325526047498,
+      "amortized_generation_ms_per_sample": 10451.599241001531,
+      "amortized_batch_wall_ms_per_sample": 10457.325526047498,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[290                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 534
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-44142-121498"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.4406404530163854,
+      "batch_wall_latency_seconds": 1.4515395000344142,
+      "amortized_generation_ms_per_sample": 1440.6404530163854,
+      "amortized_batch_wall_ms_per_sample": 1451.5395000344142,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[0,100,580,980] ,\"score\":0.95},{\"bbox_2d\":[570,120,1000,900] ,\"score\":0.93}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  0,
+                  100,
+                  580,
+                  980
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  570,
+                  120,
+                  1000,
+                  900
+                ],
+                "score": 0.93
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 62,
+          "prompt_tokens": 523
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-73258-201893"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 11.113033535890281,
+      "batch_wall_latency_seconds": 11.123388323001564,
+      "amortized_generation_ms_per_sample": 11113.033535890281,
+      "amortized_batch_wall_ms_per_sample": 11123.388323001564,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[520    \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n     \n    \n",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 251 column 1 (char 1401)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 526
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-46644-128436"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.2878015459282324,
+      "batch_wall_latency_seconds": 1.2976085640257224,
+      "amortized_generation_ms_per_sample": 1287.8015459282324,
+      "amortized_batch_wall_ms_per_sample": 1297.6085640257224,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[100,180,520,720],\"score\":0.95},{\"bbox_2d\":[450,0,990,740],\"score\":0.96}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  100,
+                  180,
+                  520,
+                  720
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  450,
+                  0,
+                  990,
+                  740
+                ],
+                "score": 0.96
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 59,
+          "prompt_tokens": 393
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-43889-120792"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.7570710440631956,
+      "batch_wall_latency_seconds": 0.7649242469342425,
+      "amortized_generation_ms_per_sample": 757.0710440631956,
+      "amortized_batch_wall_ms_per_sample": 764.9242469342425,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[120,260,340,830],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  120,
+                  260,
+                  340,
+                  830
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 33,
+          "prompt_tokens": 531
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-36082-99363"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.2985183690907434,
+      "batch_wall_latency_seconds": 1.3064349760534242,
+      "amortized_generation_ms_per_sample": 1298.5183690907434,
+      "amortized_batch_wall_ms_per_sample": 1306.4349760534242,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[0,100,420,890] ,\"score\":0.95},{\"bbox_2d\":[440,100,990,890] ,\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  0,
+                  100,
+                  420,
+                  890
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  440,
+                  100,
+                  990,
+                  890
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 61,
+          "prompt_tokens": 392
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-33108-91152"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.9395933509804308,
+      "batch_wall_latency_seconds": 0.9509444029536098,
+      "amortized_generation_ms_per_sample": 939.5933509804308,
+      "amortized_batch_wall_ms_per_sample": 950.9444029536098,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[0    ,270   ,390   ,450  ],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  0,
+                  270,
+                  390,
+                  450
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 41,
+          "prompt_tokens": 522
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-26856-73830"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.264511390007101,
+      "batch_wall_latency_seconds": 10.279962090076879,
+      "amortized_generation_ms_per_sample": 10264.511390007101,
+      "amortized_batch_wall_ms_per_sample": 10279.962090076879,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[575                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 522
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-81271-223709"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.23597171693108976,
+      "batch_wall_latency_seconds": 0.2577737799147144,
+      "amortized_generation_ms_per_sample": 235.97171693108976,
+      "amortized_batch_wall_ms_per_sample": 257.7737799147144,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 520
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-54554-150141"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.6926666980143636,
+      "batch_wall_latency_seconds": 0.710583986947313,
+      "amortized_generation_ms_per_sample": 692.6666980143636,
+      "amortized_batch_wall_ms_per_sample": 710.583986947313,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[0,0,1000,250] ,\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  0,
+                  0,
+                  1000,
+                  250
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 31,
+          "prompt_tokens": 530
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-38636-106481"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 9.935319383977912,
+      "batch_wall_latency_seconds": 9.945194306899793,
+      "amortized_generation_ms_per_sample": 9935.319383977912,
+      "amortized_batch_wall_ms_per_sample": 9945.194306899793,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[430                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 397
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-5734-15837"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.2923860140144825,
+      "batch_wall_latency_seconds": 1.3085041570011526,
+      "amortized_generation_ms_per_sample": 1292.3860140144825,
+      "amortized_batch_wall_ms_per_sample": 1308.5041570011526,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[0,190,310,740],\"score\":0.95},{\"bbox_2d\":[400,230,660,690],\"score\":0.93}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  0,
+                  190,
+                  310,
+                  740
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  400,
+                  230,
+                  660,
+                  690
+                ],
+                "score": 0.93
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 59,
+          "prompt_tokens": 525
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-67558-186325"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.23707255406770855,
+      "batch_wall_latency_seconds": 0.24415827100165188,
+      "amortized_generation_ms_per_sample": 237.07255406770855,
+      "amortized_batch_wall_ms_per_sample": 244.15827100165188,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 520
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-47053-129554"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.8615183549700305,
+      "batch_wall_latency_seconds": 0.8810114429797977,
+      "amortized_generation_ms_per_sample": 861.5183549700305,
+      "amortized_batch_wall_ms_per_sample": 881.0114429797977,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[420  ,300  ,800  ,800  ],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  420,
+                  300,
+                  800,
+                  800
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 39,
+          "prompt_tokens": 525
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-93064-256422"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.7549799080006778,
+      "batch_wall_latency_seconds": 0.7621725639328361,
+      "amortized_generation_ms_per_sample": 754.9799080006778,
+      "amortized_batch_wall_ms_per_sample": 762.172563932836,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[100,80,750,980],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  100,
+                  80,
+                  750,
+                  980
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 32,
+          "prompt_tokens": 530
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-60557-166821"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.23407667502760887,
+      "batch_wall_latency_seconds": 0.24112907599192113,
+      "amortized_generation_ms_per_sample": 234.07667502760887,
+      "amortized_batch_wall_ms_per_sample": 241.12907599192113,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 520
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-55116-151688"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.22477965708822012,
+      "batch_wall_latency_seconds": 0.23706394899636507,
+      "amortized_generation_ms_per_sample": 224.77965708822012,
+      "amortized_batch_wall_ms_per_sample": 237.06394899636507,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 520
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-65796-181392"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.24896689096931368,
+      "batch_wall_latency_seconds": 0.26310552388895303,
+      "amortized_generation_ms_per_sample": 248.96689096931368,
+      "amortized_batch_wall_ms_per_sample": 263.10552388895303,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 521
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-23014-63278"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.8068696269765496,
+      "batch_wall_latency_seconds": 0.8200291059911251,
+      "amortized_generation_ms_per_sample": 806.8696269765496,
+      "amortized_batch_wall_ms_per_sample": 820.0291059911251,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[30,300,340,700],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  30,
+                  300,
+                  340,
+                  700
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 32,
+          "prompt_tokens": 523
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-24562-67515"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.2276058099232614,
+      "batch_wall_latency_seconds": 0.24499452603049576,
+      "amortized_generation_ms_per_sample": 227.6058099232614,
+      "amortized_batch_wall_ms_per_sample": 244.99452603049576,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 526
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-17736-48684"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 9.981450814986601,
+      "batch_wall_latency_seconds": 9.995843482087366,
+      "amortized_generation_ms_per_sample": 9981.450814986601,
+      "amortized_batch_wall_ms_per_sample": 9995.843482087366,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[500    \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 499 column 1 (char 2020)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 525
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-58475-160949"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.7565385290654376,
+      "batch_wall_latency_seconds": 0.76229489792604,
+      "amortized_generation_ms_per_sample": 756.5385290654376,
+      "amortized_batch_wall_ms_per_sample": 762.29489792604,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[40,10,580,980],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  40,
+                  10,
+                  580,
+                  980
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 31,
+          "prompt_tokens": 525
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-80455-221493"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.0085041749989614,
+      "batch_wall_latency_seconds": 1.020079139037989,
+      "amortized_generation_ms_per_sample": 1008.5041749989614,
+      "amortized_batch_wall_ms_per_sample": 1020.0791390379891,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[0    ,  0   ,  560   ,  890  ],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  0,
+                  0,
+                  560,
+                  890
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 45,
+          "prompt_tokens": 522
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-31763-87405"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.3390386949758977,
+      "batch_wall_latency_seconds": 1.3469314540270716,
+      "amortized_generation_ms_per_sample": 1339.0386949758977,
+      "amortized_batch_wall_ms_per_sample": 1346.9314540270716,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[350,880,420,930] ,\"score\":0.92},{\"bbox_2d\":[580,750,640,810] ,\"score\":0.91}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  350,
+                  880,
+                  420,
+                  930
+                ],
+                "score": 0.92
+              },
+              {
+                "bbox_2d": [
+                  580,
+                  750,
+                  640,
+                  810
+                ],
+                "score": 0.91
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 63,
+          "prompt_tokens": 389
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-23920-65742"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.071104103000835,
+      "batch_wall_latency_seconds": 10.078898616950028,
+      "amortized_generation_ms_per_sample": 10071.104103000835,
+      "amortized_batch_wall_ms_per_sample": 10078.898616950028,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[510    \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 499 column 1 (char 2020)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 529
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-469-1309"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.26207074394915253,
+      "batch_wall_latency_seconds": 0.2735602979082614,
+      "amortized_generation_ms_per_sample": 262.07074394915253,
+      "amortized_batch_wall_ms_per_sample": 273.5602979082614,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 522
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-56691-155998"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.205810929066502,
+      "batch_wall_latency_seconds": 10.223061772994697,
+      "amortized_generation_ms_per_sample": 10205.810929066502,
+      "amortized_batch_wall_ms_per_sample": 10223.061772994697,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[690                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 523
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-31493-86668"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.434396203025244,
+      "batch_wall_latency_seconds": 10.448493773932569,
+      "amortized_generation_ms_per_sample": 10434.396203025244,
+      "amortized_batch_wall_ms_per_sample": 10448.493773932569,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[158                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 535
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-59284-163254"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.32271799701266,
+      "batch_wall_latency_seconds": 1.3361050819512457,
+      "amortized_generation_ms_per_sample": 1322.71799701266,
+      "amortized_batch_wall_ms_per_sample": 1336.1050819512457,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[490,360,680,970],\"score\":0.95},{\"bbox_2d\":[580,310,780,370],\"score\":0.92}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  490,
+                  360,
+                  680,
+                  970
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  580,
+                  310,
+                  780,
+                  370
+                ],
+                "score": 0.92
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 61,
+          "prompt_tokens": 543
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-57397-158015"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.22141807794105262,
+      "batch_wall_latency_seconds": 0.2377260560169816,
+      "amortized_generation_ms_per_sample": 221.41807794105262,
+      "amortized_batch_wall_ms_per_sample": 237.7260560169816,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 522
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-2935-8111"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.570877194055356,
+      "batch_wall_latency_seconds": 10.580568464938551,
+      "amortized_generation_ms_per_sample": 10570.877194055356,
+      "amortized_batch_wall_ms_per_sample": 10580.568464938551,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[380                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 530
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-22290-61226"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.22713651705998927,
+      "batch_wall_latency_seconds": 0.23939726105891168,
+      "amortized_generation_ms_per_sample": 227.13651705998927,
+      "amortized_batch_wall_ms_per_sample": 239.39726105891168,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 526
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-8416-23140"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.8887132819509134,
+      "batch_wall_latency_seconds": 1.9046463000122458,
+      "amortized_generation_ms_per_sample": 1888.7132819509134,
+      "amortized_batch_wall_ms_per_sample": 1904.6463000122458,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[0,280,330,720] ,\"score\":0.95},{\"bbox_2d\":[170,270,560,720] ,\"score\":0.94},{\"bbox_2d\":[730,190,960,790] ,\"score\":0.93}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  0,
+                  280,
+                  330,
+                  720
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  170,
+                  270,
+                  560,
+                  720
+                ],
+                "score": 0.94
+              },
+              {
+                "bbox_2d": [
+                  730,
+                  190,
+                  960,
+                  790
+                ],
+                "score": 0.93
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 90,
+          "prompt_tokens": 525
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-60731-167320"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.2317780090961605,
+      "batch_wall_latency_seconds": 1.246546880924143,
+      "amortized_generation_ms_per_sample": 1231.7780090961605,
+      "amortized_batch_wall_ms_per_sample": 1246.546880924143,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[0,80,420,910],\"score\":0.95},{\"bbox_2d\":[460,0,760,200],\"score\":0.85}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  0,
+                  80,
+                  420,
+                  910
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  460,
+                  0,
+                  760,
+                  200
+                ],
+                "score": 0.85
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 56,
+          "prompt_tokens": 526
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-49055-135086"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 1.8898930319119245,
+      "batch_wall_latency_seconds": 1.899978275061585,
+      "amortized_generation_ms_per_sample": 1889.8930319119245,
+      "amortized_batch_wall_ms_per_sample": 1899.978275061585,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[120,140,320,980] ,\"score\":0.95},{\"bbox_2d\":[320,160,620,970] ,\"score\":0.94},{\"bbox_2d\":[620,250,860,980] ,\"score\":0.93}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  120,
+                  140,
+                  320,
+                  980
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  320,
+                  160,
+                  620,
+                  970
+                ],
+                "score": 0.94
+              },
+              {
+                "bbox_2d": [
+                  620,
+                  250,
+                  860,
+                  980
+                ],
+                "score": 0.93
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 92,
+          "prompt_tokens": 526
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-7857-21644"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 9.8525026650168,
+      "batch_wall_latency_seconds": 9.865253204014152,
+      "amortized_generation_ms_per_sample": 9852.5026650168,
+      "amortized_batch_wall_ms_per_sample": 9865.253204014152,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[650                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 527
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-79645-219273"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 2.319699679967016,
+      "batch_wall_latency_seconds": 2.332257404923439,
+      "amortized_generation_ms_per_sample": 2319.699679967016,
+      "amortized_batch_wall_ms_per_sample": 2332.257404923439,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[120,420,540,700] ,\"score\":0.95},{\"bbox_2d\":[540,400,780,690] ,\"score\":0.94},{\"bbox_2d\":[0,450,120,670] ,\"score\":0.93},{\"bbox_2d\":[140,460,260,600] ,\"score\":0.92}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  120,
+                  420,
+                  540,
+                  700
+                ],
+                "score": 0.95
+              },
+              {
+                "bbox_2d": [
+                  540,
+                  400,
+                  780,
+                  690
+                ],
+                "score": 0.94
+              },
+              {
+                "bbox_2d": [
+                  0,
+                  450,
+                  120,
+                  670
+                ],
+                "score": 0.93
+              },
+              {
+                "bbox_2d": [
+                  140,
+                  460,
+                  260,
+                  600
+                ],
+                "score": 0.92
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 119,
+          "prompt_tokens": 521
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-52921-145707"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 10.00177818897646,
+      "batch_wall_latency_seconds": 10.020861182012595,
+      "amortized_generation_ms_per_sample": 10001.77818897646,
+      "amortized_batch_wall_ms_per_sample": 10020.861182012595,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[380                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "valid_prediction": null,
+          "error": "Expecting ',' delimiter: line 1 column 529 (char 528)",
+          "finish_reason": "length",
+          "completion_tokens": 512,
+          "prompt_tokens": 531
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testB-69479-191562"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.6840293509885669,
+      "batch_wall_latency_seconds": 0.70091468305327,
+      "amortized_generation_ms_per_sample": 684.0293509885669,
+      "amortized_batch_wall_ms_per_sample": 700.91468305327,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[{\"bbox_2d\":[0,30,974,986],\"score\":0.95}]}",
+          "valid_prediction": {
+            "objects": [
+              {
+                "bbox_2d": [
+                  0,
+                  30,
+                  974,
+                  986
+                ],
+                "score": 0.95
+              }
+            ]
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 30,
+          "prompt_tokens": 522
+        }
+      ]
+    },
+    {
+      "sample_ids": [
+        "testA-69466-191524"
+      ],
+      "batch_size": 1,
+      "generation_latency_seconds": 0.24351457098964602,
+      "batch_wall_latency_seconds": 0.2538871930446476,
+      "amortized_generation_ms_per_sample": 243.51457098964602,
+      "amortized_batch_wall_ms_per_sample": 253.88719304464757,
+      "outputs": [
+        {
+          "raw_response": "{\"objects\":[]}",
+          "valid_prediction": {
+            "objects": []
+          },
+          "error": null,
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 522
+        }
+      ]
+    }
+  ],
+  "mean_generation_ms_per_sample": 3652.817064514238,
+  "median_generation_ms_per_sample": 1280.612550501246,
+  "mean_batch_wall_ms_per_sample": 3667.173011115665,
+  "median_batch_wall_ms_per_sample": 1289.789535512682,
+  "mean_prompt_tokens": 517.609375,
+  "mean_completion_tokens": 178.0625,
+  "latency_scope": "A800 vLLM-0.18.0 native generation latency with the frozen task prompt and structured-output schema; model loading and warmup excluded. Batch wall time includes the real request/image preparation path.",
+  "flops_scope": "This file measures latency only. Counted FLOPs are measured separately by the HF reference probe and are not claimed to be complete vLLM kernel FLOPs."
+}
